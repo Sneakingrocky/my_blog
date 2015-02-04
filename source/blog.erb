@@ -1,0 +1,15 @@
+<div class= "row">
+  <div class= "column large-6">
+    <link href='http://fonts.googleapis.com/css?family=Abel'rel='stylesheet' type='text/css'>
+
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <li>
+          <h3><%= link_to article.title, article %></h3>
+          <h5><%= article.date.strftime('%b %e') %></h5>
+          <p><%= article.body %></p>
+        </li>
+      <% end %>
+    </ul>}  
+  </div>  
+</div>
