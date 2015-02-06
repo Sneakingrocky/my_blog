@@ -3,52 +3,91 @@
 @import "variables";
 @import "responsive";
 @import "grid";
+@import "blog";
 
 
 .hero { 
   background-size: cover;
-  width: 100%;
   height: 600px;
-  position: absolute;
   margin-top: -10px;
+  position: absolute;
+  width: 100%;
   z-index: -1;
 }
 
 body {
   background: white;
-  text-align: left;
   color: rgb(150, 150, 150);
+}
 
-  ul {
-    list-style-type: none;
-    padding-right: 60px;
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(226, 122, 63); 
+  text-decoration: none;
+}
+
+p {
+  color: (147, 146, 150);
+  font-family: 'Abel', sans-serif; 
+}
+
+.blog-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 1px;
+  margin: 1.25em 0 0 0;
+  width: 100%;
+}
+
+.placeholder {
+  padding-left: 50px;
+}
+
+.circle-text {
+    width:40%;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background-color: rgba(51, 77, 92, .90);
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circle-text div {
+    font-size: 1.5em;
+    float:left;
+    width:90%;
+    padding-top: 30%;;
+    padding-left: 10%;
+    line-height:1.5em;
+    margin-top:-0.5em;
+    text-align:left;
+    color:white;
+    font-family: 'Abel', sans-serif; 
 
   a {
+    color: rgb(69, 178, 157);
     text-decoration: none;
-  }
-
-  p {
-    color: (147, 146, 150);
-    font-family: 'Abel', sans-serif; 
-  }
+  }  
 }
 
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
-
-
-
-h3 a {
-  color: rgb(88, 140, 126);
+.position-center {
+  max-width: 1000px;
+  padding: 0 $gutter;
+  margin-top: 300px;
+  margin-left: 100px;
 }
 
+.right {
+  float: right;
+}
 

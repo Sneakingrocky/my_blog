@@ -1,31 +1,37 @@
 nav {
-  margin: em(30) 0;
   background-color: rgb(230, 88, 72);
+  height: 45px;
   width: 100%;
-
 
   ul {
     display: inline-block;
-    margin-bottom: em(10);
+    margin-bottom: em(10);                                                                                                                
+  }
+
+  li {
+    padding: 0;
+    display: block;
+    float: left;
+  }
+
+  a {
+    display: block;
+    line-height: 45px;
   }
 }
 
 .logo {
+  color: white;
   font-size: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
-  padding-top: 300px;
 }
 
 .nav-links {
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 1em;  
+  font-weight: 500;
   text-decoration: none;
   color: white;
-  padding-top: 300px;
-  padding-left: 10px;
-
-
+  padding: 0 1em;
 }

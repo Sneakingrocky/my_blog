@@ -1,12 +1,19 @@
 <nav>
-  <ul>
-    <li>
-      <%= link_to "Erica Garcia", "index.html", :class => 'logo' %>
-    </li>
-  </ul>  
-  <ul>    
-    <li class="right">  
-      <%= link_to "Blog", "blog.html", :class => 'nav-links' %>
-    </li>
-  </ul>
+  <div class="container">
+    <ul>
+      <li>
+        <%= link_to "Erica Garcia", "/index.html", :class => 'logo' %>
+      </li>
+    </ul>  
+    <ul class="right">    
+      <li>  
+        <%= link_to "Blog", "/blog.html", :class => 'nav-links' %>
+      </li>
+      <li>
+        <%= link_to "Projects", "/projects.html", :class => 'nav-links' %>
+      </li>
+    </ul>
+  </div>
 </nav>
+
+
