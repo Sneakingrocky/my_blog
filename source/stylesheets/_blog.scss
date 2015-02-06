@@ -1,15 +1,16 @@
 .article {
   font-size: 20px;
 
-  h3.article-title,
-  h3.article-title a:visited {
+  h3.article-title {
     font-size: 1.5em;
-    color: rgb(88, 140, 126);
     margin-bottom: 10px;
 
-  }
-  h3.article-title a:hover {
-    color: darken(rgb(88, 140, 126), 20%);
+    &, a, a:visited {
+      color: rgb(88, 140, 126);
+    }
+    a:hover {
+      color: darken(rgb(88, 140, 126), 20%);
+    }
   }
 }
 
