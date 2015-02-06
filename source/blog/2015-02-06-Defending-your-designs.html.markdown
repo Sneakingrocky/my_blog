@@ -1,13 +1,13 @@
 ---
-title: First Post!
-date: 2015-02-03 03:53 UTC
+title: Defending your designs
+date: 2015-02-06 03:53 UTC
 tags:
 ---
 
 "This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about. 
 
 ####My Process
-When I design I like to make decisions based on research - data driven design and user testing when possible. I am old fashioned in some ways because I still love putting things down on paper and sometimes find that by stepping away from the computer I can come up with better and more unique ideas. I believe that brainstorming, wire-framing, and prototyping are very important to my design process. These simple tools & strategies are both cost & time effective because you gain a way better grasp of the project than you would trying to dive right into creating the final product. 
+When I design I like to make decisions based on research - data driven design and user testing when possible. I am old fashioned in some ways because I still love putting things down on paper and sometimes find that by stepping away from the computer I can come up with better and more unique ideas. I believe that brainstorming, wireframing, and prototyping are very important to my design process. These simple tools & strategies are both cost & time effective because you gain a way better grasp of the project than you would trying to dive right into creating the final product. 
 
 ####Learning from your mistakes
 Over time I have definitely fallen victim to creating something that is visually appealing only to have it not be the best solution for the purpose it is being used for. Or even worse, creating a project and not looking at it from every angle only to find out during the undergraduate critique that from a certain distance my project looked like it contained a giant Nazi sign. Yes this happened and I was extremely embarrassed. I’m thankful for moments like these that I was able to crash and burn safely in undergrad because they shaped me into the designer that I am today. I believe that every design decision you make should be purposely made.  And throughout the creative process you should constantly be looking at your work with a critical eye as well as have others view your project.

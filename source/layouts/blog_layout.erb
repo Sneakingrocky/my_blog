@@ -7,16 +7,16 @@
       <div class="article-body"><%= yield %></div>
     </div>
 
+    <div class= "article-nav">
+      <% previous_article = current_article.previous_article %>
+      <% if previous_article %>
+        <%= link_to "← #{previous_article.title}", previous_article %>
+      <% end %>
 
-    <% previous_article = current_article.previous_article %>
-    <% if previous_article %>
-      <%= link_to "← #{previous_article.title}", previous_article %>
-    <% end %>
-
-    <% next_article = current_article.next_article %>
-    <% if next_article %>
-      <%= link_to "#{next_article.title} →", next_article, class: "right" %>
-    <% end %>
-
+      <% next_article = current_article.next_article %>
+      <% if next_article %>
+        <%= link_to "#{next_article.title} →", next_article, class: "right" %>
+      <% end %>
+    </div>  
   </div>
 <% end %>

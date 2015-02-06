@@ -6,10 +6,10 @@
     margin-bottom: 10px;
 
     &, a, a:visited {
-      color: rgb(88, 140, 126);
+      color: rgb(78, 109, 130);
     }
     a:hover {
-      color: darken(rgb(88, 140, 126), 20%);
+      color: darken(rgb(78, 109, 130), 5%);
     }
   }
 }
@@ -25,6 +25,7 @@
  
   h4 {
     font-size: 1.1em;
+    margin-bottom: 10px;
   }
 }
 
