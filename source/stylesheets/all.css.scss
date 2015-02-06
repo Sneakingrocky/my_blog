@@ -10,6 +10,7 @@
   background-size: cover;
   height: 600px;
   margin-top: -10px;
+  margin-bottom: 30px;
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -44,15 +45,15 @@ p {
 .mobile-bio {
   font-size: 1.5em;
   float:left;
-  width:90%;
+  width:75%;
   padding-top: 30%;;
-  padding-left: 10%;
+  padding-left: 15%;
   line-height:1.5em;
-  margin-top:-0.5em;
+  margin-top: 8em;
   text-align:left;
-  color:black;
-  font-family: 'Abel', sans-serif; 
-}
+  color: rgb(78, 109, 130);
+  font-family: 'Abel', sans-serif;
+  display: block;}
 
 .blog-divider {
   background: #e8e8e8;

@@ -32,3 +32,15 @@
 .date {
   font-size: 0.75em;
 }
+
+.teal-link {
+  color: rgb(69, 178, 157);
+  text-decoration: none;
+
+  &, a, a:visited {
+    color: rgb(69, 178, 157);
+  }
+  a:hover {
+    color: darken(rgb(69, 178, 157), 5%);
+  }
+}
