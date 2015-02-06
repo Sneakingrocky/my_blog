@@ -27,14 +27,14 @@ body {
 
 ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-}
+  padding: 0;
+ }
 
 a {
   color: rgb(69, 178, 157);
-  text-decoration: none;
   padding-bottom: 100px;
+  text-decoration: none;
 }
 
 p {
@@ -43,17 +43,18 @@ p {
 }
 
 .mobile-bio {
-  font-size: 1.5em;
+  color: rgb(78, 109, 130);
+  display: block;
   float:left;
-  width:75%;
-  padding-top: 30%;;
-  padding-left: 15%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5em; 
   line-height:1.5em;
   margin-top: 8em;
+  padding-top: 30%;;
+  padding-left: 15%;
   text-align:left;
-  color: rgb(78, 109, 130);
-  font-family: 'Abel', sans-serif;
-  display: block;}
+  width:75%;
+}
 
 .blog-divider {
   background: #e8e8e8;
@@ -68,31 +69,33 @@ p {
 }
 
 .circle-text {
-    width:40%;
+  width:40%;
 }
+
 .circle-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    background-color: rgba(51, 77, 92, .90);
+  content: "";
+  background-color: rgba(51, 77, 92, .90);
     -moz-border-radius: 50%; 
     -webkit-border-radius: 50%; 
-    border-radius: 50%;
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  
+  border-radius: 50%;
 }
 .circle-text div {
-    font-size: 1.5em;
-    float:left;
-    width:90%;
-    padding-top: 30%;;
-    padding-left: 10%;
-    line-height:1.5em;
-    margin-top:-0.5em;
-    text-align:left;
-    color:white;
-    font-family: 'Abel', sans-serif; 
-
+  color:white;
+  font-family: 'Abel', sans-serif; 
+  font-size: 1.5em;
+  float:left;
+  width:90%;
+  padding-top: 30%;;
+  padding-left: 10%;
+  line-height:1.5em;
+  margin-top:-0.5em;
+  text-align:left;
+  
   a {
     color: rgb(69, 178, 157);
     text-decoration: none;
@@ -100,8 +103,8 @@ p {
 }
 
 .position-center {
-  max-width: 1000px;
   padding: 0 $gutter;
+  max-width: 1000px; 
   margin-top: 300px;
   margin-left: 100px;
 }

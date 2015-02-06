@@ -1,7 +1,7 @@
 .container {
-  max-width: 800px;
-  padding: 0 $gutter;
   margin: 0 auto;
+  max-width: 800px; 
+  padding: 0 $gutter;
 }
 
 .row {
@@ -13,10 +13,11 @@
 }
 
 .column {
-  padding: 0 $gutter;
   float: left;
-  width: 100%;
+  padding: 0 $gutter;
   position: relative;
+  width: 100%;
+ 
 
   &.end {
     float: right;
