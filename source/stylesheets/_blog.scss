@@ -3,6 +3,7 @@
 
   h3.article-title {
     font-size: 1.5em;
+    font-weight: normal;
     margin-bottom: 10px;
 
     &, a, a:visited {
@@ -15,6 +16,10 @@
 }
 
 .article-body {
+  h2, h3, h4 {
+    font-weight: normal;
+  }
+
   h2 {
     font-size: 1.3em;
   }

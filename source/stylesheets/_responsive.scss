@@ -6,6 +6,12 @@
   }
 }
 
+.hide-for-large-only {
+  @media (min-width: $large_width) {
+    display: none;
+  }
+}
+
 .show-for-small-only {
   @media (min-width: $medium_width) {
     display: none;

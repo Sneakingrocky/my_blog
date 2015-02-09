@@ -8,10 +8,8 @@
 
 .hero { 
   background-size: cover;
-  height: 600px;
   margin-top: -10px;
   margin-bottom: 30px;
-  position: absolute;
   width: 100%;
   z-index: -1;
 
@@ -49,8 +47,6 @@ p {
   font-family: 'Abel', sans-serif;
   font-size: 1.5em; 
   line-height:1.5em;
-  margin-top: 8em;
-  padding-top: 30%;;
   padding-left: 15%;
   text-align:left;
   width:75%;
@@ -69,7 +65,10 @@ p {
 }
 
 .circle-text {
-  width:40%;
+  width:400px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
 }
 
 .circle-text:after {
@@ -80,8 +79,7 @@ p {
   display: block;
   width: 100%;
   height:0;
-  padding-bottom: 100%;
-  
+  padding-bottom: 100%; 
   border-radius: 50%;
 }
 .circle-text div {
