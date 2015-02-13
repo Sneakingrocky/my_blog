@@ -1,0 +1,128 @@
+---
+layout: projects
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS | Positioning</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"></link>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+  <section class="header"></section>
+    <div class="container">
+      <div class="fox"></div>    
+        <h1 class="title">CSS Positioning Explained</h1>
+
+        <div class="row">
+          <div class="column large-12"> 
+            <div class="story">
+              <p><span class="intro">Once upon a time ... </span> there was a handsome red fox named Koda who loved to go on adventures in the forest. Although Koda loved the peacefulness of traveling in the forest by himself he couldn’t help but daydream about having a friend to share it with. One day as Koda was venturing through a new part of the forest he saw a beautiful blue light coming from a small tunnel in the ground. Overcome with curiosity - Koda began crawling through the hole to find where the light was coming from. When he reached the end of the tunnel there was a small pile of leaves rustling. Koda became nervous and just as he was about to flee the tunnel back to safety,  a cute little baby fox crawled out. The baby fox crawled and sat right at Koda’s side, looking up at him with glistening eyes. The baby fox was unlike any fox Koda had ever seen - his fur was a magnificent blue and it was clear that the baby fox was alone just like Koda. On that day Koda adopted the little fox, naming him Rocky. Koda was happy to finally have someone to share his adventures with and Rocky was excited to have a cool new dad.</p>
+            </div>
+          </div>
+        </div>
+        <span class="divider"></span>
+
+        <div class="row">
+          <div class="column medium-12">
+            <h2>Let's use our fox friends Koda - the parent and Rocky - the child to help us understand CSS Positioning!</h3>
+          </div>  
+        </div>
+          
+        <div class="row">
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox"></div>
+            </div>
+            <h3>PARENT ELEMENTS</h3>
+            <p>A parent element is an element that contains one or more child elements. Right now Koda is statically positioned - we'll see what that means soon!</p>
+          </div>    
+
+          <div class="column medium-6">
+            <div class="box">
+              <div class="blue-fox"></div>
+            </div>
+            <h3>CHILD ELEMENTS</h3>
+            <p>All elements that are contained within a parent element are considered child elements. Rocky is also positioned statically!
+            </p>  
+          </div>
+        </div>  
+
+        <div class="row">
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox static">
+                <div class="blue-fox static"></div>
+              </div>
+            </div>
+            <h3>STATIC POSITIONING</h3>
+            <p>Static positioning  will place an element with normal flow - aka where the element would normally go. It is the default html positioning. This means that elements do not need to be declared static - they just are. It's important to also note that static elements will not respond to top, bottom, left, and right properties.</p> 
+           </div>  
+
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox static">
+                <div class="blue-fox relative"></div>
+              </div>
+              
+            </div>   
+            <h3>RELATIVE POSITIONING</h3>
+            <p>Relative positioning tells the element to land where it would have landed if it just had the default static positioning. However relative positioning is much more magical than plain ole' static positioning. It will respond to top, bottom, left, and right properties so you can move your element around! Here Rocky is positioned with 120px from the top and 80px left from where he would have with a position of static.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox static"><div class="blue-fox absolute"></div>
+              </div>
+            </div>
+            <h3>ABSOLUTE POSITIONING</h3>
+            <p>Absolute positioning positions the element in relation to the first parent element is has that doesn't have a position: static. What happens if there is not a static element? The element with position: absolute gets positioned relative to the 
+            < html > You can also use the top, bottom, left, and right properties to manipulate the positioning of the element. Rocky is currently positioned with 40px from the top and 150px left of his parent Koda.</p> 
+          </div>  
+
+          <div class="column medium-6">
+            <div class="box">
+              <p class="message">Find me in the top left corner!</p>
+            </div>   
+            <h3>FIXED POSITIONING</h3>
+            <p>Fixed positioning anchors an element to the browser window - meaning it will not move from its position.</p>
+          </div>
+        </div>
+
+
+        <div class="row">  
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox static z-index">
+                <div class="blue-fox"></div>
+              </div>
+            </div>
+              <h3>Z-INDEX</h3>
+              <p>By using the z-index property, elements are able to be "stacked". An element with a higher z-index will be stacked on top and displayed in front of an element with a lower z-index. In this example Koba has a z-index of -1 so he is underneath Rocky.</p>
+          </div>
+
+          <div class="column medium-6">
+            <div class="box">
+              <div class="red-fox static">
+                <div class="blue-fox z-index"></div>
+              </div>
+            </div>
+            <h3>Z-INDEX</h3>
+              <p>In this example Rocky now has a z-index of -1 so he is underneath Koda.</p>
+          </div>
+        </div>  
+
+
+        
+    </div>
+  </div> 
+</body> 
+
+<div class="footer"><div> 
