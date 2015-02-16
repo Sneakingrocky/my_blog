@@ -9,11 +9,11 @@
 .hero { 
   background-size: cover;
   margin-top: -10px;
-  margin-bottom: 30px;
   width: 100%;
   z-index: -1;
 
   img {
+    display: block;
     width: 100%;
   }
 }
@@ -47,6 +47,7 @@ p {
   font-family: 'Abel', sans-serif;
   font-size: 1.5em; 
   line-height:1.5em;
+  margin-top: 30px;
   padding-left: 15%;
   text-align:left;
   width:75%;
