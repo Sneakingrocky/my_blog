@@ -1,0 +1,89 @@
+h1 {
+  background-color: white;
+  color: black;
+  font-size: 6em;
+  width: 700px;
+  position: relative;
+  padding: 15px;
+  left: 100px;
+  text-align: left;
+  margin: 0;
+}
+
+h4 {
+  line-height: 1.4em;
+  margin-bottom: 0;
+}
+
+p {
+  color: black;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  
+  li {
+    line-height: 2em;
+  }
+}
+
+.location-text {
+  position: relative;
+  top: 180px;
+  right: 20px;
+}
+
+.career {
+  margin-top: 280px;
+  margin-left: 120px;
+  text-decoration: underline;
+}
+
+.picasso-img {
+  background-image: url("../images/picasso.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 500px;
+  height: 670px;
+  float: right;
+}
+
+.artwork-text {
+  position: relative;
+  margin-top: 680px;
+}
+
+.sara-img {
+  background-image: url("../images/sara_blake.png");
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 130px;
+  width: 180px;
+  height: 180px;
+}
+
+.quote {
+  color: rgb(119, 32, 64);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 100px;
+  position: relative;
+  top: 460px;
+  right: 20px;
+  width: 250px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; 
+}
+
+.margin-top {
+  margin-top: 312px;
+}
