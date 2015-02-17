@@ -88,7 +88,7 @@ h2, h3 {
   background-repeat: no-repeat;
   position: relative;
   width: 200px;
-  height: 200px;
+  height: 170px;
 }
 
 .static {
@@ -97,14 +97,18 @@ h2, h3 {
 
 .relative {
   position: relative;
-  top: 120px;
-  left: 80px;
+  left: 200px;
+}
+
+.relative2  {
+  position: relative;
+  left: 20px;
 }
 
 .absolute {
   position: absolute;
-  top: 40px;
-  left: 150px;
+  top: 100px;
+  left: 120px;
 }
 
 .z-index {

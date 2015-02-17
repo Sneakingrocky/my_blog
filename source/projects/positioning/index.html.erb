@@ -23,7 +23,7 @@ layout: projects
         <div class="row"> <h1 class="title">CSS Positioning Explained</h1>
           <div class="column large-12"> 
             <div class="story">
-              <p><span class="intro">Once upon a time ... </span> there was a handsome red fox named Koda who loved to go on adventures in the forest. Although Koda loved the peacefulness of traveling in the forest by himself he couldn’t help but daydream about having a friend to share it with. One day as Koda was venturing through a new part of the forest he saw a beautiful blue light coming from a small tunnel in the ground. Overcome with curiosity - Koda began crawling through the hole to find where the light was coming from. When he reached the end of the tunnel there was a small pile of leaves rustling. Koda became nervous and just as he was about to flee the tunnel back to safety,  a cute little baby fox crawled out. The baby fox crawled and sat right at Koda’s side, looking up at him with glistening eyes. The baby fox was unlike any fox Koda had ever seen - his fur was a magnificent blue and it was clear that the baby fox was alone just like Koda. On that day Koda adopted the little fox, naming him Rocky. Koda was happy to finally have someone to share his adventures with and Rocky was excited to have a cool new dad.</p>
+              <p><span class="intro">Once upon a time ... </span> there was a handsome red fox named Koda who loved to go on adventures in the forest. Although Koda loved the peacefulness of traveling in the forest by himself, he couldn’t help but daydream about having a friend whom with to share it. One day, as Koda was venturing through a new part of the forest, he saw a beautiful blue light coming from a small tunnel in the ground. Overcome with curiosity - Koda began crawling through the hole to find where the light was coming from. When he reached the end of the tunnel, there was a small pile of leaves rustling. Koda became nervous, and just as he was about to flee the tunnel back to safety, a cute little baby fox crawled out. The baby fox crawled and sat right at Koda’s side, looking up at him with glistening eyes. The baby fox was unlike any fox Koda had ever seen - his fur was a magnificent blue and it was clear that he was alone just like Koda. On that day, Koda adopted the little fox, naming him Rocky. Koda was happy to finally have someone to share his adventures with, and Rocky was excited to have a cool new dad.</p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ layout: projects
 
         <div class="row">
           <div class="column medium-12">
-            <h2>Let's use our fox friends Koda - the parent and Rocky - the child to help us understand CSS Positioning!</h3>
+            <h2>Let's use our fox friends Koda - the parent, and Rocky - the child to help us understand CSS Positioning!</h3>
           </div>  
         </div>
           
@@ -41,7 +41,7 @@ layout: projects
               <div class="red-fox"></div>
             </div>
             <h3>PARENT ELEMENTS</h3>
-            <p>A parent element is an element that contains one or more child elements. Right now Koda is statically positioned - we'll see what that means soon!</p>
+            <p>A parent element is simply an element that contains one or more child elements.</p>
           </div>    
 
           <div class="column medium-6">
@@ -49,7 +49,7 @@ layout: projects
               <div class="blue-fox"></div>
             </div>
             <h3>CHILD ELEMENTS</h3>
-            <p>All elements that are contained within a parent element are considered child elements. Rocky is also positioned statically!
+            <p>A child element is an element that is contained within a parent element.
             </p>  
           </div>
         </div>  
@@ -57,35 +57,40 @@ layout: projects
         <div class="row">
           <div class="column medium-6">
             <div class="box">
-              <div class="red-fox static">
-                <div class="blue-fox static"></div>
+              <div class="blue-fox static"></div>
+              <div class="blue-fox static">
               </div>
             </div>
             <h3>STATIC POSITIONING</h3>
-            <p>Static positioning  will place an element with normal flow - aka where the element would normally go. It is the default html positioning. This means that elements do not need to be declared static - they just are. It's important to also note that static elements will not respond to top, bottom, left, and right properties.</p> 
+            <p>Static positioning is the default html positioning. This means that elements do not need to be declared static - they just are. It's important to also note that static elements will not respond to top, bottom, left, and right properties.</p>
+
+            <p>Here, we have two blue fox "children". As you can see their natural behavior is to act like a "block" element. This causes them to stack on top of eachother.
            </div>  
 
           <div class="column medium-6">
             <div class="box">
-              <div class="red-fox static">
-                <div class="blue-fox relative"></div>
+              <div class="blue-fox relative"></div>
+               <div class="blue-fox static">
               </div>
               
             </div>   
             <h3>RELATIVE POSITIONING</h3>
-            <p>Relative positioning tells the element to land where it would have landed if it just had the default static positioning. However relative positioning is much more magical than plain ole' static positioning. It will respond to top, bottom, left, and right properties so you can move your element around! Here Rocky is positioned with 120px from the top and 80px left from where he would have been with a position of static.</p>
+            <p>Relative positioning moves an element relative to its default static positioning. It is also much more magical than plain ole' static positioning because it will respond to top, bottom, left, and right properties so you can move your element around!</p>
+
+            <p>Here the first blue fox is positioned relative and 200px left of where it was in the last eaxmple. It's also important to notice that it still takes up the same amount of space as before, pushing the second fox below.
           </div>
         </div>
 
         <div class="row">
           <div class="column medium-6">
             <div class="box">
-              <div class="red-fox static"><div class="blue-fox absolute"></div>
+              <div class="red-fox relative2"><div class="blue-fox absolute"></div>
               </div>
             </div>
             <h3>ABSOLUTE POSITIONING</h3>
-            <p>Absolute positioning positions the element in relation to the first parent element it has that doesn't have a position: static. What happens if there is not a static element? The element with position: absolute gets positioned relative to the 
-            < html > You can also use the top, bottom, left, and right properties to manipulate the positioning of the element. Rocky is currently positioned with 40px from the top and 150px left of his parent Koda.</p> 
+            <p>Absolute positioning positions the element in relation to the first parent element it has that doesn't have a position: static. If there is not a static element than it will position itself relative to the entire page. You can also manipulate the positioning of the element using the top, bottom, left, and right properties.</p>
+
+            <p>Here Rocky is positioned absolutely 200px from the top and 120px left from his parent Koda who is positioned relatively in the box.</p>  
           </div>  
 
           <div class="column medium-6">
