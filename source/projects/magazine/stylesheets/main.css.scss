@@ -11,8 +11,7 @@ p {
 }
 
 ul {
-  margin-top: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 48px;
   
   li {
     line-height: 2em;
@@ -28,9 +27,18 @@ ul {
   border: 1px solid #F0F0F0;
 }
 
+.content-container {
+  position: absolute;
+  top: 507px;
+  left: 230px;
+  height: 700px;
+  width: 1200px;
+  border: 1px solid #F0F0F0;
+}
+
 .article-header {
   position: relative;
-  top: 250px;
+  top: 350px;
   left: 150px;
 }
 
@@ -46,7 +54,6 @@ ul {
 
 .location-text {
   position: relative;
-  top: 5px;
   right: 20px;
 }
 
@@ -60,7 +67,7 @@ ul {
 .picasso-img {
   display: block;
   position: absolute;
-  top: 60px;
+  top: 55px;
   right: 0;
 }
 
@@ -70,21 +77,20 @@ ul {
 
 .sara-img {
   background-repeat: no-repeat;
-  position: relative;
-  float: left;
-  top: 250px;
-  left: 220px;
   width: 180px;
   height: 180px;
+}
+
+.interview-info {
+  margin-top: 40px;
 }
 
 .quote {
   color: rgb(119, 32, 64);
   font-size: 2em;
   font-weight: 700;
-  margin-bottom: 100px;
   position: relative;
-  top: 460px;
+  top: 440px;
   right: 20px;
   width: 250px;
 }
@@ -96,5 +102,5 @@ ul {
 }
 
 .margin-top {
-  margin-top: 712px;
+  margin-top: 280px;
 }
