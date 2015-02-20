@@ -1,17 +1,23 @@
 h4 {
   color: black;
+  font-family: "ratio-display",sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
   line-height: 1.4em;
   margin-bottom: 0;
 }
 
 p {
   color: black;
-  line-height: 1.5em;
+  font-family: "ratio-display",sans-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 1.2em;
   margin-top: 0;
 }
 
 ul {
-  margin-bottom: 48px;
+  margin-bottom: 70px;
   
   li {
     line-height: 2em;
@@ -19,55 +25,70 @@ ul {
 }
 
 
-.magazine-container {
-  margin-top: 100px;
+.column {
+  float: left;
+  padding: 0 15px;
   position: relative;
-  height: 1500px;
+  width: 230px;
+}  
+ 
+.magazine-container {
+  margin: 80px;
+  position: relative;
+  height: 1600px;
   width: 1200px;
   border: 1px solid #F0F0F0;
 }
 
 .content-container {
   position: absolute;
-  top: 507px;
-  left: 230px;
+  top: 510px;
+  left: 162px;
   height: 700px;
   width: 1200px;
-  border: 1px solid #F0F0F0;
 }
 
 .article-header {
   position: relative;
-  top: 350px;
+  top: 300px;
   left: 150px;
 }
 
 .name {
   background-color: white;
   color: black;
-  font-size: 6em;
-  width: 665px;
-  padding: 15px;
-  text-align: right;
- 
+  line-height: 1.00;
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-size: 10.5em;
+  font-weight: 700;
+  width: 655px;
+  padding:0;
+  margin:0;
+  text-align: left;
 }
 
 .location-text {
-  position: relative;
-  right: 20px;
+  color: black;
+  font-size: .8em;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .career {
+  border-bottom: solid 2px #000000;
+  display: inline;
   color: black;
-  text-decoration: underline;
+  font-family: "adriane",serif;
+  font-weight: 400;
+  font-size: 1.1em;
   position: relative;
-  left: 55px;
+  left: 10px;
 }
 
 .picasso-img {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 75px;
   right: 0;
 }
 
@@ -76,31 +97,49 @@ ul {
 }
 
 .sara-img {
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 180px;
+  padding: 0 20px;
 }
 
 .interview-info {
-  margin-top: 40px;
+  color: #aaa;
+  margin-top: 22px;
 }
 
 .quote {
   color: rgb(119, 32, 64);
-  font-size: 2em;
+  font-size: 3.2em;
   font-weight: 700;
-  position: relative;
-  top: 440px;
-  right: 20px;
-  width: 250px;
+  font-family: "jaf-bernino-sans-comp",sans-serif;
+  line-height: 1em;
+  position: absolute;
+  top: 622px;
+  left: 15px;
 }
 
 .circle {
+  background-color: black;
   border-radius: 50%;
-  width: 30px;
-  height: 30px; 
+  width: 18px;
+  height: 18px; 
+  position: relative;
+  bottom: 15px;
+}
+
+.page-footer {
+  color: black;
+  font-weight: 300;
+  font-family: "brandon-grotesque",sans-serif;
+  font-size: .8em;
+  position: relative;
+  top: 200px;
+  left: 100px;
+}
+
+.page-number {
+  display: inline;
+  font-size: 1.5em;
 }
 
 .margin-top {
-  margin-top: 280px;
+  margin-top: 292px;
 }
