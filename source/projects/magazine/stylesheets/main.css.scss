@@ -29,7 +29,7 @@ ul {
   float: left;
   padding: 0 15px;
   position: relative;
-  width: 230px;
+  width: 227px;
 }  
  
 .magazine-container {
@@ -112,7 +112,7 @@ ul {
   font-family: "jaf-bernino-sans-comp",sans-serif;
   line-height: 1em;
   position: absolute;
-  top: 622px;
+  top: 648px;
   left: 15px;
 }
 
@@ -142,4 +142,8 @@ ul {
 
 .margin-top {
   margin-top: 292px;
+}
+
+.less-line-height {
+  line-height: 1.15em;
 }
