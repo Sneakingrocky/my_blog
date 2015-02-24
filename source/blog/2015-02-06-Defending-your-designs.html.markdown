@@ -1,10 +1,10 @@
 ---
 title: Defending your designs
-date: 2015-02-06 03:53 UTC
+date: 2015-02-06 03:53 UTC3
 tags:
 ---
 
-"This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about. 
+This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about. 
 
 ####My Process
 When I design I like to make decisions based on research - data driven design and user testing when possible. I am old fashioned in some ways because I still love putting things down on paper and sometimes find that by stepping away from the computer I can come up with better and more unique ideas. I believe that brainstorming, wireframing, and prototyping are very important to my design process. These simple tools & strategies are both cost & time effective because you gain a way better grasp of the project than you would trying to dive right into creating the final product. 
@@ -21,4 +21,3 @@ Defending yourself can be extremely tricky in the professional world. Sometimes 
 
 ####Final thoughts
 It’s important for everyone to be able to have full confidence in their work, but it is also always important to remember that not all battles can be won. Sometimes you just have to accept that with grace. I promise you one thing though — you will feel much better defending your design decisions proudly than you would be questioning your decisions or even your skills as a professional.
-"

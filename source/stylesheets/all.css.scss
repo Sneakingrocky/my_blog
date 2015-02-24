@@ -20,7 +20,7 @@
 
 body {
   background: white;
-  color: rgb(150, 150, 150);
+  color: rgb(75, 75, 75);
 }
 
 ul {
@@ -37,12 +37,12 @@ a {
 
 p {
   color: (147, 146, 150);
-  font-family: 'Abel', sans-serif; 
+  font-family: "fanwood",sans-serif; 
 }
 
 .mobile-bio {
   color: rgb(78, 109, 130);
-  font-family: 'Abel', sans-serif;
+  font-family: "fanwood",sans-serif;
   font-size: 1.5em; 
   line-height:1.5em;
   margin-top: 30px;
@@ -81,7 +81,7 @@ p {
 }
 .circle-text div {
   color:white;
-  font-family: 'Abel', sans-serif; 
+  font-family: "fanwood",sans-serif;
   font-size: 1.5em;
   float:left;
   width:90%;
@@ -95,6 +95,10 @@ p {
     color: rgb(69, 178, 157);
     text-decoration: none;
   }  
+}
+
+.quote-color {
+  color: rgb(150, 150, 150)
 }
 
 .right {
