@@ -36,7 +36,22 @@
   img {
     max-width: 100%;
     margin: 5px;
-  } 
+  }
+
+  code {
+    color: #0d115a;
+    font-size: 0.75em;
+    background: #eee;
+    padding: 4px;
+  }
+
+  pre {
+    background: #eee;
+    padding: 10px;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;
+  }
 
 }
 

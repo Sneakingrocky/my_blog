@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix, .container {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+h1 {
+  color: white;
+  font-family: "grafolita-script",sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+}
+
+h2, blockquote, nav {
+  font-family: "cantiga",sans-serif;
+  font-weight: 300;
+  color: #3F3F3F;
+}
+
+
+p {
+  color: #848484;
+  font-family: "garamond-premier-pro-caption",serif; 
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+ul {
+  color: #848484;
+  font-family: "cantiga",sans-serif;
+  font-size: 1.2em;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+blockquote {
+  font-size: 1.5em;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    font-size: 2.5em;
+
+  }
+}
+
+cite {
+  font-size: .5em;
+  display: block;
+  margin-top: 10px;
+}
+
+section {
+  padding: 50px;
+}
+
+
+
+nav.top-nav {
+  float: right;
+
+  ul {
+    margin: 0;
+
+    li {
+      float: left;
+      list-style: none;
+      position: relative;
+    }
+  }
+
+  a {
+    padding: 0 20px;
+    color: black;
+    display: block;
+    line-height: 60px;
+    text-decoration: none;
+
+  }  
+}
+
+.row {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.column {
+
+  @media (min-width: 600px) {
+    width: 50%;
+    float: left;
+    padding: 0 25px;
+  }    
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #E54C10;
+  float: left;
+  font-family: "cantiga",sans-serif;
+  font-size: 2.5em;
+  line-height: 60px;
+}  
+
+
+
+#hero { 
+  background-image: url("../images/Design.png");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.content-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
+
+footer {
+  background: #403F33;
+  color: white;
+  padding: 40px;
+  text-align: center;
+
+  p {
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+
