@@ -24,10 +24,11 @@ h2, blockquote {
   color: #3F3F3F;
   font-family: "cantiga",sans-serif;
   font-weight: 300;
+  margin: 0;
 }
 
 
-p {
+p, figcaption {
   color: #848484;
   font-family: "garamond-premier-pro-caption",serif; 
   font-size: 1.2em;
@@ -43,24 +44,6 @@ ul {
   padding: 0;
 }
 
-blockquote {
-  font-size: 1.5em;
-  text-align: center;
-
-  @media (min-width: 600px) {
-    font-size: 2.5em;
-  }
-}
-
-cite {
-  font-size: .5em;
-  display: block;
-  margin-top: 10px;
-}
-
-section, aside {
-  padding: 40px 0;
-}
 
 a {
   text-decoration: none;
@@ -82,27 +65,36 @@ a {
 
 }
 
+blockquote {
+  font-size: 1.5em;
+  text-align: center;
 
-
-nav.top-nav {
-  float: right;
-
-  ul {
-    margin: 0;
-
-    li {
-      float: left;
-      list-style: none;
-      position: relative;
-    }
+  @media (min-width: 600px) {
+    font-size: 2.5em;
   }
-
-  a {
-    padding: 0 20px;
-    display: block;
-    line-height: 60px;
-  }  
 }
+
+cite {
+  font-size: .5em;
+  display: block;
+  margin-top: 10px;
+}
+
+section, aside {
+  padding: 40px 0;
+}
+
+figure {
+  display: inline-block;
+  vertical-align: center;
+  padding: 30px 1px;
+}
+
+figcaption {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 
 .row {
   position: relative;
@@ -129,6 +121,28 @@ nav.top-nav {
   margin: 0 auto;
 }
 
+
+nav.top-nav {
+  float: right;
+
+  ul {
+    margin: 0;
+
+    li {
+      float: left;
+      list-style: none;
+      position: relative;
+    }
+  }
+
+  a {
+    padding: 0 20px;
+    display: block;
+    line-height: 60px;
+  }  
+}
+
+
 .logo {
   color: #E54C10;
   float: left;
@@ -136,7 +150,6 @@ nav.top-nav {
   font-size: 2.5em;
   line-height: 60px;
 }  
-
 
 
 #hero { 
@@ -152,6 +165,19 @@ nav.top-nav {
   display: block;
   height: 1px;
   width: 100%;
+  margin: 40px 0;
+}
+
+.blog-heading {
+  font-size: 2em;
+  font-family: "cantiga",sans-serif;
+  padding-bottom: 30px;
+}
+
+.byline {
+  font-family: "garamond-premier-pro-caption",serif; 
+  font-size: 1em;
+  color: #848484;
 }
 
 
