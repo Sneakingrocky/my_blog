@@ -15,15 +15,15 @@ h1 {
   font-family: "grafolita-script",sans-serif;
   font-size: 5em;
   font-weight: 700;
-  text-align: center;
   margin: 0;
   padding-top: 100px;
+  text-align: center;
 }
 
-h2, blockquote, nav {
+h2, blockquote {
+  color: #3F3F3F;
   font-family: "cantiga",sans-serif;
   font-weight: 300;
-  color: #3F3F3F;
 }
 
 
@@ -40,6 +40,7 @@ ul {
   font-size: 1.2em;
   list-style: none;
   line-height: 1.5em;
+  padding: 0;
 }
 
 blockquote {
@@ -48,7 +49,6 @@ blockquote {
 
   @media (min-width: 600px) {
     font-size: 2.5em;
-
   }
 }
 
@@ -58,12 +58,28 @@ cite {
   margin-top: 10px;
 }
 
-section {
-  padding: 50px;
+section, aside {
+  padding: 40px 0;
 }
 
 a {
   text-decoration: none;
+
+
+  &:visited {
+    color: #3F3F3F;
+  }
+
+ 
+  &:hover {
+    color: #FF6A00;
+
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
 }
 
 
@@ -83,11 +99,8 @@ nav.top-nav {
 
   a {
     padding: 0 20px;
-    color: black;
     display: block;
     line-height: 60px;
-    text-decoration: none;
-
   }  
 }
 
@@ -146,6 +159,7 @@ footer {
   background: #403F33;
   color: white;
   padding: 40px;
+  margin-top: 60px;
   text-align: center;
 
   p {
