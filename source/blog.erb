@@ -1,21 +1,23 @@
-<div class="container">
-  <script src="//use.typekit.net/fel5pcq.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+<div class="content-container">
+  <div class="container">
+    <script src="//use.typekit.net/fel5pcq.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
 
-  <ul>
-    <% page_articles.each_with_index do |article, i| %>
-      <li class="article">
-        <h3 class="article-title"><%= link_to article.title, article %></h3>
-        <div class="date"><%= article.date.strftime('%b %e %Y') %></div>
-        <div class="article-body">
-          <%= article.summary %>
-        </div>
-        <div class="teal-link">
-          <%= link_to 'Read more…', article %>
-        </div>
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <li class="article">
+          <h3 class="article-title"><%= link_to article.title, article %></h3>
+          <div class="date"><%= article.date.strftime('%b %e %Y') %></div>
+          <div class="article-body">
+            <%= article.summary %>
+          </div>
+          <div class="teal-link">
+            <%= link_to 'Read more…', article %>
+          </div>
 
-        <span class="blog-divider"></span>
-      </li>
-    <% end %>
-  </ul>
+          <span class="blog-divider"></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>

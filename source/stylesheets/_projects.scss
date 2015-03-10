@@ -10,39 +10,6 @@
   }
 }
 
-.row {
-  position: relative;
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.column {
-
-  @media (min-width: 600px) {
-    width: 50%;
-    float: left;
-    padding: 0 25px;
-  }    
-}
-
-.container {
-  max-width: 1000px;
-  padding: .5em .1em;
-  margin: 0 auto;
-}
-
-
-.project-container {
-  margin: 100px auto;
-  position: relative;
-  max-width: 50%;
-  z-index: 1;
-}
-
 img.project-border {
   max-width: 100%;
   position: center;
