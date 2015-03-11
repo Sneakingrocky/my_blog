@@ -14,7 +14,7 @@ After searching through a few layouts my mentor and I decided that this one woul
 [![Original Layout][2]][1]
 
   [1]: http://issuu.com/imdiogodantas/docs/creativemind-magazine/10
-  [2]: /images/blog/Original_layout.png
+  [2]: /images/blog/magazine/Original_layout.png
 
 My remake can be found here: [Magazine Project](http://ericagarcia.me/projects/magazine/).  
 
@@ -23,7 +23,7 @@ My remake can be found here: [Magazine Project](http://ericagarcia.me/projects/m
 
 When I first looked at the article it seemed like trying to position everything would be pretty difficult. And my first approach of jumping right in and laying things out in the browser - something I normally don’t do - did make it pretty difficult. In order to see the relationships a little more clearly I brought the image into photoshop and placed some guidelines where things aligned. This was great because it created a rough grid for me to follow as well as unveiled a few relationships and alignments that I missed at first glance.  
 
-![Rough Grid](/images/blog/Rough_grid.png)
+![Rough Grid](/images/blog/magazine/Rough_grid.png)
 
 
 
@@ -35,10 +35,10 @@ This rough grid helped me see a few things:
 
 3.) There are a few visual groupings that I could put together for easy positioning - Article header group, content group, and within the content group there are groups of content that clearly align with each other. 
 
-![Magazine Grid](/images/blog/Magazine_grid.png)
+![Magazine Grid](/images/blog/magazine/Magazine_grid.png)
 
-![Mag ](/images/blog/Magazine_layout1.png)
-![Grid Key](/images/blog/Grid_key.png)
+![Mag ](/images/blog/magazine/Magazine_layout1.png)
+![Grid Key](/images/blog/magazine/Grid_key.png)
 
 ####I did it all wrong
 
@@ -47,8 +47,8 @@ Well, not all wrong but there were many things that I could improve on. My first
 In my next attempt I looked for a way to separate the content not only into columns but into rows that made sense as well. 
 
 
-![alt text](/images/blog/Magazine_layout2.png)
-![Grid Key](/images/blog/Grid_key.png)
+![alt text](/images/blog/magazine/Magazine_layout2.png)
+![Grid Key](/images/blog/magazine/Grid_key.png)
 
 
 
@@ -63,8 +63,8 @@ This approach was much better but I still lacked a few things:
 
 For my last attempt I tried to improve upon these weaknesses in my code. 
 
-![alt text](/images/blog/Magazine_layout3.png)
-![Grid Key](/images/blog/Grid_key.png)
+![alt text](/images/blog/magazine/Magazine_layout3.png)
+![Grid Key](/images/blog/magazine/Grid_key.png)
 
 
 ####What I learned
