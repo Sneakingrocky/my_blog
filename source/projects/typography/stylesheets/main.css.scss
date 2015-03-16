@@ -33,51 +33,19 @@
   margin: 0 auto;
 }
 
-#hero {
-  background-color: #BF3030;
-  background-size: cover;
-  padding: 100px 0;
-  position: relative;
-  width: 100%;
-
-  h1 {
-    font-size: 2em;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: "nimbus-sans",sans-serif;
-    font-style: normal;
-    font-size: 2.5em;
-    font-weight: 400;
-
-    @media (min-width: 540px) {
-      font-size: 4em;
-    }
-
-    @media (min-width: 900px) {
-      font-size: 7em;
-    }
-  }
-}
-
-.grey-background {
-  background-color: #eee;
-  background-size: cover;
-  padding: 100px 0;
-  position: relative;
-  width: 100%;
-
-}
 
 body {
 
-  h1 {
+  h1, h2, h3 {
     color: #333745;
+    font-family: "nimbus-sans",sans-serif;
+    font-style: normal;
+  }
+
+  h1 {
     padding: 0;
     margin: 0;
-    font-family: "nimbus-sans",sans-serif;
     font-size: 3em;
-    font-style: normal;
     font-weight: 400;
 
     @media (min-width: 680px) {
@@ -90,17 +58,11 @@ body {
   }
 
   h2 {
-    color: #333745;
-    font-family: "nimbus-sans",sans-serif;
-    font-style: normal;
     font-size: 3em;
     font-weight: 400;
   }
 
   h3 { 
-    color: #333745;
-    font-family: "nimbus-sans",sans-serif;
-    font-style: normal;
     font-size: 1.5em;
     font-weight: 400;
   }
@@ -142,35 +104,32 @@ section {
   margin-bottom: 100px;
 }
 
-.grid {
 
-  ul {
-    @extend .clearfix;
+#hero {
+  background-color: #BF3030;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
 
-    li {    
-      float: left;
-      list-style: none;
-      padding: 10px;
-      width: 50%;
+  h1 {
+    font-size: 2em;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: "nimbus-sans",sans-serif;
+    font-style: normal;
+    font-size: 2.5em;
+    font-weight: 400;
 
-      @media (min-width: 800px) {
-        width: 25%;
-      }
-
-      .example {
-        border: 5px solid #F27052;
-        font-size: 6em;
-        text-align: center;
-        height: 160px;
-        line-height: 150px;
-      }
-
-      .name {
-        text-align: center;
-        margin-top: 15px;
-      }
+    @media (min-width: 540px) {
+      font-size: 4em;
     }
-  }  
+
+    @media (min-width: 900px) {
+      font-size: 7em;
+    }
+  }
 }
 
 
@@ -204,6 +163,38 @@ nav.top-nav {
   }  
 }
 
+.grid {
+
+  ul {
+    @extend .clearfix;
+
+    li {    
+      float: left;
+      list-style: none;
+      padding: 10px;
+      width: 50%;
+
+      @media (min-width: 800px) {
+        width: 25%;
+      }
+
+      .example {
+        border: 5px solid #F27052;
+        font-size: 6em;
+        text-align: center;
+        height: 160px;
+        line-height: 150px;
+      }
+
+      .name {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  }  
+}
+
+
 .typeface-example {
   border: 5px solid #F27052;
   display: inline-block;
@@ -222,6 +213,23 @@ nav.top-nav {
   margin-bottom: 50px;
   width: 100%;
   padding: 5px;
+}
+
+
+.grey-background {
+  background-color: #eee;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 .capitalize {
