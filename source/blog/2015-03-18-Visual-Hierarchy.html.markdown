@@ -8,12 +8,12 @@ Visual hierarchy is vital in every design in order to create an enjoyable user e
 
 ###How do humans view information?
 
-In the 1920s German psychologists created theories in order to describe the capability of our brain to generate and organize visual elements into groups or “unified wholes”. This branch of study is called Gestalt psychology and a major part of this study involves the theory of the gestalt effect. The gestalt effect contains a few principles that explain the reasoning behind why our brains are naturally able to categorize information: grouping similar visual elements and organizing them into meaningful patterns.
+In the 1920s German psychologists created theories in order to describe the capability of our brains to generate and organize visual elements into groups or “unified wholes”. This branch of study is called Gestalt psychology and a major part of this study involves the theory of the gestalt effect. The gestalt effect contains a few principles that explain the reasoning behind why our brains are naturally able to categorize information: grouping similar visual elements and organizing them into meaningful patterns.
 
 
 A few principles of the gestalt effect are: 
 
-**Law of Similarity:** When things are similar the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.
+**Law of Similarity:** When things are similar, the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.
 
 ![similarity_example](/images/blog/hierarchy/similarity.png)
 
@@ -69,4 +69,4 @@ Proximity separates elements from each other and creates sub-hierarchies. Items 
 Repetition instantly attaches meaning to elements and communicates that elements are at the same level in the hierarchy. An example of this would be a human knowing that something is a link because they are all styled the same throughout the website.
 
 ###Pulling it all together
-Whenever you are working on a project it is important to know what your your goals are. What are you trying to communicate to the viewer? Which information needs to be prioritized? When you have your design, ask yourself whether or not there is a nice visual flow from one piece of content to the next. If literally numbering your pieces of content in order of importance helps - go for it! If you’re having trouble, try standing back and viewing your design while squinting in order to see what pops out to you first. Is it the content that you numbered 1? If yes, move on to see if the rest of the numbers follow sequentially. If no you’ll need to play around with your visual weight tools a little more. And once you’re done creating a visual hierarchy masterpiece be sure to celebrate! 
+Whenever you are working on a project it is important to know what your goals are. What are you trying to communicate to the viewer? Which information needs to be prioritized? When you have your design, ask yourself whether or not there is a nice visual flow from one piece of content to the next. While drafting, if literally numbering your pieces of content in order of importance helps - go for it! If you’re having trouble, try standing back and viewing your design while squinting in order to see what pops out to you first. Is it the content that you numbered 1? If yes, move on to see if the rest of the numbers follow sequentially. If no, you’ll need to play around with your visual weight tools a little more. And once you’re done creating a visual hierarchy masterpiece be sure to celebrate! 
