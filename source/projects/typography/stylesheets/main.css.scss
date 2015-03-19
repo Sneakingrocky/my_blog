@@ -37,7 +37,7 @@
 body {
 
   h1, h2, h3 {
-    color: #333745;
+    color: #4D5958;
     font-family: "nimbus-sans",sans-serif;
     font-style: normal;
   }
@@ -69,7 +69,7 @@ body {
 
 
   p {
-    color: #333745;
+    color: #4D5958;
     font-family: "garamond-premier-pro",serif;
     font-size: 1.3em;
   }
@@ -85,7 +85,7 @@ body {
 
    
     &:hover {
-      color: #36BFA6;
+      color: #D9A05B;
 
     }
 
@@ -106,7 +106,7 @@ section {
 
 
 #hero {
-  background-color: #BF3030;
+  background-color: #3B3C40;
   background-size: cover;
   padding: 100px 0;
   position: relative;
@@ -179,7 +179,7 @@ nav.top-nav {
       }
 
       .example {
-        border: 5px solid #F27052;
+        border: 5px solid #BF7B54;
         font-size: 6em;
         text-align: center;
         height: 160px;
@@ -196,7 +196,7 @@ nav.top-nav {
 
 
 .typeface-example {
-  border: 5px solid #F27052;
+  border: 5px solid #BF7B54;
   display: inline-block;
   font-size: 10em;
   max-width: 100%;
