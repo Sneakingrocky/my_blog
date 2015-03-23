@@ -20,9 +20,11 @@
 
 .column {
   padding: 0 25px;
+  width: 100%;
 
-  @media (min-width: 600px) {
-    width: 50%;
+  @media (min-width: 725px) {
+    width: 25%;
+    padding: 0 10px;
     float: left;
   }    
 }
@@ -30,7 +32,11 @@
 .container {
   max-width: 1000px;
   padding: 0 25px;
-  margin: 0 auto;
+  margin: 20px auto;
+
+  @media (min-width: 700px) {
+    margin: 100px auto;
+  }    
 }
 
 body {
@@ -38,31 +44,43 @@ body {
 }
 
 h1 {
-  background-color: rgba(150, 150, 150, .2);
   color: white;
   font-family: "lush",sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 400;
   margin: 0;
   padding: 0;
 
- 
 
   @media (min-width: 680px) {
-    font-size: 4em;
+    font-size: 6em;
   }
 
-  @media (min-width: 985px) {
+  @media (min-width: 900px) {
+    font-size: 7em;
+  }
+
+  @media (min-width: 1000px) {
     font-size: 10em;
-  } 
+  }
 
-
+  @media (min-width: 1200px) {
+    font-size: 12em;
+  }  
 }
 
 h2 {
   color: #301621;
-  font-size: 3em;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+
+   @media (min-width: 640px) {
+    font-size: 4em;
+  }
 }
+
+
 ul {
   padding: 0;
   margin: 0;
@@ -81,11 +99,14 @@ blockquote {
   color: #869157;
   font-size: 1.5em;
   text-align: center;
+  padding: 20px;
 
   @media (min-width: 600px) {
     font-size: 2.5em;
+    margin: 0;
   }
 }
+
 #hero {
   background-image: url("../images/wood_texture.png");
   background-size: cover;
@@ -154,4 +175,8 @@ blockquote {
     -moz-animation: load 10s;
     -o-animation: load 10s;
     animation: load 10s;
+}
+
+footer {
+  background-image: url("../images/wood_texture.png");
 }
