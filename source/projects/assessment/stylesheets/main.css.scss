@@ -22,25 +22,27 @@
   padding: 0 25px;
   width: 100%;
 
-  @media (min-width: 725px) {
+  @media (min-width: 800px) {
     width: 25%;
     padding: 0 10px;
     float: left;
-  }    
+  }
+
+  @media (min-width: 700px) and (max-width: 897px) {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+  }      
 }
 
 .container {
   max-width: 1000px;
   padding: 0 25px;
-  margin: 20px auto;
-
-  @media (min-width: 700px) {
-    margin: 100px auto;
-  }    
+  margin: 0 auto;   
 }
 
 body {
-  font-family: "jaf-bernina-sans-comp",sans-serif;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -49,7 +51,8 @@ h1 {
   font-size: 4em;
   font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
+  text-align: center;
 
 
   @media (min-width: 680px) {
@@ -71,12 +74,14 @@ h1 {
 
 h2 {
   color: #301621;
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  font-weight: 400;
   font-size: 2em;
-  padding: 0;
+  padding-top: 100px;
   margin: 0;
 
    @media (min-width: 640px) {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
@@ -95,25 +100,30 @@ ul {
 
 
 blockquote {
-  background-color: #eee;
-  color: #869157;
-  font-size: 1.5em;
+  color: white;
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  font-weight: 300;
+  font-size: 2em;
   text-align: center;
-  padding: 20px;
-
-  @media (min-width: 600px) {
-    font-size: 2.5em;
-    margin: 0;
-  }
 }
+
+section {
+  margin: 100px;
+}
+
+.content-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 4px;
+  width: 100%;
+} 
 
 #hero {
   background-image: url("../images/wood_texture.png");
   background-size: cover;
   width: 100%;
   display: block;
-  padding: 10em;
-
+  padding: 5em 0;
 }
 
 
@@ -133,18 +143,18 @@ blockquote {
     position: relative;
     text-align: center;
     color: #93A2AC;
-    font-family: "jaf-bernina-sans-comp",sans-serif;
+    font-family: "jaf-bernina-sans-condensed",sans-serif;
     margin: 2rem;
 }
 .progress>li:before {
-    content: attr(data-name);
+    content: attr(skill);
     position: absolute;
     width: 100%;
     bottom: -2rem;
     font-weight:400;
 }
 .progress>li:after {
-    content: attr(data-percent);
+    content: attr(rating);
     position: absolute;
     width: 100%;
     top: 3.7rem;
@@ -153,11 +163,18 @@ blockquote {
     text-align: center;
 }
 .progress svg {
-    width: 10rem;
+    width: 100%;
     height: 10rem;
+}
+.progress svg:nth-child(1) {
+  g {
+    fill: none;
+    stroke-width: 6;
+  }
 }
 .progress svg:nth-child(2) {
     position: absolute;
+    stroke-width: 6;
     left: 0;
     top: 0;
     transform: rotate(-90deg);
@@ -167,16 +184,12 @@ blockquote {
 }
 .progress svg:nth-child(2) path {
     fill: none;
-    stroke-width: 25;
+    stroke-width: 6;
     stroke-dasharray: 629;
     stroke: #fff;
     opacity:.9;
-    -webkit-animation: load 10s;
-    -moz-animation: load 10s;
-    -o-animation: load 10s;
-    animation: load 10s;
-}
-
-footer {
-  background-image: url("../images/wood_texture.png");
+    -webkit-animation: load 2s;
+    -moz-animation: load 2s;
+    -o-animation: load 2s;
+    animation: load 2s;
 }
