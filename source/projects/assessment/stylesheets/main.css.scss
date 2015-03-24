@@ -77,11 +77,12 @@ h2 {
   font-family: "jaf-bernina-sans-condensed",sans-serif;
   font-weight: 400;
   font-size: 2em;
-  padding-top: 100px;
+  padding-top: 50px;
   margin: 0;
 
    @media (min-width: 640px) {
     font-size: 3em;
+    padding-top: 100px;
   }
 }
 
@@ -105,6 +106,8 @@ blockquote {
   font-weight: 300;
   font-size: 2em;
   text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 section {
