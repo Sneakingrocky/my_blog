@@ -7,7 +7,7 @@
       <div class="article-body"><%= yield %></div>
     </div>
 
-    <div class= "teal-link">
+    <div class= "read-more">
       <% previous_article = current_article.previous_article %>
       <% if previous_article %>
         <%= link_to "← #{previous_article.title}", previous_article %>

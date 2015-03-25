@@ -22,7 +22,7 @@ The code to create one of these animated circles looks a little confusing:
 
 ##Let's break it down
 
-First it's important to note that this circle is created by using 6 equal parts. So each "path" creates one section of the circle like so:
+First it's important to note that this circle is created by using 6 equal parts. This was done so that each section could potentially be a different color or a gradient effect could be used. So each "path" creates one section of the circle like so:
 
 ![svg_circles](/images/blog/svg/svg_circle_divided.png)
 

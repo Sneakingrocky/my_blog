@@ -64,8 +64,9 @@
 
 .teal-link {
   color: rgb(69, 178, 157);
-  font-size: .8em;
+  font-size: 1em;
   text-decoration: none;
+  padding-bottom: 50px;
 
   &, a, a:visited {
     color: rgb(69, 178, 157);
@@ -74,3 +75,19 @@
     color: darken(rgb(69, 178, 157), 5%);
   }
 }
+
+.read-more {
+  color: rgb(69, 178, 157);
+  font-size: 1em;
+  text-decoration: none;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  &, a, a:visited {
+    color: rgb(69, 178, 157);
+  }
+  a:hover {
+    color: darken(rgb(69, 178, 157), 5%);
+  }
+}
+
