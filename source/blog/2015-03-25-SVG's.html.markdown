@@ -4,7 +4,7 @@ date: 2015-03-25 03:53 UTC3
 tags:
 ---
 
-When I first started working with image way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.
+When I first started working with images way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.
 
 Enter the world of people accessing the internet via various devices, screen sizes, and resolutions as well as the trend of responsive web design. Images and graphics not only need to be displayed at high quality, they need to be scalable and responsive. 
 
@@ -22,7 +22,7 @@ The code to create one of these animated circles looks a little confusing:
 
 ##Let's break it down
 
-First it's important to not that this circle is created by using 6 equal parts. So each "path" creates one section of the circle like so:
+First it's important to note that this circle is created by using 6 equal parts. So each "path" creates one section of the circle like so:
 
 ![svg_circles](/images/blog/svg/svg_circle_divided.png)
 
@@ -55,9 +55,11 @@ I think out of everything, paths can look pretty intimidating. But they aren't s
   <script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"></script>
 
 
-**A** - “Arc” command has five parameters. The first two set the radius of the arc, the third sets the rotation of the arc’s -axis compared to the normal x-axis, and the fourth and fifth parameters are the large-arc-flag and the sweep flag. The large-arc flag  determines if the arc that should be drawn should be greater than, or less than 180 degrees, and in the end determines which direction the arc will travel around a given circle. The sweep-flag determines if the arc should begin moving at negative angles or positive ones.
+**A** - “Arc” command has five parameters. The first two set the radius of the arc, the third sets the rotation of the arc’s -axis compared to the normal x-axis, and the fourth and fifth parameters are the large-arc-flag and the sweep flag. The large-arc flag  determines if the arc that should be drawn should be greater than, or less than 180 degrees, and in the end determines which direction the arc will travel around a given circle. The sweep-flag determines if the arc should begin moving at negative or positive angles. 
 
-A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag,
+A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag
+
+![svg_arcs](/images/blog/svg/SVGArcs_Flags.png)
 
 Here the virtual pen is using absolute coordinates - starting at 0, -100 to the point 86.6, -50 ( the last two numbers in the list of A coordinates). The first two numbers of A are the same 100, 100 so this results in a circular arc.
 
@@ -75,12 +77,12 @@ This contains some of the other elements but a couple new ones as well.
 
 **C** (absolute) **c** (relative) - (x1 y1 x2 y2 x y)
 
-This draws a cubic Bézier curve from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve.
+This draws a [Cubic Bézier curve](http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves "Cubic Bézier curve") from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve.
 
 **Z or z** are simple guys - they simply close the path.
 
 ##Styling##
-When I was looking at SVG's I saw a lot of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.
+When I was looking at SVG's I saw a lot of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.
 
 This was just a brief breakdown of some of the many elements available for building SVG's. If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)
 
