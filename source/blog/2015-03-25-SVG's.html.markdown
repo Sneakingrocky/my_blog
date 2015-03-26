@@ -18,13 +18,18 @@ During my last project: [Self Assessment](http://ericagarcia.me/projects/assessm
 
 The code to create one of these animated circles looks a little confusing:
 
-<script src="https://gist.github.com/Sneakingrocky/a87b2b0803ed122c9bbd.js"></script>
+<script src="https://gist.github.com/Sneakingrocky/09fbb1e2d4b5dfc8af2d.js"></script>
+
 
 ##Let's break it down
 
-First it's important to note that this circle is created by using 6 equal parts. This was done so that each section could potentially be a different color or a gradient effect could be used. So each "path" creates one section of the circle like so:
+Maybe it would be easier to view this problem as a series of diffent sections like so:
 
-![svg_circles](/images/blog/svg/svg_circle_divided.png)
+![svg_circles](/images/blog/svg/svg_circles_divided.png)
+
+The code to create a sectioned circle would look something like this:
+
+<script src="https://gist.github.com/Sneakingrocky/a87b2b0803ed122c9bbd.js"></script>
 
 ##viewBox and g
 
@@ -69,7 +74,7 @@ Here the virtual pen is using absolute coordinates - starting at 0, -100 to the 
 
 ##Getting Fancy
 
-If you noticed the full svg code has another svg within it that isn't a part of the g - grouping.This is a piece that is used as a mask for the circle animation. Told you we were getting fancy!
+What about that second SVG? This is a piece that is used as a mask for the circle animation. Told you we were getting fancy!
 
 <script src="https://gist.github.com/Sneakingrocky/2ed94c52b0eec7222230.js"></script>
 
@@ -82,7 +87,7 @@ This draws a [Cubic Bézier curve](http://en.wikipedia.org/wiki/B%C3%A9zier_curv
 **Z or z** are simple guys - they simply close the path.
 
 ##Styling##
-When I was looking at SVG's I saw a lot of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.
+When I was browsing through a lot of SVG XML code I saw tons of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.
 
 This was just a brief breakdown of some of the many elements available for building SVG's. If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)
 

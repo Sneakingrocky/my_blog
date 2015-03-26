@@ -30,13 +30,13 @@ layout: projects
     </header>
 
 
-      <section class="container">
+      <section class="container web-development">
         <h2>Web Development</h2>
         <div class="row">
           <div class="column">
             <ul class="progress">
               <li skill="HTML & SCSS" rating="5">
-                <%= partial("circle_svg", locals: {color: "#8CBEB2", rating: 5}) %>
+                <%= partial("circle_svg", locals: { rating: 5}) %>
               </li>
             </ul>
           </div>  
@@ -44,7 +44,7 @@ layout: projects
           <div class="column">
             <ul class="progress">
               <li skill="Responsive" rating="5">
-                <%= partial("circle_svg", locals: {color: "#8CBEB2", rating: 5}) %>
+                <%= partial("circle_svg", locals: { rating: 5}) %>
               </li>
             </ul>
           </div>
@@ -52,7 +52,7 @@ layout: projects
           <div class="column">
             <ul class="progress">
               <li skill="Ruby" rating="6">
-                <%= partial("circle_svg", locals: {color: "#8CBEB2", rating: 6}) %>
+                <%= partial("circle_svg", locals: { rating: 6}) %>
               </li>
             </ul>
           </div>
@@ -60,20 +60,20 @@ layout: projects
           <div class="column">  
             <ul class="progress">
               <li skill="TDD" rating="6">
-                <%= partial("circle_svg", locals: {color: "#8CBEB2", rating: 6}) %>
+                <%= partial("circle_svg", locals: { rating: 6}) %>
               </li>
             </ul>
           </div>
         </div>    
       </section>
 
-      <section class="container">
+      <section class="container design">
         <h2>Design</h2>
         <div class="row">
           <div class="column">
             <ul class="progress">
               <li skill="Adobe CS" rating="8">
-                <%= partial("circle_svg", locals: {color: "#F3B562", rating: 8}) %>
+                <%= partial("circle_svg", locals: {rating: 8}) %>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@ layout: projects
           <div class="column">       
             <ul class="progress">
               <li skill="Graphic Design" rating="8">
-                <%= partial("circle_svg", locals: {color: "#F3B562", rating: 8}) %>
+                <%= partial("circle_svg", locals: { rating: 8}) %>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ layout: projects
           <div class="column">     
             <ul class="progress">
               <li skill="Typography" rating="7">
-                <%= partial("circle_svg", locals: {color: "#F3B562", rating: 7}) %>
+                <%= partial("circle_svg", locals: { rating: 7}) %>
               </li>
             </ul>
           </div>
@@ -99,20 +99,20 @@ layout: projects
           <div class="column">     
             <ul class="progress">
               <li skill="Creativity" rating="10">
-                <%= partial("circle_svg", locals: {color: "#F3B562", rating: 10}) %>
+                <%= partial("circle_svg", locals: { rating: 10}) %>
               </li>
             </ul>
           </div>
         </div>    
       </section>
 
-      <section class="container">
+      <section class="container personal-skills">
         <h2>Personal Skills</h2>
         <div class="row">
           <div class="column">
             <ul class="progress">
               <li skill="Desire to learn" rating="10">
-                <%= partial("circle_svg", locals: {color: "#F06060", rating: 10}) %>
+                <%= partial("circle_svg", locals: { rating: 10}) %>
               </li>
             </ul>
           </div>
@@ -120,7 +120,8 @@ layout: projects
           <div class="column">  
             <ul class="progress">
               <li skill="Adaptability" rating="10">
-                <%= partial("circle_svg", locals: {color: "#F06060", rating: 10}) %>
+                <%= partial("circle_svg", locals: {
+                  rating: 10}) %>
               </li>
             </ul>
           </div>
@@ -128,7 +129,7 @@ layout: projects
           <div class="column">  
             <ul class="progress">
               <li skill="Empathy" rating="10">
-                <%= partial("circle_svg", locals: {color: "#F06060", rating: 10}) %>
+                <%= partial("circle_svg", locals: { rating: 10}) %>
               </li>
             </ul>
           </div>

@@ -114,13 +114,6 @@ section {
   margin: 100px;
 }
 
-.content-divider {
-  background: #e8e8e8;
-  display: block;
-  height: 4px;
-  width: 100%;
-} 
-
 #hero {
   background-image: url("../images/wood_texture.png");
   background-size: cover;
@@ -128,6 +121,13 @@ section {
   display: block;
   padding: 5em 0;
 }
+
+.content-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 4px;
+  width: 100%;
+} 
 
 
 /* Load animation */
@@ -166,18 +166,28 @@ section {
     text-align: center;
 }
 .progress svg {
-    width: 100%;
-    height: 10rem;
+  width: 100%;
+  height: 10rem;
+  fill: none;
+  stroke-width: 6;
 }
-.progress svg:nth-child(1) {
-  g {
-    fill: none;
-    stroke-width: 6;
+
+.progress svg.circle path {
+  .web-development & {
+    stroke: #8CBEB2;
+  }
+
+  .design & {
+    stroke: #F3B562; 
+  }
+
+  .personal-skills & {
+    stroke: #F06060;
   }
 }
-.progress svg:nth-child(2) {
+
+.progress svg.circle-mask {
     position: absolute;
-    stroke-width: 6;
     left: 0;
     top: 0;
     transform: rotate(-90deg);
@@ -185,9 +195,7 @@ section {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
 }
-.progress svg:nth-child(2) path {
-    fill: none;
-    stroke-width: 6;
+.progress svg.circle-mask path {
     stroke-dasharray: 629;
     stroke: #fff;
     opacity:.9;
