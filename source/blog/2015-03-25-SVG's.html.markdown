@@ -23,7 +23,7 @@ The code to create one of these animated circles looks a little confusing:
 
 ##Let's break it down
 
-Maybe it would be easier to view this problem as a series of diffent sections like so:
+Maybe it would be easier to view this problem as a series of different sections like so:
 
 ![svg_circles](/images/blog/svg/svg_circles_divided.png)
 
