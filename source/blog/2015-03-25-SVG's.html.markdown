@@ -82,14 +82,19 @@ This contains some of the other elements but a couple new ones as well.
 
 **C** (absolute) **c** (relative) - (x1 y1 x2 y2 x y)
 
-This draws a [Cubic Bézier curve](http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves "Cubic Bézier curve") from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve.
+This draws a [Cubic Bézier curve](http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves "Cubic Bézier curve") from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2, y2) as the control point at the end of the curve.
 
 **Z or z** are simple guys - they simply close the path.
 
 ##Styling##
 When I was browsing through a lot of SVG XML code I saw tons of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.
 
-This was just a brief breakdown of some of the many elements available for building SVG's. If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)
+This was just a brief breakdown of some of the many elements available for building SVG's. And perhaps an easier less exploratory route to make a circle would have been simply using the SVG circle element. This element uses the parameters cx, cy, and r where the cx and cy attributes define the x and y coordinates of the center of the circle and the r attribute defines the radius of the circle.
+
+<script src="https://gist.github.com/Sneakingrocky/260ab17f67ab6965e263.js"></script>
+
+
+If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)
 
 
 
