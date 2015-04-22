@@ -1,0 +1,133 @@
+<!doctype html><html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Semantic Elements</title>
+    <script src="//use.typekit.net/fel5pcq.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body class="x2015 x2015_03 x2015_03_05 x2015_03_05_HTML5-Semantic-elements x2015_03_05_HTML5-Semantic-elements_index">
+    <nav>
+  <ul>
+    <li>
+      <a class="logo" href="/">Erica Garcia</a>
+    </li>
+  </ul>  
+  <ul class="right">    
+    <li>  
+      <a class="nav-links" href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a class="nav-links" href="/projects/">Projects</a>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      <div class="container">
+    <div class="article">
+      <h3 class="article-title">Semantic Elements</h3>
+      <div class="date">Mar  5 2015</div>
+
+      <div class="article-body"><p>For the first 20 years of my life when someone would tell me that they were interested in learning a new language I would immediately think that they were talking about a foreign language. But in the past year, hanging around people who are passionate about programming and web development, “learning a new language” has a whole new meaning. </p>
+
+<p>Perhaps learning a programming or markup language is not so different from learning a foreign language. There are plenty of similarities between learning a language such as Spanish and a markup language such as HTML (HyperText Markup Language). </p>
+
+<p>One such example is the study of Semantics: The study of the meanings of words and phrases in a language. </p>
+
+<p>In HTML5 there are non-semantic elements as well as semantic elements:</p>
+
+<p><strong>Non-semantic:</strong> These elements do not tell us the meaning of it’s content<br />
+<strong>Examples:</strong> <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></p>
+
+<p><strong>Semantic:</strong> These elements give meaning to the content<br />
+<strong>Examples:</strong> <code>&lt;header&gt;</code>,  <code>&lt;footer&gt;</code> and <code>&lt;img&gt;</code></p>
+
+<p>You may be wondering what is means to “give meaning” or to “not give meaning” to content. Semantic elements explicitly label its content and enable computers, search engines, screen readers, etc. to read and understand the content on our web pages. And not only does it help machines better understand our HTML,  it creates a universal language so that when someone else jumps onto your markup they can better understand all of the parts.</p>
+
+<p>Here are a few HTML5 Semantic tags explained using a project I worked on this week:</p>
+
+<p><a href="http://ericagarcia.me/projects/semantics/"><img alt="My Semantics Project" src="/images/blog/semantics/Semantics_project.png" /></a></p>
+
+<h5 id="header-">&lt; header &gt;</h5>
+
+<p>The <code>&lt;header&gt;</code> is a structural element that represents a group of introductory or navigational aids. It typically contains a section’s heading, but can hold other content (a search form, relevant logos, etc.) if necessary. </p>
+
+<p>There can be multiple headers in a document but be sure not to overuse this element. For example, if the <code>&lt;header&gt;</code> element only contains a single heading element its unnecessary. </p>
+
+<p><img alt="header_example" src="/images/blog/semantics/Semantics_header.png" /></p>
+
+<h5 id="footer-">&lt; footer &gt;</h5>
+<p>The footer identifies the closing or end of a page, article, section, or other segment of a page.</p>
+
+<p>Footers may contain things such as short list of links to various pages of a site, social media icons, copyright information, etc.</p>
+
+<p><img alt="footer_example" src="/images/blog/semantics/Semantics_footer.png" /></p>
+
+<h5 id="nav-">&lt; nav &gt;</h5>
+<p>The nav identifies a section of major navigational links on a page. </p>
+
+<p>This element is also one that is commonly overused. An example of over-usage would be using it for the links located in your footer as they are not considered “major” navigational links.</p>
+
+<p><img alt="nav_example" src="/images/blog/semantics/Semantics_nav.png" /></p>
+
+<h5 id="article-">&lt; article &gt;</h5>
+<p>A <code>&lt;article&gt;</code> is used to contribute to the documents structure. It contains a standalone piece of content that may be independently distributed or reused. </p>
+
+<p>An easy test to see whether something would make sense as an <code>&lt;article&gt;</code> is:
+Would it’s content make sense independent of it’s context? If so, it’s a good candidate for an <code>&lt;article&gt;</code>. </p>
+
+<p><img alt="article_example" src="/images/blog/semantics/Semantics_article.png" /></p>
+
+<h5 id="section-">&lt; section &gt;</h5>
+<p>A section is also used to contribute to the documents structure. It is used to group different articles into different purposes or subjects, or to define the different sections of a single article.</p>
+
+<p><img alt="section_example" src="/images/blog/semantics/Semantics_section.png" /></p>
+
+<h5 id="aside-">&lt; aside &gt;</h5>
+<p>The aside element holds content, such as sidebars, inserts, or brief explanations that is separate from but related to the content surrounding it. </p>
+
+<p>Examples for an aside could be advertisements, or groups of navigation items. In this case I have a list of speakers which navigate to their personal websites.</p>
+
+<p><img alt="aside_example" src="/images/blog/semantics/Semantics_aside.png" /></p>
+
+<p>Extra: </p>
+
+<p>In my previous project I used a <code>&lt;blockquote&gt;</code> to label a quote that was pulled from the magazine article and used as a print “pull-quote.” However this was not the right use of a <code>&lt;blockquote&gt;</code>… </p>
+
+<h5 id="blockquote-">&lt; blockquote &gt;</h5>
+<p>A <code>&lt;blockquote&gt;</code> is used to specify that a section is quoted from another source:</p>
+
+<pre><code>&lt;blockquote cite="http://www.imdb.com/title/tt0091042/quotes"&gt;
+  &lt;p&gt;Life moves pretty fast. If you don't stop and look around once in a while, you could miss it..&lt;/p&gt;
+  &lt;footer&gt;— &lt;a href="http://www.imdb.com/title/tt0091042/quotes"&gt;Ferris Bueller&lt;/a&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+</code></pre>
+
+<p>Cite is used to specify the source of the quotation*</p>
+
+<h5 id="q-">&lt; q &gt;</h5>
+<p>A <code>&lt;q&gt;</code> is an inline html quotation element that is used for short quotations that don’t require paragraph breaks.</p>
+
+<p><img alt="blockquote_example" src="/images/blog/semantics/Semantics_blockquote.png" /></p>
+
+</div>
+    </div>
+
+    <div class= "read-more">
+        <a href="/2015/03/02/Magazine-Project/">← Magazine Project</a>
+
+        <a class="right" href="/2015/03/18/Visual-Hierarchy/">Visual Hierarchy →</a>
+    </div>  
+    <div class="footer"></div>
+  </div>
+
+  </body>
+</html>

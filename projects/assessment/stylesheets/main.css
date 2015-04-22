@@ -1,0 +1,201 @@
+/* line 1, ../projects/assessment/stylesheets/main.css.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 6, ../projects/assessment/stylesheets/main.css.scss */
+.clearfix:after, .row:after, .container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 13, ../projects/assessment/stylesheets/main.css.scss */
+.row {
+  position: relative;
+  margin: 0 -25px; }
+
+/* line 21, ../projects/assessment/stylesheets/main.css.scss */
+.column {
+  padding: 0 25px;
+  width: 100%; }
+  @media (min-width: 800px) {
+    /* line 21, ../projects/assessment/stylesheets/main.css.scss */
+    .column {
+      width: 25%;
+      padding: 0 10px;
+      float: left; } }
+  @media (min-width: 700px) and (max-width: 897px) {
+    /* line 21, ../projects/assessment/stylesheets/main.css.scss */
+    .column {
+      width: 50%;
+      padding: 0 10px;
+      float: left; } }
+
+/* line 38, ../projects/assessment/stylesheets/main.css.scss */
+.container {
+  max-width: 1000px;
+  padding: 0 25px;
+  margin: 0 auto; }
+
+/* line 44, ../projects/assessment/stylesheets/main.css.scss */
+body {
+  padding-bottom: 100px; }
+
+/* line 48, ../projects/assessment/stylesheets/main.css.scss */
+h1 {
+  color: white;
+  font-family: "lush",sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center; }
+  @media (min-width: 680px) {
+    /* line 48, ../projects/assessment/stylesheets/main.css.scss */
+    h1 {
+      font-size: 6em; } }
+  @media (min-width: 900px) {
+    /* line 48, ../projects/assessment/stylesheets/main.css.scss */
+    h1 {
+      font-size: 7em; } }
+  @media (min-width: 1000px) {
+    /* line 48, ../projects/assessment/stylesheets/main.css.scss */
+    h1 {
+      font-size: 10em; } }
+  @media (min-width: 1200px) {
+    /* line 48, ../projects/assessment/stylesheets/main.css.scss */
+    h1 {
+      font-size: 12em; } }
+
+/* line 75, ../projects/assessment/stylesheets/main.css.scss */
+h2 {
+  color: #301621;
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 50px;
+  margin: 0; }
+  @media (min-width: 640px) {
+    /* line 75, ../projects/assessment/stylesheets/main.css.scss */
+    h2 {
+      font-size: 3em;
+      padding-top: 100px; } }
+
+/* line 90, ../projects/assessment/stylesheets/main.css.scss */
+ul {
+  padding: 0;
+  margin: 0; }
+  /* line 94, ../projects/assessment/stylesheets/main.css.scss */
+  ul li {
+    font-size: 1.5em;
+    list-style: none;
+    line-height: 2em;
+    padding: 0; }
+
+/* line 103, ../projects/assessment/stylesheets/main.css.scss */
+blockquote {
+  color: white;
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0; }
+
+/* line 113, ../projects/assessment/stylesheets/main.css.scss */
+section {
+  margin: 100px; }
+
+/* line 117, ../projects/assessment/stylesheets/main.css.scss */
+#hero {
+  background-image: url("../images/wood_texture.png");
+  background-size: cover;
+  width: 100%;
+  display: block;
+  padding: 5em 0; }
+
+/* line 125, ../projects/assessment/stylesheets/main.css.scss */
+.content-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 4px;
+  width: 100%; }
+
+/* Load animation */
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0; } }
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0; } }
+/* Container */
+/* line 137, ../projects/assessment/stylesheets/main.css.scss */
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center; }
+
+/* Item */
+/* line 144, ../projects/assessment/stylesheets/main.css.scss */
+.progress > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: "jaf-bernina-sans-condensed",sans-serif;
+  margin: 2rem; }
+
+/* line 152, ../projects/assessment/stylesheets/main.css.scss */
+.progress > li:before {
+  content: attr(skill);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400; }
+
+/* line 159, ../projects/assessment/stylesheets/main.css.scss */
+.progress > li:after {
+  content: attr(rating);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 5rem;
+  text-align: center; }
+
+/* line 168, ../projects/assessment/stylesheets/main.css.scss */
+.progress svg {
+  width: 100%;
+  height: 10rem;
+  fill: none;
+  stroke-width: 6; }
+
+/* line 176, ../projects/assessment/stylesheets/main.css.scss */
+.web-development .progress svg.circle path {
+  stroke: #8CBEB2; }
+/* line 180, ../projects/assessment/stylesheets/main.css.scss */
+.design .progress svg.circle path {
+  stroke: #F3B562; }
+/* line 184, ../projects/assessment/stylesheets/main.css.scss */
+.personal-skills .progress svg.circle path {
+  stroke: #F06060; }
+
+/* line 189, ../projects/assessment/stylesheets/main.css.scss */
+.progress svg.circle-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); }
+
+/* line 198, ../projects/assessment/stylesheets/main.css.scss */
+.progress svg.circle-mask path {
+  stroke-dasharray: 629;
+  stroke: #fff;
+  opacity: .9;
+  -webkit-animation: load 2s;
+  -moz-animation: load 2s;
+  -o-animation: load 2s;
+  animation: load 2s; }

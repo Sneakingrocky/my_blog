@@ -1,0 +1,136 @@
+<!doctype html><html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>SVG's</title>
+    <script src="//use.typekit.net/fel5pcq.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body class="x2015 x2015_03 x2015_03_25 x2015_03_25_SVG-s x2015_03_25_SVG-s_index">
+    <nav>
+  <ul>
+    <li>
+      <a class="logo" href="/">Erica Garcia</a>
+    </li>
+  </ul>  
+  <ul class="right">    
+    <li>  
+      <a class="nav-links" href="/blog/">Blog</a>
+    </li>
+    <li>
+      <a class="nav-links" href="/projects/">Projects</a>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      <div class="container">
+    <div class="article">
+      <h3 class="article-title">SVG's</h3>
+      <div class="date">Mar 25 2015</div>
+
+      <div class="article-body"><p>When I first started working with images way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.</p>
+
+<p>Enter the world of people accessing the internet via various devices, screen sizes, and resolutions as well as the trend of responsive web design. Images and graphics not only need to be displayed at high quality, they need to be scalable and responsive. </p>
+
+<p>I have been really intrigued with the world of responsive web design which is why I stumbled upon SVG’s (Scalable Vector Graphics). An SVG is a XML-based vector image format for 2D graphics that has support for interactivity and animation. A few benefits of using an SVG are its scalability, and SEO friendliness because is can include descriptions which can be searched by search engines.</p>
+
+<p>During my last project: <a title="Self Assessment" href="http://ericagarcia.me/projects/assessment/">Self Assessment</a>, I was looking for a way to display my ratings and decided to experiement with SVG graphics and animations. </p>
+
+<p><img alt="svg_circles" src="/images/blog/svg/svg_circles.png" /></p>
+
+<p>The code to create one of these animated circles looks a little confusing:</p>
+
+<script src="https://gist.github.com/Sneakingrocky/09fbb1e2d4b5dfc8af2d.js"></script>
+
+<h2 id="lets-break-it-down">Let's break it down</h2>
+
+<p>Maybe it would be easier to view this problem as a series of different sections like so:</p>
+
+<p><img alt="svg_circles" src="/images/blog/svg/svg_circles_divided.png" /></p>
+
+<p>The code to create a sectioned circle would look something like this:</p>
+
+<script src="https://gist.github.com/Sneakingrocky/a87b2b0803ed122c9bbd.js"></script>
+
+<h2 id="viewbox-and-g">viewBox and g</h2>
+
+<p>The first things we see listed are svg viewBox and g.</p>
+
+<script src="https://gist.github.com/Sneakingrocky/d32a3bf9cfd12eb5279f.js"></script>
+
+<p><strong>viewBox</strong> - contains four numbers (min-x, min-y, width and height) which define how the graphics fit in its container element. </p>
+
+<p><strong>g</strong> - This element is used to group SVG shapes together as a single shape. The advantages of doing this are you can now target grouped shapes and add things such as transformations or styles.</p>
+
+<h3 id="paths">Paths</h3>
+
+<p>To create these animated circles several paths were needed:</p>
+
+<script src="https://gist.github.com/Sneakingrocky/1ba09a94d2c33a8954e4.js"></script>
+
+<p>I think out of everything, paths can look pretty intimidating. But they aren't so bad! To make things a little easier, let's just grab the first path and disect it.</p>
+
+<script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"></script>
+
+<p><strong>path</strong> - This element is used to draw advanced shapes combined from lines, arcs, curves etc. </p>
+
+<p><strong>d</strong> - this is the d attribute which the drawing commands which are given to a “virtual pen” </p>
+
+<p><strong>M</strong> - “Move to” command - This should always be first thing listed in a path! Here the virtual pen is being moved to point 0, -100
+  <script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"></script></p>
+
+<p><strong>A</strong> - “Arc” command has five parameters. The first two set the radius of the arc, the third sets the rotation of the arc’s -axis compared to the normal x-axis, and the fourth and fifth parameters are the large-arc-flag and the sweep flag. The large-arc flag  determines if the arc that should be drawn should be greater than, or less than 180 degrees, and in the end determines which direction the arc will travel around a given circle. The sweep-flag determines if the arc should begin moving at negative or positive angles. </p>
+
+<p>A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag</p>
+
+<p><img alt="svg_arcs" src="/images/blog/svg/SVGArcs_Flags.png" /></p>
+
+<p>Here the virtual pen is using absolute coordinates - starting at 0, -100 to the point 86.6, -50 ( the last two numbers in the list of A coordinates). The first two numbers of A are the same 100, 100 so this results in a circular arc.</p>
+
+<script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"></script>
+
+<p>*Note that an uppercase “A” uses absolute coordinates and a lowercase “a” uses relative coordinates (relative from its start point).</p>
+
+<h2 id="getting-fancy">Getting Fancy</h2>
+
+<p>What about that second SVG? This is a piece that is used as a mask for the circle animation. Told you we were getting fancy!</p>
+
+<script src="https://gist.github.com/Sneakingrocky/2ed94c52b0eec7222230.js"></script>
+
+<p>This contains some of the other elements but a couple new ones as well.</p>
+
+<p><strong>C</strong> (absolute) <strong>c</strong> (relative) - (x1 y1 x2 y2 x y)</p>
+
+<p>This draws a <a title="Cubic Bézier curve" href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves">Cubic Bézier curve</a> from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2, y2) as the control point at the end of the curve.</p>
+
+<p><strong>Z or z</strong> are simple guys - they simply close the path.</p>
+
+<h2 id="styling">Styling</h2>
+<p>When I was browsing through a lot of SVG XML code I saw tons of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.</p>
+
+<p>This was just a brief breakdown of some of the many elements available for building SVG's. And perhaps an easier less exploratory route to make a circle would have been simply using the SVG circle element. This element uses the parameters cx, cy, and r where the cx and cy attributes define the x and y coordinates of the center of the circle and the r attribute defines the radius of the circle.</p>
+
+<script src="https://gist.github.com/Sneakingrocky/260ab17f67ab6965e263.js"></script>
+
+<p>If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)</p>
+
+</div>
+    </div>
+
+    <div class= "read-more">
+        <a href="/2015/03/18/Visual-Hierarchy/">← Visual Hierarchy</a>
+
+    </div>  
+    <div class="footer"></div>
+  </div>
+
+  </body>
+</html>

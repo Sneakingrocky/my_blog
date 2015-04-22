@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "partials/nav";
+@import "variables";
+@import "responsive";
+@import "grid";
+@import "blog";
+@import "projects";
+
+
+.hero { 
+  background-size: cover;
+  margin-top: -10px;
+  width: 100%;
+  z-index: -1;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+body {
+  background: white;
+  color: rgb(75, 75, 75);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+a {
+  color: rgb(69, 178, 157);
+  text-decoration: none;
+}
+
+p {
+  font-family: "lato",sans-serif;
+  line-height: 1.5em;
+  font-size: .85em;
+}
+
+.content-container {
+  padding: 50px 10px;
+}
+
+.mobile-bio {
+  color: rgb(78, 109, 130);
+  font-family: "lato",sans-serif;
+  font-size: 1.5em; 
+  line-height:1.5em;
+  margin-top: 30px;
+  text-align:left;
+ }
+
+.blog-divider {
+  background: #e8e8e8;
+  display: block;
+  height: 1px;
+  margin: 1.25em 0 0 0;
+  width: 100%;
+}
+
+.placeholder {
+  padding-left: 50px;
+}
+
+.circle-text {
+  width:400px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.circle-text:after {
+  content: "";
+  background-color: rgba(51, 77, 92, .90);
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%; 
+  border-radius: 50%;
+}
+.circle-text div {
+  color:white;
+  font-family: "lato",sans-serif;
+  font-size: 1.4em;
+  float:left;
+  width:90%;
+  padding-top: 30%;;
+  padding-left: 10%;
+  line-height:1.5em;
+  margin-top:-0.5em;
+  text-align:left;
+  
+  a {
+    color: rgb(69, 178, 157);
+    text-decoration: none;
+  }  
+}
+
+.quote-color {
+  color: rgb(150, 150, 150)
+}
+
+.right {
+  float: right;
+}

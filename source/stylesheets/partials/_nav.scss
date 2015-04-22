@@ -1,0 +1,38 @@
+nav {
+  background-color: rgb(230, 88, 72);
+  height: 45px;
+  width: 100%;
+
+  ul {
+    display: inline-block;
+    margin-bottom: em(10);                                                                                                                
+  }
+
+  li {
+    display: block;
+    float: left;
+    padding: 0;   
+  }
+
+  a {
+    display: block;
+    line-height: 45px;
+  }
+}
+
+.logo {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 17px;
+}
+
+.nav-links {
+  color: white;
+  font-size: 1em;  
+  font-weight: 500;
+  padding: 0 1em;
+  text-decoration: none;
+}

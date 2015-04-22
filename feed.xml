@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-03-24T22:53:00-05:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>SVG's</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/25/SVG's/"/>
+    <id>http://blog.url.com/2015/03/25/SVG's/</id>
+    <published>2015-03-24T22:53:00-05:00</published>
+    <updated>2015-03-26T09:46:29-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;When I first started working with images way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.&lt;/p&gt;
+&lt;p&gt;Enter the world of people accessing the internet via various devices, screen sizes, and resolutions as well as the trend of responsive web design. Images and graphics not only need to be displayed at high quality, they need to be scalable and responsive. &lt;/p&gt;
+
+&lt;p&gt;I have been really intrigued with the world of responsive web design which is why I stumbled upon SVG’s (Scalable Vector Graphics). An SVG is a XML-based vector image format for 2D graphics that has support for interactivity and animation. A few benefits of using an SVG are its scalability, and SEO friendliness because is can include descriptions which can be searched by search engines.&lt;/p&gt;
+
+&lt;p&gt;During my last project: &lt;a title="Self Assessment" href="http://ericagarcia.me/projects/assessment/"&gt;Self Assessment&lt;/a&gt;, I was looking for a way to display my ratings and decided to experiement with SVG graphics and animations. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The code to create one of these animated circles looks a little confusing:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/09fbb1e2d4b5dfc8af2d.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="lets-break-it-down"&gt;Let's break it down&lt;/h2&gt;
+
+&lt;p&gt;Maybe it would be easier to view this problem as a series of different sections like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles_divided.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The code to create a sectioned circle would look something like this:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/a87b2b0803ed122c9bbd.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="viewbox-and-g"&gt;viewBox and g&lt;/h2&gt;
+
+&lt;p&gt;The first things we see listed are svg viewBox and g.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/d32a3bf9cfd12eb5279f.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;viewBox&lt;/strong&gt; - contains four numbers (min-x, min-y, width and height) which define how the graphics fit in its container element. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;g&lt;/strong&gt; - This element is used to group SVG shapes together as a single shape. The advantages of doing this are you can now target grouped shapes and add things such as transformations or styles.&lt;/p&gt;
+
+&lt;h3 id="paths"&gt;Paths&lt;/h3&gt;
+
+&lt;p&gt;To create these animated circles several paths were needed:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/1ba09a94d2c33a8954e4.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;I think out of everything, paths can look pretty intimidating. But they aren't so bad! To make things a little easier, let's just grab the first path and disect it.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;path&lt;/strong&gt; - This element is used to draw advanced shapes combined from lines, arcs, curves etc. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;d&lt;/strong&gt; - this is the d attribute which the drawing commands which are given to a “virtual pen” &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;M&lt;/strong&gt; - “Move to” command - This should always be first thing listed in a path! Here the virtual pen is being moved to point 0, -100
+  &lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt; - “Arc” command has five parameters. The first two set the radius of the arc, the third sets the rotation of the arc’s -axis compared to the normal x-axis, and the fourth and fifth parameters are the large-arc-flag and the sweep flag. The large-arc flag  determines if the arc that should be drawn should be greater than, or less than 180 degrees, and in the end determines which direction the arc will travel around a given circle. The sweep-flag determines if the arc should begin moving at negative or positive angles. &lt;/p&gt;
+
+&lt;p&gt;A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="svg_arcs" src="/images/blog/svg/SVGArcs_Flags.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here the virtual pen is using absolute coordinates - starting at 0, -100 to the point 86.6, -50 ( the last two numbers in the list of A coordinates). The first two numbers of A are the same 100, 100 so this results in a circular arc.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;*Note that an uppercase “A” uses absolute coordinates and a lowercase “a” uses relative coordinates (relative from its start point).&lt;/p&gt;
+
+&lt;h2 id="getting-fancy"&gt;Getting Fancy&lt;/h2&gt;
+
+&lt;p&gt;What about that second SVG? This is a piece that is used as a mask for the circle animation. Told you we were getting fancy!&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/2ed94c52b0eec7222230.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;This contains some of the other elements but a couple new ones as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C&lt;/strong&gt; (absolute) &lt;strong&gt;c&lt;/strong&gt; (relative) - (x1 y1 x2 y2 x y)&lt;/p&gt;
+
+&lt;p&gt;This draws a &lt;a title="Cubic Bézier curve" href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves"&gt;Cubic Bézier curve&lt;/a&gt; from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2, y2) as the control point at the end of the curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Z or z&lt;/strong&gt; are simple guys - they simply close the path.&lt;/p&gt;
+
+&lt;h2 id="styling"&gt;Styling&lt;/h2&gt;
+&lt;p&gt;When I was browsing through a lot of SVG XML code I saw tons of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.&lt;/p&gt;
+
+&lt;p&gt;This was just a brief breakdown of some of the many elements available for building SVG's. And perhaps an easier less exploratory route to make a circle would have been simply using the SVG circle element. This element uses the parameters cx, cy, and r where the cx and cy attributes define the x and y coordinates of the center of the circle and the r attribute defines the radius of the circle.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/260ab17f67ab6965e263.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Visual Hierarchy</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/18/Visual-Hierarchy/"/>
+    <id>http://blog.url.com/2015/03/18/Visual-Hierarchy/</id>
+    <published>2015-03-17T22:53:00-05:00</published>
+    <updated>2015-03-18T16:40:37-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Visual hierarchy is vital in every design in order to create an enjoyable user experience. Good visual hierarchy is the responsible use of color, contrast, texture, shape, position, orientation, and size to create different levels of relative importance. It’s a difficult task to responsibly use all of these exciting tools to create a cohesive and  enjoyable experience for the user. However, with a better understanding of how our users perceive the information we provide them, we’ll have more guidance as to how to efficiently guide our viewers from one piece of content to the next. &lt;/p&gt;
+&lt;h3 id="how-do-humans-view-information"&gt;How do humans view information?&lt;/h3&gt;
+
+&lt;p&gt;In the 1920s German psychologists created theories in order to describe the capability of our brains to generate and organize visual elements into groups or “unified wholes”. This branch of study is called Gestalt psychology and a major part of this study involves the theory of the gestalt effect. The gestalt effect contains a few principles that explain the reasoning behind why our brains are naturally able to categorize information: grouping similar visual elements and organizing them into meaningful patterns.&lt;/p&gt;
+
+&lt;p&gt;A few principles of the gestalt effect are: &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Similarity:&lt;/strong&gt; When things are similar, the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="similarity_example" src="/images/blog/hierarchy/similarity.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Continuation:&lt;/strong&gt; Continuation occurs when the eye is naturally compelled to move through one object to another object. Elements arranged on a line or curve are perceived to be more related than elements not on a line or curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="continuation_example" src="/images/blog/hierarchy/continuation.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Closure:&lt;/strong&gt; This is a really cool one. This occurs when the human brain is able to fill in missing information in order to create a whole.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="closure_example" src="/images/blog/hierarchy/closure.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Proximity:&lt;/strong&gt; When elements are placed in close proximity the brain tends to categorize them into a group as where things that are placed further apart from each other are viewed as  separate groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="proximity_example" src="/images/blog/hierarchy/proximity.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure and Ground Relationships:&lt;/strong&gt; This is the brains ability to create a relationship between the object and its background.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="figure_ground_example" src="/images/blog/hierarchy/figure_ground.png" /&gt;&lt;/p&gt;
+
+&lt;h3 id="how-does-the-gestalt-theory-help-us"&gt;How does the gestalt theory help us?&lt;/h3&gt;
+
+&lt;p&gt;A big take away from the principles of the gestalt effect theory is that humans see everything in terms of relationships. With this information designers can apply the gestalt principles to basic design principles such as contrast, repetition, alignment, and proximity to communicate better with their users. &lt;/p&gt;
+
+&lt;h3 id="how-is-hierarchy-created"&gt;How is hierarchy created?&lt;/h3&gt;
+
+&lt;p&gt;Hierarchy is created by changing the visual weight of each element. Something with more visual weight is considered higher in the ranks of hierarchy which means that something with less visual weight is less important. Visual weights can be controlled through the use of:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrast&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Contrast is using the difference in visual properties to make things distinguishable from each other. Shifts in color, size, shape, and position can help create a sense of visual hierarchical importance. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Size&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Elements that are larger in size carry more visual weight. That being said, the most important elements of your design should be bigger and the least important elements should be smaller.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Color&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bold, contrasting colors can call attention to an element and raise its importance in a design. It can also be used as a hierarchy organizational tool in something such as infographic. The value (the darkness and lightness of an element can also give it more or less visual weight).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proximity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Proximity separates elements from each other and creates sub-hierarchies. Items that are packed closely together create a dense area and therefore create more visual weight. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Repetition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Repetition instantly attaches meaning to elements and communicates that elements are at the same level in the hierarchy. An example of this would be a human knowing that something is a link because they are all styled the same throughout the website.&lt;/p&gt;
+
+&lt;h3 id="pulling-it-all-together"&gt;Pulling it all together&lt;/h3&gt;
+&lt;p&gt;Whenever you are working on a project it is important to know what your goals are. What are you trying to communicate to the viewer? Which information needs to be prioritized? When you have your design, ask yourself whether or not there is a nice visual flow from one piece of content to the next. While drafting, if literally numbering your pieces of content in order of importance helps - go for it! If you’re having trouble, try standing back and viewing your design while squinting in order to see what pops out to you first. Is it the content that you numbered 1? If yes, move on to see if the rest of the numbers follow sequentially. If no, you’ll need to play around with your visual weight tools a little more. And once you’re done creating a visual hierarchy masterpiece be sure to celebrate! &lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Semantic Elements</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/05/HTML5-Semantic-elements/"/>
+    <id>http://blog.url.com/2015/03/05/HTML5-Semantic-elements/</id>
+    <published>2015-03-04T21:53:00-06:00</published>
+    <updated>2015-03-11T10:25:05-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;For the first 20 years of my life when someone would tell me that they were interested in learning a new language I would immediately think that they were talking about a foreign language. But in the past year, hanging around people who are passionate about programming and web development, “learning a new language” has a whole new meaning. &lt;/p&gt;
+&lt;p&gt;Perhaps learning a programming or markup language is not so different from learning a foreign language. There are plenty of similarities between learning a language such as Spanish and a markup language such as HTML (HyperText Markup Language). &lt;/p&gt;
+
+&lt;p&gt;One such example is the study of Semantics: The study of the meanings of words and phrases in a language. &lt;/p&gt;
+
+&lt;p&gt;In HTML5 there are non-semantic elements as well as semantic elements:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Non-semantic:&lt;/strong&gt; These elements do not tell us the meaning of it’s content&lt;br /&gt;
+&lt;strong&gt;Examples:&lt;/strong&gt; &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Semantic:&lt;/strong&gt; These elements give meaning to the content&lt;br /&gt;
+&lt;strong&gt;Examples:&lt;/strong&gt; &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;,  &lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You may be wondering what is means to “give meaning” or to “not give meaning” to content. Semantic elements explicitly label its content and enable computers, search engines, screen readers, etc. to read and understand the content on our web pages. And not only does it help machines better understand our HTML,  it creates a universal language so that when someone else jumps onto your markup they can better understand all of the parts.&lt;/p&gt;
+
+&lt;p&gt;Here are a few HTML5 Semantic tags explained using a project I worked on this week:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://ericagarcia.me/projects/semantics/"&gt;&lt;img alt="My Semantics Project" src="/images/blog/semantics/Semantics_project.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id="header-"&gt;&amp;lt; header &amp;gt;&lt;/h5&gt;
+
+&lt;p&gt;The &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; is a structural element that represents a group of introductory or navigational aids. It typically contains a section’s heading, but can hold other content (a search form, relevant logos, etc.) if necessary. &lt;/p&gt;
+
+&lt;p&gt;There can be multiple headers in a document but be sure not to overuse this element. For example, if the &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; element only contains a single heading element its unnecessary. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="header_example" src="/images/blog/semantics/Semantics_header.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="footer-"&gt;&amp;lt; footer &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The footer identifies the closing or end of a page, article, section, or other segment of a page.&lt;/p&gt;
+
+&lt;p&gt;Footers may contain things such as short list of links to various pages of a site, social media icons, copyright information, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="footer_example" src="/images/blog/semantics/Semantics_footer.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="nav-"&gt;&amp;lt; nav &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The nav identifies a section of major navigational links on a page. &lt;/p&gt;
+
+&lt;p&gt;This element is also one that is commonly overused. An example of over-usage would be using it for the links located in your footer as they are not considered “major” navigational links.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="nav_example" src="/images/blog/semantics/Semantics_nav.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="article-"&gt;&amp;lt; article &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is used to contribute to the documents structure. It contains a standalone piece of content that may be independently distributed or reused. &lt;/p&gt;
+
+&lt;p&gt;An easy test to see whether something would make sense as an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is:
+Would it’s content make sense independent of it’s context? If so, it’s a good candidate for an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="article_example" src="/images/blog/semantics/Semantics_article.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="section-"&gt;&amp;lt; section &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A section is also used to contribute to the documents structure. It is used to group different articles into different purposes or subjects, or to define the different sections of a single article.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="section_example" src="/images/blog/semantics/Semantics_section.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="aside-"&gt;&amp;lt; aside &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The aside element holds content, such as sidebars, inserts, or brief explanations that is separate from but related to the content surrounding it. &lt;/p&gt;
+
+&lt;p&gt;Examples for an aside could be advertisements, or groups of navigation items. In this case I have a list of speakers which navigate to their personal websites.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="aside_example" src="/images/blog/semantics/Semantics_aside.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Extra: &lt;/p&gt;
+
+&lt;p&gt;In my previous project I used a &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; to label a quote that was pulled from the magazine article and used as a print “pull-quote.” However this was not the right use of a &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;… &lt;/p&gt;
+
+&lt;h5 id="blockquote-"&gt;&amp;lt; blockquote &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; is used to specify that a section is quoted from another source:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote cite="http://www.imdb.com/title/tt0091042/quotes"&amp;gt;
+  &amp;lt;p&amp;gt;Life moves pretty fast. If you don't stop and look around once in a while, you could miss it..&amp;lt;/p&amp;gt;
+  &amp;lt;footer&amp;gt;— &amp;lt;a href="http://www.imdb.com/title/tt0091042/quotes"&amp;gt;Ferris Bueller&amp;lt;/a&amp;gt;&amp;lt;/footer&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cite is used to specify the source of the quotation*&lt;/p&gt;
+
+&lt;h5 id="q-"&gt;&amp;lt; q &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;q&amp;gt;&lt;/code&gt; is an inline html quotation element that is used for short quotations that don’t require paragraph breaks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="blockquote_example" src="/images/blog/semantics/Semantics_blockquote.png" /&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Magazine Project</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/02/Magazine-Project/"/>
+    <id>http://blog.url.com/2015/03/02/Magazine-Project/</id>
+    <published>2015-03-01T21:53:00-06:00</published>
+    <updated>2015-03-11T10:28:40-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;In order to work more on my understanding of CSS positioning and relationships, I was given the challenge of choosing a magazine layout and trying to replicate it using HTML and CSS.&lt;/p&gt;
+&lt;p&gt;After searching through a few layouts my mentor and I decided that this one would present some interesting challenges.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://issuu.com/imdiogodantas/docs/creativemind-magazine/10"&gt;&lt;img alt="Original Layout" src="/images/blog/magazine/Original_layout.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My remake can be found here: &lt;a href="http://ericagarcia.me/projects/magazine/"&gt;Magazine Project&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;h4 id="tackling-the-problem"&gt;Tackling the problem&lt;/h4&gt;
+
+&lt;p&gt;When I first looked at the article it seemed like trying to position everything would be pretty difficult. And my first approach of jumping right in and laying things out in the browser - something I normally don’t do - did make it pretty difficult. In order to see the relationships a little more clearly I brought the image into photoshop and placed some guidelines where things aligned. This was great because it created a rough grid for me to follow as well as unveiled a few relationships and alignments that I missed at first glance.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Rough Grid" src="/images/blog/magazine/Rough_grid.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This rough grid helped me see a few things: &lt;/p&gt;
+
+&lt;p&gt;1.) My entire magazine layout should be in a “container” &lt;/p&gt;
+
+&lt;p&gt;2.) I could easily use a four column grid for my layout&lt;/p&gt;
+
+&lt;p&gt;3.) There are a few visual groupings that I could put together for easy positioning - Article header group, content group, and within the content group there are groups of content that clearly align with each other. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Magazine Grid" src="/images/blog/magazine/Magazine_grid.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Mag " src="/images/blog/magazine/Magazine_layout1.png" /&gt;
+&lt;img alt="Grid Key" src="/images/blog/magazine/Grid_key.png" /&gt;&lt;/p&gt;
+
+&lt;h4 id="i-did-it-all-wrong"&gt;I did it all wrong&lt;/h4&gt;
+
+&lt;p&gt;Well, not all wrong but there were many things that I could improve on. My first completed rendition of this project mimicked the original almost flawlessly. My markup on the other hand suffered from my approach. I was thinking with the mindset of a print designer - grouping content visually and dividing the article into vertical columns. &lt;/p&gt;
+
+&lt;p&gt;In my next attempt I looked for a way to separate the content not only into columns but into rows that made sense as well. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="alt text" src="/images/blog/magazine/Magazine_layout2.png" /&gt;
+&lt;img alt="Grid Key" src="/images/blog/magazine/Grid_key.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This approach was much better but I still lacked a few things:&lt;/p&gt;
+
+&lt;p&gt;1 .) My code could be improved by having more flexible class names&lt;/p&gt;
+
+&lt;p&gt;2.) My groupings could be improved even more by considering them as “modules” instead of visual groupings - example: The text under the circle image was more related to the image than it was to the column (although having it as part of the column made things align much easier for me).&lt;/p&gt;
+
+&lt;p&gt;3.) I was using a large amount of padding to push the content away from the edge of the page. A better solution would be to have the content contained by another container within the magazine container.&lt;/p&gt;
+
+&lt;p&gt;For my last attempt I tried to improve upon these weaknesses in my code. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="alt text" src="/images/blog/magazine/Magazine_layout3.png" /&gt;
+&lt;img alt="Grid Key" src="/images/blog/magazine/Grid_key.png" /&gt;&lt;/p&gt;
+
+&lt;h4 id="what-i-learned"&gt;What I learned&lt;/h4&gt;
+
+&lt;p&gt;I learned so much from this project. Maybe most importantly that there are a million ways to achieve the same visual result. But just because your html and css is working together to place the elements on the page does not mean that it has been done in the best and cleanest way. It is important to be mindful when creating  - making sure that your markup and stylesheets are understandable as well as flexible to future changes. This is something I want to continue to improve on throughout my apprenticeship. &lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Empathy</title>
+    <link rel="alternate" href="http://blog.url.com/2015/02/24/Empathy/"/>
+    <id>http://blog.url.com/2015/02/24/Empathy/</id>
+    <published>2015-02-23T21:53:00-06:00</published>
+    <updated>2015-02-24T14:44:22-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Recently, I attended a talk at 8th Light in Chicago given by Doug Bradbury on “Developing Empathy, or, How to Not Be a Jerk All the Time”. &lt;/p&gt;
+&lt;p&gt;I’m always looking to learn new things, but to be honest before I even heard a word spoken at the talk I thought that I was an expert in empathy and couldn’t possibly learn anything new. I wouldn’t say that i’m a cocky person - but I felt that I was a pretty good listener and my rocky road of life and experiences could help me have empathy for pretty much anyone.&lt;/p&gt;
+
+&lt;p&gt;I quickly learned that I really had no idea what empathy truly meant. By definition:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Empathy is the ability to sense other people’s emotions, coupled with the ability to imagine what someone else might be thinking or feeling.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But what does it really mean?&lt;/p&gt;
+
+&lt;h4 id="you-can-have-empathy-for-anyone"&gt;You can have empathy for anyone&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“You do not have to have anything in common with someone to have 
+empathy.”&lt;/em&gt;      &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This quote resonated with me not because I feel that I am unable to have empathy for someone because I have nothing in common with them, but because I immediately try to show the person what I do have in common with them by telling them about my experience.&lt;/p&gt;
+
+&lt;p&gt;This can best be described by what Doug referred to as “story-telling” which can be viewed by someone as “one-upping” their situation or re-focusing the conversation on your problems or feelings. &lt;/p&gt;
+
+&lt;p&gt;Personally, I feel that sharing a story with someone for the purpose of showing them that they are not alone is ok. But it is very important to avoid making the situation about you and to focus the conversation on their feelings and their experiences. &lt;/p&gt;
+
+&lt;h4 id="dont-be-judgemental"&gt;Don’t be judgemental&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Empathy does not involve judging the person and their issue.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One of the quickest ways to be a jerk is to judge a person and put yourself on a higher ground. Just because you feel that their problem is small or even their fault does not give you the right to be condescending and judgemental. It’s also important to be aware of your body language because sometimes it can speak louder than words.&lt;/p&gt;
+
+&lt;h4 id="do-more-than-listen"&gt;Do more than listen&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“You have to be more than a good listener.”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In order to have empathy you have to be willing to truly listen to the other person. But it is so much more than that. It is important to show that you are listening. Repeating back phases that the other person says is a great way to show that you are listening. Another thing to pay attention to is that you’re not ending the conversation prematurely. Of course the conversation cannot go on forever, but sometimes people unknowingly end a conversation by responding with something that does not allow for the conversation to continue. &lt;/p&gt;
+
+&lt;p&gt;Empathy has been a hot topic and rightfully so. Imagine how much better the world would be if people were able to be more empathetic with their family, friends, co-workers, customers or even complete strangers. &lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Defending your designs</title>
+    <link rel="alternate" href="http://blog.url.com/2015/02/06/Defending-your-designs/"/>
+    <id>http://blog.url.com/2015/02/06/Defending-your-designs/</id>
+    <published>2015-02-05T21:53:00-06:00</published>
+    <updated>2015-03-25T13:01:13-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about. &lt;/p&gt;
+&lt;h4 id="my-process"&gt;My Process&lt;/h4&gt;
+&lt;p&gt;When I design I like to make decisions based on research - data driven design and user testing when possible. I am old fashioned in some ways because I still love putting things down on paper and sometimes find that by stepping away from the computer I can come up with better and more unique ideas. I believe that brainstorming, wireframing, and prototyping are very important to my design process. These simple tools &amp;amp; strategies are both cost &amp;amp; time effective because you gain a way better grasp of the project than you would trying to dive right into creating the final product. &lt;/p&gt;
+
+&lt;h4 id="learning-from-your-mistakes"&gt;Learning from your mistakes&lt;/h4&gt;
+&lt;p&gt;Over time I have definitely fallen victim to creating something that is visually appealing only to have it not be the best solution for the purpose it is being used for. Or even worse, creating a project and not looking at it from every angle only to find out during the undergraduate critique that from a certain distance my project looked like it contained a giant Nazi sign. Yes this happened and I was extremely embarrassed. I’m thankful for moments like these that I was able to crash and burn safely in undergrad because they shaped me into the designer that I am today. I believe that every design decision you make should be purposely made.  And throughout the creative process you should constantly be looking at your work with a critical eye as well as have others view your project.&lt;/p&gt;
+
+&lt;h4 id="know-your-clients-goals"&gt;Know your clients goals&lt;/h4&gt;
+&lt;p&gt;When dealing with a client it’s important to try to make the client’s company and project goals as transparent as possible. This will aid in the creative process because you will always have something to refer to: 
+“Will this design decision help reach my client’s goals?” Knowing your client’s goals will also help you approach things from an angle that they may not have thought of. And being able to directly relate your decision to the client’s goals is a very powerful weapon to have when it comes time to defend your work.&lt;/p&gt;
+
+&lt;h4 id="defending-your-design-decisions"&gt;Defending your design decisions&lt;/h4&gt;
+&lt;p&gt;Defending yourself can be extremely tricky in the professional world. Sometimes you are speechless and caught off guard, you strongly disagree with an opposing side, or your emotions just get the best of you and all composure is lost — &lt;em&gt;Flips table&lt;/em&gt;. This is where actively thinking about your design decisions during your process can help you think fast on your feet because you are aware and confident about exactly WHY you did something. I find that one of the best ways to defend myself is to understand the other viewpoints. This approach is very helpful because it shows that I understand their thoughts and ideas, but maybe most importantly i’m not making their opinions seem inferior. &lt;/p&gt;
+
+&lt;h4 id="final-thoughts"&gt;Final thoughts&lt;/h4&gt;
+&lt;p&gt;It’s important for everyone to be able to have full confidence in their work, but it is also always important to remember that not all battles can be won. Sometimes you just have to accept that with grace. I promise you one thing though — you will feel much better defending your design decisions proudly than you would be questioning your decisions or even your skills as a professional.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

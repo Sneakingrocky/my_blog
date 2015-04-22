@@ -1,0 +1,164 @@
+/* line 1, ../projects/magazine/stylesheets/main.css.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, ../projects/magazine/stylesheets/main.css.scss */
+body {
+  background: #ddd; }
+
+/* line 9, ../projects/magazine/stylesheets/main.css.scss */
+ul {
+  padding: 0; }
+  /* line 12, ../projects/magazine/stylesheets/main.css.scss */
+  ul li {
+    line-height: 2;
+    list-style: none; }
+
+/* line 20, ../projects/magazine/stylesheets/main.css.scss */
+.less-line-height p,
+.less-line-height h4 {
+  line-height: 1.2em; }
+
+/* line 26, ../projects/magazine/stylesheets/main.css.scss */
+.magazine-container {
+  background: white;
+  border: 1px solid #F0F0F0;
+  margin: 30px auto;
+  position: relative;
+  width: 1100px;
+  z-index: 1; }
+
+/* line 35, ../projects/magazine/stylesheets/main.css.scss */
+.container {
+  margin: 100px; }
+
+/* line 39, ../projects/magazine/stylesheets/main.css.scss */
+.row {
+  position: relative; }
+  /* line 42, ../projects/magazine/stylesheets/main.css.scss */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 49, ../projects/magazine/stylesheets/main.css.scss */
+.column {
+  width: 25%;
+  padding: 0 15px;
+  float: left; }
+
+/* line 55, ../projects/magazine/stylesheets/main.css.scss */
+.hero {
+  padding-top: 250px; }
+
+/* line 60, ../projects/magazine/stylesheets/main.css.scss */
+.hero-img {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  z-index: -1; }
+
+/* line 67, ../projects/magazine/stylesheets/main.css.scss */
+.artwork-caption {
+  font-size: .8em;
+  margin: 0; }
+
+/* line 72, ../projects/magazine/stylesheets/main.css.scss */
+.underline-heading-container {
+  margin-bottom: 2px; }
+
+/* line 76, ../projects/magazine/stylesheets/main.css.scss */
+.underline-heading {
+  border-bottom: solid 2px #000000;
+  color: black;
+  font-family: "adriane",serif;
+  font-size: 1.1em;
+  font-weight: 400; }
+
+/* line 84, ../projects/magazine/stylesheets/main.css.scss */
+.large-heading {
+  background: white;
+  color: black;
+  display: inline-block;
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-size: 10em;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0;
+  padding-right: 20px;
+  z-index: 1; }
+
+/* line 97, ../projects/magazine/stylesheets/main.css.scss */
+.photo-caption {
+  color: black;
+  font-size: .8em;
+  font-weight: 700;
+  margin: 0; }
+
+/* line 104, ../projects/magazine/stylesheets/main.css.scss */
+.article-info {
+  color: #aaa;
+  margin: 0;
+  padding-top: 30px; }
+
+/* line 110, ../projects/magazine/stylesheets/main.css.scss */
+.article-body {
+  margin-top: 100px; }
+  /* line 113, ../projects/magazine/stylesheets/main.css.scss */
+  .article-body .column:first-child {
+    margin-top: -150px;
+    margin-left: 25%; }
+  /* line 118, ../projects/magazine/stylesheets/main.css.scss */
+  .article-body h4 {
+    color: black;
+    font-family: "ratio-display",sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0; }
+  /* line 127, ../projects/magazine/stylesheets/main.css.scss */
+  .article-body p {
+    color: black;
+    font-family: "ratio-display",sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  /* line 137, ../projects/magazine/stylesheets/main.css.scss */
+  .article-body .pull-quote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    margin: 0; }
+    /* line 144, ../projects/magazine/stylesheets/main.css.scss */
+    .article-body .pull-quote p {
+      color: #772040;
+      font-family: "jaf-bernino-sans-comp",sans-serif;
+      font-size: 3.2em;
+      font-weight: 700;
+      line-height: 1;
+      padding: 0 15px;
+      text-transform: uppercase; }
+
+/* line 156, ../projects/magazine/stylesheets/main.css.scss */
+.circle {
+  background-color: black;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: 15px; }
+
+/* line 165, ../projects/magazine/stylesheets/main.css.scss */
+.page-footer {
+  color: black;
+  font-family: "brandon-grotesque",sans-serif;
+  font-size: .8em;
+  font-weight: 300;
+  float: right; }
+
+/* line 173, ../projects/magazine/stylesheets/main.css.scss */
+.page-number {
+  font-size: 1.5em; }

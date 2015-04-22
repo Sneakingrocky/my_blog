@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix, .container {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+img.project-border {
+  max-width: 100%;
+  position: center;
+  border: 5px solid rgba(150, 150, 150, .2);
+  margin-bottom: 100px;
+}
+
+h3.project-title a {
+  color: #4e6d82;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+p.project-description {
+  font-size: 1.1em;
+} 
