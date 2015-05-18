@@ -5,16 +5,99 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-03-24T22:53:00-05:00</updated>
+  <updated>2015-05-13T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Limiting repetiton in your html</title>
+    <link rel="alternate" href="http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/"/>
+    <id>http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/</id>
+    <published>2015-05-13T22:53:00-05:00</published>
+    <updated>2015-05-18T00:23:12-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="diagram_1" src="/images/blog/yaml/diagram_1.svg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The team pages were structured the same but contained content particular to that team such as its own about content, members, and leader info. The best part about this monster I created was that it would breed like bunnies…&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="baby_bunnies" src="/images/blog/yaml/baby_bunnies.svg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;As more team pages were added that same html markup would have to be copied. Even more fun – adding and updating content would not be pretty and I could create more enemies than Joffrey from the Game of Thrones.&lt;/p&gt;
+
+&lt;p&gt;I decided to leave the darkside and find a better solution.&lt;/p&gt;
+
+&lt;h2 id="one-view-to-the-rescue"&gt;One view to the rescue&lt;/h2&gt;
+
+&lt;p&gt;The idea behind this approach is to solve these problems:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Each team is it’s own “view” = ton’s of repetition&lt;/li&gt;
+  &lt;li&gt;In order to edit data pertaining to a team you currently have to update it in the index and its individual team page&lt;/li&gt;
+  &lt;li&gt;The static html files are tedious to enter data into&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Create easy to edit data files that feed into one view. It would work like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="diagram_2" src="/images/blog/yaml/diagram_2.svg" /&gt;&lt;/p&gt;
+
+&lt;h2 id="creating-the-data-files"&gt;Creating the "data files"&lt;/h2&gt;
+
+&lt;p&gt;As I stated before the data for each of the team pages was pretty similar. So having data files that could feed into one view which would generate new team pages made sense. &lt;/p&gt;
+
+&lt;p&gt;I chose to research and use my new friend, YAML aka “YAML Ain't Markup Language" for these data files. What is great about YAML is that it was designed to be easily mapped to data types common to most high-level languages: lists, associative arrays, and scalar.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of a YAML data file that would feed into the view:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/c2e56783fc953ea2c7fd.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;This data creates generates a giant hash of keys and values like so:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/115e11b03387de806af8.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;If you like dealing with hashes good for you. I'm a bigger fan of working with objects. Using Ruby you can create methods which turn these key &amp;amp; values into an object like so:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/967bf1974a2d958b0ca5.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;The new methods we created can now be used in our view using Embedded Ruby:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/65ce56bee20f12a3b8c6.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="everything-is-so-much-cleaner"&gt;Everything is so much cleaner!&lt;/h2&gt;
+
+&lt;p&gt;Using tools such as YAML, Ruby, and Embedded Ruby allowed me to clean up the structure of my project. With a singular view for team pages the duplication work that someone would have to do if they were somehow assigned to add 100 new teams is now gone. Imagine manually creating 100 static html pages and then having to apply future changes to each static page…yuck.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>I don't have to choose</title>
+    <link rel="alternate" href="http://blog.url.com/2015/05/13/I-don't-have-to-choose/"/>
+    <id>http://blog.url.com/2015/05/13/I-don't-have-to-choose/</id>
+    <published>2015-05-12T22:53:00-05:00</published>
+    <updated>2015-05-13T14:07:03-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Last October while in the last month of my student software apprenticeship I really struggled with the decision of whether to continue to learn software development or to jump back into my designer shoes. I enjoyed the complex problems of programming but really missed the design side of problem solving. And even though I have always believed that one doesn’t have to choose between design and development I truly felt that I had to make a choice. And I did. Because to be honest - as a beginner of anything you have to stay focused on the thing you want to perfect. If you’re jumping around too much too early on you’re going to know a lot of things but you’ll never be a master at anything.&lt;/p&gt;
+&lt;p&gt;So I chose design and starting over from square one. It wasn’t easy. And truthfully I was burnt out from living and breathing software for four months.  But I knew what I wanted, and I was ready to work for it.&lt;/p&gt;
+
+&lt;p&gt;Since being accepted as a design resident I have tried to implement some of the principles that I learned while I was a software student. Trying to get something to work, be visually appealing, responsive, and look clean under the hood hasn’t been an easy task. I still have a lot of work to do because essentially every problem i’m tackling is something that i’m tackling for the very first time. That doesn’t bother me so much. Maybe the thing that bothers me the most is continually being road blocked by something that is “developer territory”. It seems acceptable around here for a designer to wait for that roadblock to be cleared by a developer. I don’t want to be road blocked. I don’t want to accept that something is as good as it can get because I don’t know the solution right then or am not required to know the solution. &lt;/p&gt;
+
+&lt;p&gt;I think i’m at the point where I can start to join my passion for both design and development without getting too overwhelmed. I’m excited!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;"You always have two choices: your commitment versus your fear." — Sammy Davis, Jr.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
   <entry>
     <title>SVG's</title>
     <link rel="alternate" href="http://blog.url.com/2015/03/25/SVG's/"/>
     <id>http://blog.url.com/2015/03/25/SVG's/</id>
     <published>2015-03-24T22:53:00-05:00</published>
-    <updated>2015-03-26T09:46:29-05:00</updated>
+    <updated>2015-05-13T14:56:40-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -326,85 +409,6 @@ Would it’s content make sense independent of it’s context? If so, it’s a g
 
 &lt;p&gt;I learned so much from this project. Maybe most importantly that there are a million ways to achieve the same visual result. But just because your html and css is working together to place the elements on the page does not mean that it has been done in the best and cleanest way. It is important to be mindful when creating  - making sure that your markup and stylesheets are understandable as well as flexible to future changes. This is something I want to continue to improve on throughout my apprenticeship. &lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Empathy</title>
-    <link rel="alternate" href="http://blog.url.com/2015/02/24/Empathy/"/>
-    <id>http://blog.url.com/2015/02/24/Empathy/</id>
-    <published>2015-02-23T21:53:00-06:00</published>
-    <updated>2015-02-24T14:44:22-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Recently, I attended a talk at 8th Light in Chicago given by Doug Bradbury on “Developing Empathy, or, How to Not Be a Jerk All the Time”. &lt;/p&gt;
-&lt;p&gt;I’m always looking to learn new things, but to be honest before I even heard a word spoken at the talk I thought that I was an expert in empathy and couldn’t possibly learn anything new. I wouldn’t say that i’m a cocky person - but I felt that I was a pretty good listener and my rocky road of life and experiences could help me have empathy for pretty much anyone.&lt;/p&gt;
-
-&lt;p&gt;I quickly learned that I really had no idea what empathy truly meant. By definition:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Empathy is the ability to sense other people’s emotions, coupled with the ability to imagine what someone else might be thinking or feeling.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;But what does it really mean?&lt;/p&gt;
-
-&lt;h4 id="you-can-have-empathy-for-anyone"&gt;You can have empathy for anyone&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“You do not have to have anything in common with someone to have 
-empathy.”&lt;/em&gt;      &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This quote resonated with me not because I feel that I am unable to have empathy for someone because I have nothing in common with them, but because I immediately try to show the person what I do have in common with them by telling them about my experience.&lt;/p&gt;
-
-&lt;p&gt;This can best be described by what Doug referred to as “story-telling” which can be viewed by someone as “one-upping” their situation or re-focusing the conversation on your problems or feelings. &lt;/p&gt;
-
-&lt;p&gt;Personally, I feel that sharing a story with someone for the purpose of showing them that they are not alone is ok. But it is very important to avoid making the situation about you and to focus the conversation on their feelings and their experiences. &lt;/p&gt;
-
-&lt;h4 id="dont-be-judgemental"&gt;Don’t be judgemental&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Empathy does not involve judging the person and their issue.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;One of the quickest ways to be a jerk is to judge a person and put yourself on a higher ground. Just because you feel that their problem is small or even their fault does not give you the right to be condescending and judgemental. It’s also important to be aware of your body language because sometimes it can speak louder than words.&lt;/p&gt;
-
-&lt;h4 id="do-more-than-listen"&gt;Do more than listen&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“You have to be more than a good listener.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In order to have empathy you have to be willing to truly listen to the other person. But it is so much more than that. It is important to show that you are listening. Repeating back phases that the other person says is a great way to show that you are listening. Another thing to pay attention to is that you’re not ending the conversation prematurely. Of course the conversation cannot go on forever, but sometimes people unknowingly end a conversation by responding with something that does not allow for the conversation to continue. &lt;/p&gt;
-
-&lt;p&gt;Empathy has been a hot topic and rightfully so. Imagine how much better the world would be if people were able to be more empathetic with their family, friends, co-workers, customers or even complete strangers. &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Defending your designs</title>
-    <link rel="alternate" href="http://blog.url.com/2015/02/06/Defending-your-designs/"/>
-    <id>http://blog.url.com/2015/02/06/Defending-your-designs/</id>
-    <published>2015-02-05T21:53:00-06:00</published>
-    <updated>2015-03-25T13:01:13-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about. &lt;/p&gt;
-&lt;h4 id="my-process"&gt;My Process&lt;/h4&gt;
-&lt;p&gt;When I design I like to make decisions based on research - data driven design and user testing when possible. I am old fashioned in some ways because I still love putting things down on paper and sometimes find that by stepping away from the computer I can come up with better and more unique ideas. I believe that brainstorming, wireframing, and prototyping are very important to my design process. These simple tools &amp;amp; strategies are both cost &amp;amp; time effective because you gain a way better grasp of the project than you would trying to dive right into creating the final product. &lt;/p&gt;
-
-&lt;h4 id="learning-from-your-mistakes"&gt;Learning from your mistakes&lt;/h4&gt;
-&lt;p&gt;Over time I have definitely fallen victim to creating something that is visually appealing only to have it not be the best solution for the purpose it is being used for. Or even worse, creating a project and not looking at it from every angle only to find out during the undergraduate critique that from a certain distance my project looked like it contained a giant Nazi sign. Yes this happened and I was extremely embarrassed. I’m thankful for moments like these that I was able to crash and burn safely in undergrad because they shaped me into the designer that I am today. I believe that every design decision you make should be purposely made.  And throughout the creative process you should constantly be looking at your work with a critical eye as well as have others view your project.&lt;/p&gt;
-
-&lt;h4 id="know-your-clients-goals"&gt;Know your clients goals&lt;/h4&gt;
-&lt;p&gt;When dealing with a client it’s important to try to make the client’s company and project goals as transparent as possible. This will aid in the creative process because you will always have something to refer to: 
-“Will this design decision help reach my client’s goals?” Knowing your client’s goals will also help you approach things from an angle that they may not have thought of. And being able to directly relate your decision to the client’s goals is a very powerful weapon to have when it comes time to defend your work.&lt;/p&gt;
-
-&lt;h4 id="defending-your-design-decisions"&gt;Defending your design decisions&lt;/h4&gt;
-&lt;p&gt;Defending yourself can be extremely tricky in the professional world. Sometimes you are speechless and caught off guard, you strongly disagree with an opposing side, or your emotions just get the best of you and all composure is lost — &lt;em&gt;Flips table&lt;/em&gt;. This is where actively thinking about your design decisions during your process can help you think fast on your feet because you are aware and confident about exactly WHY you did something. I find that one of the best ways to defend myself is to understand the other viewpoints. This approach is very helpful because it shows that I understand their thoughts and ideas, but maybe most importantly i’m not making their opinions seem inferior. &lt;/p&gt;
-
-&lt;h4 id="final-thoughts"&gt;Final thoughts&lt;/h4&gt;
-&lt;p&gt;It’s important for everyone to be able to have full confidence in their work, but it is also always important to remember that not all battles can be won. Sometimes you just have to accept that with grace. I promise you one thing though — you will feel much better defending your design decisions proudly than you would be questioning your decisions or even your skills as a professional.&lt;/p&gt;
 </content>
   </entry>
 </feed>

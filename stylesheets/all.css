@@ -221,66 +221,69 @@ nav {
     .article h3.article-title a:hover {
       color: #446072; }
 
-/* line 21, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body h2, .article-body h3, .article-body h4 {
-  margin-top: 50px;
-  font-weight: normal; }
-/* line 26, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body h2 {
-  font-size: 1.3em; }
-/* line 30, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body h3 {
-  font-size: 1.2em; }
-/* line 34, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body h4 {
-  font-size: 1.1em;
-  margin-bottom: 10px; }
-/* line 39, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body img {
-  max-width: 100%;
-  margin: 5px; }
-/* line 44, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body code {
-  color: #0d115a;
-  font-size: 0.75em;
-  background: #eee;
-  padding: 4px; }
-/* line 51, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.article-body pre {
-  background: #eee;
-  padding: 10px;
-  white-space: pre;
-  word-wrap: normal;
-  overflow: auto; }
+/* line 19, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+.article-body {
+  font-size: .85em; }
+  /* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body h2, .article-body h3, .article-body h4 {
+    margin-top: 50px;
+    font-weight: normal; }
+  /* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body h2 {
+    font-size: 1.3em; }
+  /* line 31, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body h3 {
+    font-size: 1.2em; }
+  /* line 35, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px; }
+  /* line 40, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body img {
+    max-width: 100%;
+    margin: 5px; }
+  /* line 45, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body code {
+    color: #0d115a;
+    font-size: 0.75em;
+    background: #eee;
+    padding: 4px; }
+  /* line 52, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  .article-body pre {
+    background: #eee;
+    padding: 10px;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto; }
 
-/* line 61, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 62, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
 .date {
   font-size: 0.75em; }
 
-/* line 65, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 66, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
 .teal-link {
   color: #45b29d;
   font-size: 1em;
   text-decoration: none;
   padding-bottom: 50px; }
-  /* line 71, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 72, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
   .teal-link, .teal-link a, .teal-link a:visited {
     color: #45b29d; }
-  /* line 74, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 75, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
   .teal-link a:hover {
     color: #3ea08d; }
 
-/* line 79, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 80, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
 .read-more {
   color: #45b29d;
   font-size: 1em;
   text-decoration: none;
   padding-top: 50px;
   padding-bottom: 100px; }
-  /* line 86, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 87, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
   .read-more, .read-more a, .read-more a:visited {
     color: #45b29d; }
-  /* line 89, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 90, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
   .read-more a:hover {
     color: #3ea08d; }
 
@@ -343,14 +346,13 @@ a {
 /* line 38, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 p {
   font-family: "lato",sans-serif;
-  line-height: 1.5em;
-  font-size: .85em; }
+  line-height: 1.5em; }
 
-/* line 44, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 43, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .content-container {
   padding: 50px 10px; }
 
-/* line 48, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 47, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .mobile-bio {
   color: #4e6d82;
   font-family: "lato",sans-serif;
@@ -359,7 +361,7 @@ p {
   margin-top: 30px;
   text-align: left; }
 
-/* line 57, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 56, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .blog-divider {
   background: #e8e8e8;
   display: block;
@@ -367,18 +369,18 @@ p {
   margin: 1.25em 0 0 0;
   width: 100%; }
 
-/* line 65, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 64, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .placeholder {
   padding-left: 50px; }
 
-/* line 69, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 68, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text {
   width: 400px;
   position: absolute;
   top: 30%;
   left: 15%; }
 
-/* line 76, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 75, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text:after {
   content: "";
   background-color: rgba(51, 77, 92, 0.9);
@@ -390,7 +392,7 @@ p {
   padding-bottom: 100%;
   border-radius: 50%; }
 
-/* line 87, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 86, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text div {
   color: white;
   font-family: "lato",sans-serif;
@@ -402,15 +404,15 @@ p {
   line-height: 1.5em;
   margin-top: -0.5em;
   text-align: left; }
-  /* line 99, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 98, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .circle-text div a {
     color: #45b29d;
     text-decoration: none; }
 
-/* line 105, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 104, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .quote-color {
   color: #969696; }
 
-/* line 109, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 108, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .right {
   float: right; }
