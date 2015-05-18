@@ -1,0 +1,42 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px; 
+  padding: 0 -15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+.column {
+  float: left;
+  padding: 0 -15px;
+  position: relative;
+  width: 100%;
+ 
+
+  &.end {
+    float: right;
+  }
+}

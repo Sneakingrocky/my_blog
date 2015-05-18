@@ -1,0 +1,15 @@
+.btn-default {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #4e5457;
+  background: white;
+  padding: 20px 40px;
+  margin-top: 30px;
+  width: auto;
+
+  &:hover {
+  background: #1A1F2B;
+  color: white;
+  }
+}

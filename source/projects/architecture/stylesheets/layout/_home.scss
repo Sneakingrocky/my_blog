@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero { 
+  width: 100%;
+  height: 1000px;
+  opacity: 1;
+  visibility: inherit;
+  background-image: url("../images/hero.jpg");
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+
+  h1 {
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+.gallery {
+  img {
+    float: left;
+    max-width: 100%;
+    width: 20%;
+   
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.5em;
+  margin-bottom: 23px;
+}
+
+.team {
+  background: #eae5d6;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.team__description {
+  float: left;
+  width: 50%;
+}
+
+.bio-snippet {
+  max-width: 100%;
+  text-align: center;
+}
+
+
+.logo {
+  float: none;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 601px) {
+    float: none;
+  }
+}
+
+.contact-form-container {
+  background: white;
+  padding: 17px 30px 40px;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  z-index: 10;
+}
+
+.contact-form input,
+.contact-form  select,
+.contact-form textarea {
+  border: 1px solid #c6c9cc;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.contact-form  input,
+.contact-form textarea {
+  width: 100%;
+}
+.contact-form  select {
+  height: 34px;
+  width: 60px;
+}
+.contact-form  textarea {
+  height: 78px;
+} 
+
+.white-font {
+  color: white;
+}
+
+.services {
+  text-align: center;
+}
+.about-photo {
+  float: right;
+  width: 50%;
+}
+
