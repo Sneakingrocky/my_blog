@@ -301,10 +301,9 @@ nav {
 img.project-border {
   max-width: 100%;
   position: center;
-  border: 5px solid rgba(150, 150, 150, 0.2);
-  margin-bottom: 100px; }
+  border: 5px solid rgba(150, 150, 150, 0.2); }
 
-/* line 20, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
+/* line 19, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
 h3.project-title a {
   color: #4e6d82;
   font-size: 1.5em;
@@ -312,47 +311,118 @@ h3.project-title a {
   margin-bottom: 10px;
   text-transform: uppercase; }
 
-/* line 28, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
+/* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
 p.project-description {
   font-size: 1.1em; }
 
 /* line 10, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.title h1 {
+  color: grey;
+  font-family: "chaparral-pro",sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding-top: 4em;
+  text-align: center; }
+
+/* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.subtitle {
+  color: grey;
+  font-family: "chaparral-pro",sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  text-align: center; }
+
+/* ==========================================================================
+   Card
+   ========================================================================== */
+/* line 41, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.card {
+  border: 1px solid #E4E3E3;
+  border-bottom-width: 3px;
+  padding: 0px;
+  margin-bottom: 50px;
+  width: 100%; }
+  /* line 48, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  .card img {
+    display: block; }
+  /* line 52, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  .card a {
+    color: inherit;
+    text-decoration: none; }
+
+/* line 59, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.card .card-section {
+  border-top: 1px solid #E4E3E3;
+  margin: 0px;
+  padding: 0px 15px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center; }
+  /* line 67, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  .card .card-section :first-child {
+    margin-top: 0; }
+
+/* line 72, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.card__image {
+  max-width: 100%; }
+
+/* line 76, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.card__name {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.4em;
+  line-height: 1.3em; }
+
+/* line 82, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.card-section__title {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.1em;
+  margin-bottom: .5em; }
+
+/* line 98, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .hero {
   background-size: cover;
   margin-top: -10px;
   width: 100%;
   z-index: -1; }
-  /* line 16, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 104, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .hero img {
     display: block;
     width: 100%; }
 
-/* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 110, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 body {
   background: white;
   color: #4b4b4b; }
 
-/* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 115, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 33, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 121, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 a {
   color: #45b29d;
   text-decoration: none; }
 
-/* line 38, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 126, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 p {
   font-family: "lato",sans-serif;
   line-height: 1.5em; }
 
-/* line 43, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 131, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .content-container {
+  margin: 0 auto;
   padding: 50px 10px; }
 
-/* line 47, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 136, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .mobile-bio {
   color: #4e6d82;
   font-family: "lato",sans-serif;
@@ -361,7 +431,7 @@ p {
   margin-top: 30px;
   text-align: left; }
 
-/* line 56, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 145, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .blog-divider {
   background: #e8e8e8;
   display: block;
@@ -369,18 +439,18 @@ p {
   margin: 1.25em 0 0 0;
   width: 100%; }
 
-/* line 64, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 153, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .placeholder {
   padding-left: 50px; }
 
-/* line 68, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 157, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text {
   width: 400px;
   position: absolute;
   top: 30%;
   left: 15%; }
 
-/* line 75, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 164, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text:after {
   content: "";
   background-color: rgba(51, 77, 92, 0.9);
@@ -392,7 +462,7 @@ p {
   padding-bottom: 100%;
   border-radius: 50%; }
 
-/* line 86, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 175, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text div {
   color: white;
   font-family: "lato",sans-serif;
@@ -404,15 +474,15 @@ p {
   line-height: 1.5em;
   margin-top: -0.5em;
   text-align: left; }
-  /* line 98, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 187, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .circle-text div a {
     color: #45b29d;
     text-decoration: none; }
 
-/* line 104, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 193, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .quote-color {
   color: #969696; }
 
-/* line 108, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 197, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .right {
   float: right; }
