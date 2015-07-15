@@ -5,10 +5,36 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-07-11T22:53:00-05:00</updated>
+  <updated>2015-07-12T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Pairing with Ginny</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/13/Pairing-with-Ginny/"/>
+    <id>http://blog.url.com/2015/07/13/Pairing-with-Ginny/</id>
+    <published>2015-07-12T22:53:00-05:00</published>
+    <updated>2015-07-14T22:26:21-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day1.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;For my first day of pairing I paired with Ginny and the studio team - Mike E., Sylwia, and Diana who is our newest Craftswoman. We started out our day with our daily standup to discuss what each person worked on on Friday, if they had any “blockers”, what they were planning on working on that day, and what features were most urgent.&lt;/p&gt;
+
+&lt;p&gt;After standup, Ginny, Slywia, Diana, and I started working on a priority feature for a client project that is launching very soon. We were creating a form which would process and supply the user with a code that they would need to then copy. In order to make the user-experience better we wanted to have the code automatically highlighted when it appeared. In order to do this the team used Javascript which they could place right into the html:&lt;/p&gt;
+
+&lt;p&gt;After working on that feature the team split off to complete the other stories. Ginny, Diana and I continued to work on making additions to the project and I was excited to be able to contribute to some of the more designer territory stories but also that I was able to follow along well with Ginny while she tackled some backend work.
+After lunch we all had an IPM (iteration planning meeting) with our client who is getting ready to launch soon. It was awesome to see everyone in action, hear the questions from both the client and, the craftsman, and the way they all worked together to figure out what was needed to wrap up this project and pass it over to the client team. &lt;/p&gt;
+
+&lt;p&gt;After the meeting we all discussed a user experience issue and came up with a nice solution together. I helped Sylwia add some style additions and then continued to work with Ginny for the rest of the day. What I loved about pairing with Ginny was that she would say every step that she was doing which made it very easy to follow along and follow her thought process - this is hard to find! A lot of developers want to get from point A to point B as fast as possible with or without their pair still in the car.&lt;/p&gt;
+
+&lt;p&gt;It was a great first day! The crazy and impressive thing about this team is that they were all versed in several client projects and had to balance time between each. And what I loved more than anything was the communication between them all on the state of the projects, the willingness of each person to help one another move a roadblock or solve a nasty bug. So while I originally thought that pairing meant that I would solely be working with one person - their great teamwork allowed me to work with every single person on the team.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." –Andrew Carnegie”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
   <entry>
     <title>The Final Stretch</title>
     <link rel="alternate" href="http://blog.url.com/2015/07/12/The-Final-Stretch/"/>
@@ -276,64 +302,6 @@ git push –force&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;"You always have two choices: your commitment versus your fear." — Sammy Davis, Jr.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>CSS Architecture</title>
-    <link rel="alternate" href="http://blog.url.com/2015/04/24/CSS-Architecture/"/>
-    <id>http://blog.url.com/2015/04/24/CSS-Architecture/</id>
-    <published>2015-04-23T22:53:00-05:00</published>
-    <updated>2015-06-19T01:42:31-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;When I was first learning to program in Ruby I remember being so excited to have a working program. I was extremely nervous to show my work to my mentor. And as we went through my code she was very patient and told me that she could tell I worked hard on it. It meant so much - and honestly was great fuel to keep me excited about programming. &lt;/p&gt;
-&lt;p&gt;Fast forward to the last few months of my student software apprenticeship and I realized just how terrible my code was. I had no regard for clean or structured code - I was a beginner and I needed to know how to make things work above all. &lt;/p&gt;
-
-&lt;p&gt;I can see this same pattern in my Design Apprenticeship but perhaps the rules for the design and structure for setting up your project files and CSS is less clear and more opinionated than than it seemed to me when dealing with backend code. It just seems like everyone is trying to find a way to solve CSS architecture - but no one has found a solution to win over the masses quite yet.&lt;/p&gt;
-
-&lt;p&gt;In order to start forming my own ideas on CSS architecture my mentor had me research a few of the most popular ways to structure my code and files: OOCSS(Object Oriented CSS), BEM(Block, Element, Modifier), and SMACSS(Scalable and Modular Architecture for CSS).&lt;/p&gt;
-
-&lt;h3 id="oocssobject-oriented-css"&gt;OOCSS(Object Oriented CSS)&lt;/h3&gt;
-
-&lt;p&gt;Object oriented CSS reminds me a lot about of the philosophies I learned during my student software apprenticeship. The idea is the same - while coding it is important to write it in a way that is clean and reusable. The benefits of coding this way are having cleaner, smaller, and more maintainable stylesheets. &lt;/p&gt;
-
-&lt;h3 id="bemblock-element-modifier"&gt;BEM(Block, Element, Modifier)&lt;/h3&gt;
-
-&lt;p&gt;BEM was a really interesting one to research. It’s a bit ugly but it’s purpose is beautiful. It’s ultimately trying to solve the problem of CSS being unreadable and confusing to those who didn’t write it themselves. If we’re honest with ourselves, maybe the classes we wrote ourselves a few weeks ago don’t seem to make sense anymore. This problem was also present when I was learning Ruby —&amp;gt; Write methods that are more descriptive. In reference to CSS —&amp;gt; Write classes that are more descriptive.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="BEM" src="/images/bem.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="smacssscalable-and-modular-architecture-for-css"&gt;SMACSS(Scalable and Modular Architecture for CSS)&lt;/h3&gt;
-
-&lt;p&gt;SMACSS was a little confusing at first but broken down it is simply trying to find a universal way for everyone to structure their project folders. &lt;/p&gt;
-
-&lt;p&gt;style.scss &lt;/p&gt;
-
-&lt;p&gt;_base.scss &lt;/p&gt;
-
-&lt;p&gt;_layout.scss &lt;/p&gt;
-
-&lt;p&gt;_modules.scss &lt;/p&gt;
-
-&lt;p&gt;_state.scss&lt;/p&gt;
-
-&lt;p&gt;_theme.scss&lt;/p&gt;
-
-&lt;p&gt;Personally, I think that the state and theme folders are not necessary all the time and I don’t think i’ll be adding them to my file structure. However the other folders will help my organization a lot:&lt;/p&gt;
-
-&lt;p&gt;style.scss 
-The master file that imports all of your other stylesheets&lt;/p&gt;
-
-&lt;p&gt;_base.scss 
-This is where all the base styles live; resets, element defaults, default font sizes, etc.&lt;/p&gt;
-
-&lt;p&gt;_layout.scss 
-In this section you specify all types of layout containers, such as header, footer, content, sidebar, etc. &lt;/p&gt;
-
-&lt;p&gt;_modules.scss 
-Every module should be completely independent of its context and should work within any layout container or other module.&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
