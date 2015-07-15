@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015/07/13/Pairing-with-Ginny/"/>
     <id>http://blog.url.com/2015/07/13/Pairing-with-Ginny/</id>
     <published>2015-07-12T22:53:00-05:00</published>
-    <updated>2015-07-14T22:26:21-05:00</updated>
+    <updated>2015-07-14T22:32:37-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,8 +23,10 @@
 
 &lt;p&gt;After standup, Ginny, Slywia, Diana, and I started working on a priority feature for a client project that is launching very soon. We were creating a form which would process and supply the user with a code that they would need to then copy. In order to make the user-experience better we wanted to have the code automatically highlighted when it appeared. In order to do this the team used Javascript which they could place right into the html:&lt;/p&gt;
 
+&lt;script src="https://gist.github.com/Sneakingrocky/c89c9d6fe5df543c6100.js"&gt;&lt;/script&gt;
+
 &lt;p&gt;After working on that feature the team split off to complete the other stories. Ginny, Diana and I continued to work on making additions to the project and I was excited to be able to contribute to some of the more designer territory stories but also that I was able to follow along well with Ginny while she tackled some backend work.
-After lunch we all had an IPM (iteration planning meeting) with our client who is getting ready to launch soon. It was awesome to see everyone in action, hear the questions from both the client and, the craftsman, and the way they all worked together to figure out what was needed to wrap up this project and pass it over to the client team. &lt;/p&gt;
+After lunch we all had an IPM (iteration planning meeting) with our client who is getting ready to launch soon. It was awesome to see everyone in action, hear the questions from both the client and, the craftsman, and the way they all worked together to figure out what was needed to wrap up this project and pass it over to the client team.&lt;/p&gt;
 
 &lt;p&gt;After the meeting we all discussed a user experience issue and came up with a nice solution together. I helped Sylwia add some style additions and then continued to work with Ginny for the rest of the day. What I loved about pairing with Ginny was that she would say every step that she was doing which made it very easy to follow along and follow her thought process - this is hard to find! A lot of developers want to get from point A to point B as fast as possible with or without their pair still in the car.&lt;/p&gt;
 
