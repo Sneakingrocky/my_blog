@@ -5,10 +5,44 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-06-01T22:53:00-05:00</updated>
+  <updated>2015-07-11T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The Final Stretch</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/12/The-Final-Stretch/"/>
+    <id>http://blog.url.com/2015/07/12/The-Final-Stretch/</id>
+    <published>2015-07-11T22:53:00-05:00</published>
+    <updated>2015-07-14T21:17:08-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I’ve hit an important milestone of my Design Residency here at 8th Light. I am in my last month of my apprenticeship which means that I will spend the next month trying to show what i’ve learned in the last 5 months and prove that I have what it takes to earn a position as a Design Craftsperson here at 8th Light. It is also an opportunity for me to see what it is like to work with other Craftsman, explore some of our client projects, and to gauge whether it’s truly the right fit.&lt;/p&gt;
+&lt;p&gt;For the next two weeks I will go on a “Pairing Tour” which means that I will be pairing with a new person every day. I’m really excited to continue to work alongside others as my last month of client work with Emmanuel and Geoff has been such a great experience.&lt;/p&gt;
+
+&lt;p&gt;I rolled an amazing group of people for my tour  and review board so I know it’ll be a fun couple of weeks and i’m no doubt going to learn a great deal from each person. I’ll use this fuel the energy I know i’ll need to complete two weeks of challenges following my tour and to prepare for my speech where I’ll most likely turn red thanks to my Irish side.&lt;/p&gt;
+
+&lt;h5 id="some-goals-i-have-for-my-tour"&gt;Some goals I have for my tour:&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Try to get better sleep than I have during my apprenticeship&lt;/li&gt;
+  &lt;li&gt;Ask tons of questions&lt;/li&gt;
+  &lt;li&gt;Be a good pair who’s engaged in the work&lt;/li&gt;
+  &lt;li&gt;Stay positive even if I feel out of my element&lt;/li&gt;
+  &lt;li&gt;Blog about each day of my tour&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id="my-schedule"&gt;My Schedule:&lt;/h5&gt;
+
+&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar.svg" /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“You have to fight to reach your dream. You have to sacrifice and work hard for it.
+- Lionel Messi”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
   <entry>
     <title>Helpful Notes</title>
     <link rel="alternate" href="http://blog.url.com/2015/06/02/Helpful-Notes/"/>
@@ -300,27 +334,6 @@ In this section you specify all types of layout containers, such as header, foot
 &lt;p&gt;_modules.scss 
 Every module should be completely independent of its context and should work within any layout container or other module.&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Say No</title>
-    <link rel="alternate" href="http://blog.url.com/2015/04/21/Say-No/"/>
-    <id>http://blog.url.com/2015/04/21/Say-No/</id>
-    <published>2015-04-20T22:53:00-05:00</published>
-    <updated>2015-06-19T01:03:20-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;A few months ago a friend said something to me that I silently found offensive. He stated that I was a “people pleaser”. I couldn’t exactly pinpoint why this stuck with me so much… I mean how is wanting to make people happy a bad quality? If more people went out of their way to make others happy wouldn’t that make the world be a better place?&lt;/p&gt;
-&lt;p&gt;Last week I learned a valuable lesson: Everyone needs to be able to say no. And people pleasing doesn’t always just mean making others happy - it can also mean sacrificing your health &amp;amp; happiness.&lt;/p&gt;
-
-&lt;p&gt;To make a long story short I was asked to take on several tasks - some which should not have been my responsibility. Knowing I had a lot on my plate I still took on more responsibilities than I should have.&lt;/p&gt;
-
-&lt;p&gt;I was able to accomplish all of the tasks but that came with a lot of stress and little sleep. I should have stood my ground and said no. That would have been the professional thing to do.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Saying “yes” too much could jeopardize more than just your patience. Taking on more than you’re capable could result in illness or burning out. When you become sick, it’s a struggle to help yourself, much less everyone around you, so cut your losses and say “no” for the sake of your health.”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </content>
   </entry>
 </feed>
