@@ -1,6 +1,6 @@
 /* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
 nav {
-  background-color: #e65848;
+  background-color: white;
   height: 45px;
   width: 100%; }
   /* line 6, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
@@ -16,19 +16,21 @@ nav {
   nav a {
     display: block;
     line-height: 45px; }
+  /* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
+  nav a:hover {
+    color: #53bc91; }
 
-/* line 23, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
+/* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
 .logo {
-  color: white;
+  color: grey;
   font-size: 1.4em;
-  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 17px; }
 
-/* line 32, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
+/* line 35, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
 .nav-links {
-  color: white;
+  color: grey;
   font-size: 1em;
   font-weight: 500;
   padding: 0 1em;
@@ -317,14 +319,14 @@ p.project-description {
 
 /* line 10, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .title h1 {
-  color: grey;
+  color: #53bc91;
   font-family: "chaparral-pro",sans-serif;
   font-size: 5em;
   font-weight: 400;
   line-height: 1.2em;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding-top: 4em;
+  padding-top: 3em;
   text-align: center; }
 
 /* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
@@ -336,28 +338,27 @@ p.project-description {
   line-height: 1.2em;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding-bottom: 200px;
   text-align: center; }
 
 /* ==========================================================================
    Card
    ========================================================================== */
-/* line 41, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 39, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .card {
   border: 1px solid #E4E3E3;
   border-bottom-width: 3px;
   padding: 0px;
   margin-bottom: 50px;
   width: 100%; }
-  /* line 48, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 46, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .card img {
     display: block; }
-  /* line 52, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 50, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .card a {
     color: inherit;
     text-decoration: none; }
 
-/* line 59, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 57, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .card .card-section {
   border-top: 1px solid #E4E3E3;
   margin: 0px;
@@ -365,64 +366,64 @@ p.project-description {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   text-align: center; }
-  /* line 67, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 65, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .card .card-section :first-child {
     margin-top: 0; }
 
-/* line 72, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 70, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .card__image {
   max-width: 100%; }
 
-/* line 76, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 74, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .card__name {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.4em;
   line-height: 1.3em; }
 
-/* line 82, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 80, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .card-section__title {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.1em;
   margin-bottom: .5em; }
 
-/* line 98, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 91, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .hero {
   background-size: cover;
   margin-top: -10px;
   width: 100%;
   z-index: -1; }
-  /* line 104, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 97, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .hero img {
     display: block;
     width: 100%; }
 
-/* line 110, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 103, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 body {
   background: white;
   color: #4b4b4b; }
 
-/* line 115, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 108, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 121, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 114, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 a {
   color: #45b29d;
   text-decoration: none; }
 
-/* line 126, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 119, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 p {
   font-family: "lato",sans-serif;
   line-height: 1.5em; }
 
-/* line 131, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 124, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .content-container {
   margin: 0 auto;
   padding: 50px 10px; }
 
-/* line 136, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 129, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .mobile-bio {
   color: #4e6d82;
   font-family: "lato",sans-serif;
@@ -431,7 +432,7 @@ p {
   margin-top: 30px;
   text-align: left; }
 
-/* line 145, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 138, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .blog-divider {
   background: #e8e8e8;
   display: block;
@@ -439,18 +440,18 @@ p {
   margin: 1.25em 0 0 0;
   width: 100%; }
 
-/* line 153, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 146, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .placeholder {
   padding-left: 50px; }
 
-/* line 157, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 150, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text {
   width: 400px;
   position: absolute;
   top: 30%;
   left: 15%; }
 
-/* line 164, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 157, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text:after {
   content: "";
   background-color: rgba(51, 77, 92, 0.9);
@@ -462,7 +463,7 @@ p {
   padding-bottom: 100%;
   border-radius: 50%; }
 
-/* line 175, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 168, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .circle-text div {
   color: white;
   font-family: "lato",sans-serif;
@@ -474,15 +475,38 @@ p {
   line-height: 1.5em;
   margin-top: -0.5em;
   text-align: left; }
-  /* line 187, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  /* line 180, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
   .circle-text div a {
     color: #45b29d;
     text-decoration: none; }
 
-/* line 193, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 186, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .quote-color {
   color: #969696; }
 
-/* line 197, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 190, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
 .right {
   float: right; }
+
+/* line 195, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.submit-button {
+  background: transparent;
+  border: 2px solid #53bc91;
+  color: grey;
+  font-family: "lato",sans-serif;
+  margin: 0;
+  padding: 0.5rem 1rem; }
+  /* line 203, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  .submit-button:hover {
+    background: #53bc91;
+    color: #FFF;
+    cursor: pointer; }
+
+/* line 210, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.section-buttons {
+  text-align: center;
+  margin-top: 50px; }
+
+/* line 215, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+.margin-right {
+  margin-right: 15px; }
