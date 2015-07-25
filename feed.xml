@@ -5,10 +5,83 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-07-13T22:53:00-05:00</updated>
+  <updated>2015-07-16T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Pairing with Eric</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/17/Pairing-with-Eric/"/>
+    <id>http://blog.url.com/2015/07/17/Pairing-with-Eric/</id>
+    <published>2015-07-16T22:53:00-05:00</published>
+    <updated>2015-07-25T18:19:08-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day5.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;After a long day yesterday it was nice to have a more relaxing day today. I treated myself to Starbucks Chai Tea Latte like I do most Fridays to reward myself for another good week. I had the first part of the day to set up my computer for the internal iOS app that Eric and I would be working on the second portion of the day. I installed the latest version of Xcode, pulled the repos i’d need for the project from Github and started to read documentation on that I thought might be helpful for building the app. I also used this time to work on a few business cards for the London Craftsman.&lt;/p&gt;
+
+&lt;p&gt;After a successful week 2 company stand up, Eric and Emmanuel explained the app that the group had been working on - an internal ping pong queue named “Slam”. They then showed me the features that they had already developed.&lt;/p&gt;
+
+&lt;p&gt;Although they were eager to jump right into styling I couldn’t help but want to start from the beginning and sketch out a user flow to come up with some additional fun features. Having time to utilize the entire design process and meet tight deadlines is not something that I have been able to do during my apprenticeship so I really wanted to use it for this project.&lt;/p&gt;
+
+&lt;p&gt;The guys were very welcoming to the idea of mapping out a user flow so together we started from the beginning creating an enjoyable user-flow chart. We then began fleshing these ideas out more in the form of low fidelity wireframes using Balsamiq Mockups.&lt;/p&gt;
+
+&lt;p&gt;We started from the first step the user would take while using the app. This would of course be logging in. We decided that using google authorization would be a good option for 8th Lighters to login and tie themselves to an identity so we could add features such as ranks, stats, and leaderboards.&lt;/p&gt;
+
+&lt;p&gt;It was a fun day, we made really good progress on the wireframes and began talks about possible branding ideas. I’m really excited to see this app grow and be used (hopefully soon!).&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Nelsol</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/16/Pairing-with-Nelsol/"/>
+    <id>http://blog.url.com/2015/07/16/Pairing-with-Nelsol/</id>
+    <published>2015-07-15T22:53:00-05:00</published>
+    <updated>2015-07-25T17:39:24-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day4.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today I paired with my mentor, Nelsol. Through this experience I was able to truly get a feel of what a normal day for a designer at 8th Light might look like.&lt;/p&gt;
+
+&lt;p&gt;Since Nelsol and I were going to be joining the team I worked with yesterday for their iteration planning meeting and design session I caught Nelsol up on the new feature that the team was looking to add based on user input &amp;amp; data. The proposed feature was a search for the App (Global or specific has yet to be decided yet).&lt;/p&gt;
+
+&lt;p&gt;After an extended IPM with a client we were eventually able to join the team for the meeting. Mike went through the data and charts with the client, pain points, assumptions we had, and what problems the search feature would solve for the users. An important statistic that he brought up was that the search function would solve an issue that the apps most active users were having - the app having trouble handling so much data at once. Ultimately and our hope being, more users would be utilizing the app in this way in the near feature. For that reason, tackling this problem would benefit our best users as well as our best future users.&lt;/p&gt;
+
+&lt;p&gt;The client was great, and even offered a few pain points that we hadn’t thought of. Once we added those to our list we began our design session where each participant, even the clients, were asked to create four drawings in 10 minutes with their ideas for how the search feature should be displayed and how it should function. Through these drawings and exercise we were able think creatively without boundaries and quickly come up with several solutions. We shared these solutions with each other and worked together toward narrowing down the best solution for the search feature.&lt;/p&gt;
+
+&lt;p&gt;After the meeting, Nelsol and I worked together on a few client tickets. I was quickly thrown out of my comfort zone when Nelsol said that we would be using VIM as our text editor. I had meant to learn VIM during my apprenticeship but juggling all of my responsibilities pushed that further and further. Even though Nelsol had told me to start learning VIM in my spare time he was very patient with me as I slowly made changes and scrambled to remember each key.&lt;/p&gt;
+
+&lt;p&gt;Along with the painful pace at which i moved through the editor I was overwhelmed with the spaghetti code of the project and how the pages were laid out. I would be lying if I said working with this code base didn’t scar me with how many dependencies and redundant lines there were. Thinking positively - it makes me appreciate other projects i’ve worked on or have been able to start from scratch.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Legacy code. The phrase strikes disgust in the hearts of programmers. It conjures images of slogging through a murky swamp of tangled undergrowth with leaches beneath and stinging flies above. It conjures odors of murk, slime, stagnancy, and offal. Although our first joy of programming may have been intense, the misery of dealing with legacy code is often sufficient to extinguish that flame.﻿”-― Michael C. Feathers, Working Effectively with Legacy Code&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Mike</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/15/Pairing-with-Mike/"/>
+    <id>http://blog.url.com/2015/07/15/Pairing-with-Mike/</id>
+    <published>2015-07-14T22:53:00-05:00</published>
+    <updated>2015-07-25T16:57:05-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day3.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today I paired with Mike D on an iOS app project. I was excited to work with Mike because we’ve always had great conversations at lunch but I haven’t had the opportunity to work on his project during my apprenticeship. He also did a great job helping out with a group of visitors from Mobile Makers yesterday – all of the kids were entranced while he talked about his daily activities as one of our main iOS developers.&lt;/p&gt;
+
+&lt;p&gt;To start things off Mike took me through the app and all of its current features. We worked through a couple of the support tickets and talked about some of the current user pain points that the team was looking to improve on.&lt;/p&gt;
+
+&lt;p&gt;In order to improve upon the app the team has been trying to let user input, data &amp;amp; stats drive their next steps and prioritize which pain points are the most urgent. In order to do this Mike and I began began collecting data &amp;amp; stats from our database. With the data we created charts to better represent the data to our client in our next iteration planning meeting.&lt;/p&gt;
+
+&lt;p&gt;This process excited me for a couple reasons. I think its great that the team is making an effort to solve user pain points using data driven design. Going this route will be much more effective than implementing a new feature based on pure assumption. The other thing that excited me was having a team of hardworking developers take part in the design process.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;"What makes people passionate, pure and simple, is great experiences. If they have great experience with your product and they have great experiences with your service, they’re going to be passionate about your brand, they’re going to be committed to it. That’s how you build that kind of commitment." –- Jesse James Garrett&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
   <entry>
     <title>Pairing with Kyle</title>
     <link rel="alternate" href="http://blog.url.com/2015/07/14/Pairing-with-Kyle/"/>
@@ -112,220 +185,6 @@ After lunch we all had an IPM (iteration planning meeting) with our client who i
   &lt;p&gt;&lt;em&gt;“You have to fight to reach your dream. You have to sacrifice and work hard for it.
 - Lionel Messi”&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Helpful Notes</title>
-    <link rel="alternate" href="http://blog.url.com/2015/06/02/Helpful-Notes/"/>
-    <id>http://blog.url.com/2015/06/02/Helpful-Notes/</id>
-    <published>2015-06-01T22:53:00-05:00</published>
-    <updated>2015-06-19T02:07:29-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Before learning anything about programming I used to thing that programmers were nerdy magical beings who had a massive file system of programming tricks up their sleeves. I soon figured out that programmers are master-expert googlers and most of the time they know how to solve a problem because they were once stuck on it themselves. Over the past year i've become more nerdy, and hopefully awesome? Here's a list I keep in my notes section of problems I have run into:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;NOTES&lt;/p&gt;
-
-&lt;h3 id="when-you-need-to-take-a-screen-shot"&gt;WHEN YOU NEED TO TAKE A SCREEN SHOT&lt;/h3&gt;
-&lt;p&gt;Command +shift +4 = screen shot selection&lt;/p&gt;
-
-&lt;h3 id="when-youre-stuck-in-your-command-line"&gt;WHEN YOU'RE STUCK IN YOUR COMMAND LINE&lt;/h3&gt;
-&lt;p&gt;control c - quits a process on your command line&lt;/p&gt;
-
-&lt;h3 id="when-you-push-something-you-didnt-mean-to"&gt;WHEN YOU PUSH SOMETHING YOU DIDN'T MEAN TO&lt;/h3&gt;
-
-&lt;p&gt;git reset HEAD~ 
-re-add and commit the files you wanted
-git push –force&lt;/p&gt;
-
-&lt;h3 id="when-you-need-to-kill-your-server"&gt;WHEN YOU NEED TO KILL YOUR SERVER&lt;/h3&gt;
-&lt;p&gt;Try&lt;/p&gt;
-
-&lt;p&gt;lsof -i:4567&lt;/p&gt;
-
-&lt;p&gt;And see if there are any processes running. If so, you'll be provided the process id and you can do:&lt;/p&gt;
-
-&lt;p&gt;kill -9 &lt;pid here=""&gt;&lt;/pid&gt;&lt;/p&gt;
-
-&lt;h3 id="when-your-ruby-version-changes"&gt;WHEN YOUR RUBY VERSION CHANGES::::&lt;/h3&gt;
-
-&lt;p&gt;$ rvm use 2.x.x&lt;/p&gt;
-
-&lt;p&gt;$ rvm –default use 2.x.x&lt;/p&gt;
-
-&lt;h3 id="when-you-need-to-create-a-new-branch"&gt;WHEN YOU NEED TO CREATE A NEW BRANCH&lt;/h3&gt;
-&lt;p&gt;example:&lt;/p&gt;
-
-&lt;p&gt;[master][~projects/vision] git checkout -b create-branch-name-here&lt;/p&gt;
-
-&lt;p&gt;[cohort-pages] [~projects/vision] git branch&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;cohort-pages&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;master&lt;/p&gt;
-
-&lt;p&gt;if you want to get back to master…&lt;/p&gt;
-
-&lt;p&gt;git checkout master&lt;/p&gt;
-
-&lt;h3 id="when-you-need-to-pull-down-a-branch"&gt;WHEN YOU NEED TO PULL DOWN A BRANCH&lt;/h3&gt;
-
-&lt;p&gt;Pull down a branch&lt;/p&gt;
-
-&lt;p&gt;git br -r&lt;/p&gt;
-
-&lt;p&gt;——shows all branches&lt;/p&gt;
-
-&lt;p&gt;git fetch &lt;/p&gt;
-
-&lt;p&gt;git checkout (whatever branch you want)&lt;/p&gt;
-
-&lt;h3 id="when-you-need-to-create-a-pull-request"&gt;WHEN YOU NEED TO CREATE A PULL-REQUEST&lt;/h3&gt;
-
-&lt;p&gt;cool resource: http://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch&lt;/p&gt;
-
-&lt;p&gt;git branch (check out the branch you’re on)&lt;/p&gt;
-
-&lt;p&gt;git status to check what you have to commit&lt;/p&gt;
-
-&lt;p&gt;git add .&lt;/p&gt;
-
-&lt;p&gt;git commit -m “ “&lt;/p&gt;
-
-&lt;p&gt;git push origin cohort-pages &lt;/p&gt;
-
-&lt;p&gt;git checkout master&lt;/p&gt;
-
-&lt;p&gt;git pull&lt;/p&gt;
-
-&lt;p&gt;git checkout (page you want to be on example: cohort-pages)&lt;/p&gt;
-
-&lt;p&gt;git rebase master &amp;lt;——may need to rebase earlier???&lt;/p&gt;
-
-&lt;h3 id="when-you-want-to-save-your-local-changes-before-pulling"&gt;WHEN YOU WANT TO SAVE YOUR LOCAL CHANGES (before pulling)&lt;/h3&gt;
-
-&lt;p&gt;git stash; &lt;/p&gt;
-
-&lt;p&gt;git pull; &lt;/p&gt;
-
-&lt;p&gt;git stash pop&lt;/p&gt;
-
-&lt;h3 id="when-youre-having-a-migration-error"&gt;WHEN YOU'RE HAVING A MIGRATION ERROR:&lt;/h3&gt;
-&lt;p&gt;rake db:reset&lt;/p&gt;
-
-&lt;h3 id="when-youre-not-getting-data-from-the-database"&gt;WHEN YOU'RE NOT GETTING DATA FROM THE DATABASE:&lt;/h3&gt;
-&lt;p&gt;rake db:seed&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;It's funny looking back at this list and the issues i've run into… Screen shot? O, Erica you silly girl. It's also great to go down the list and remember where I was in my apprenticeship and where I am now. It'll be interesting to see what my next adventures will be =)&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Cesars Resources</title>
-    <link rel="alternate" href="http://blog.url.com/2015/05/20/Cesars-Resources/"/>
-    <id>http://blog.url.com/2015/05/20/Cesars-Resources/</id>
-    <published>2015-05-19T22:53:00-05:00</published>
-    <updated>2015-06-19T00:44:14-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;For the majority of my apprenticeship I have been working on my own. However, this week I was able to get some good pairing in with another designer - Cesar Figueroa. One of the things I loved about working with Cesar aside from his great taste in music is his willingness to share all of the cool tools he has gathered over time. Here are some of the cool resources that I took note of:&lt;/p&gt;
-&lt;h3 id="caniusecom"&gt;caniuse.com&lt;/h3&gt;
-
-&lt;p&gt;"Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Can I Use" src="/images/blog/resources/can-i-use.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="tinypngcom"&gt;tinypng.com&lt;/h3&gt;
-
-&lt;p&gt;“TinyPNG uses smart lossy compression techniques to reduce the file size of your PNG files.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Tiny PNG" src="/images/blog/resources/tinypng.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="chromecache"&gt;chrome://cache/&lt;/h3&gt;
-
-&lt;p&gt;The server will tell the browser whether it should cache a page and for long. This is pretty usefl if you need to find a cached version of your website.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Chrome cache" src="/images/blog/resources/chrome.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="destroyallsoftwarecom"&gt;destroyallsoftware.com&lt;/h3&gt;
-
-&lt;p&gt;Destroy All Software screencasts are short: 10 to 15 minutes, but dense with information.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="destroyallsoftware" src="/images/blog/resources/death-to-software.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="thegreatdiscontentcom"&gt;thegreatdiscontent.com&lt;/h3&gt;
-
-&lt;p&gt;The Great Discontent (TGD) is a triannual print publication and online magazine featuring candid interviews with those who create. Focusing on beginnings, creativity, and risk, TGD provides a memorable look into the lives of its subjects via long-form interviews, short features, and film-based projects.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="The Great Discontent" src="/images/blog/resources/great-discontent.png" /&gt;&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>Limiting repetiton in your html</title>
-    <link rel="alternate" href="http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/"/>
-    <id>http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/</id>
-    <published>2015-05-13T22:53:00-05:00</published>
-    <updated>2015-05-18T00:23:12-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="diagram_1" src="/images/blog/yaml/diagram_1.svg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;The team pages were structured the same but contained content particular to that team such as its own about content, members, and leader info. The best part about this monster I created was that it would breed like bunnies…&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="baby_bunnies" src="/images/blog/yaml/baby_bunnies.svg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;As more team pages were added that same html markup would have to be copied. Even more fun – adding and updating content would not be pretty and I could create more enemies than Joffrey from the Game of Thrones.&lt;/p&gt;
-
-&lt;p&gt;I decided to leave the darkside and find a better solution.&lt;/p&gt;
-
-&lt;h2 id="one-view-to-the-rescue"&gt;One view to the rescue&lt;/h2&gt;
-
-&lt;p&gt;The idea behind this approach is to solve these problems:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Each team is it’s own “view” = ton’s of repetition&lt;/li&gt;
-  &lt;li&gt;In order to edit data pertaining to a team you currently have to update it in the index and its individual team page&lt;/li&gt;
-  &lt;li&gt;The static html files are tedious to enter data into&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Create easy to edit data files that feed into one view. It would work like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="diagram_2" src="/images/blog/yaml/diagram_2.svg" /&gt;&lt;/p&gt;
-
-&lt;h2 id="creating-the-data-files"&gt;Creating the "data files"&lt;/h2&gt;
-
-&lt;p&gt;As I stated before the data for each of the team pages was pretty similar. So having data files that could feed into one view which would generate new team pages made sense. &lt;/p&gt;
-
-&lt;p&gt;I chose to research and use my new friend, YAML aka “YAML Ain't Markup Language" for these data files. What is great about YAML is that it was designed to be easily mapped to data types common to most high-level languages: lists, associative arrays, and scalar.&lt;/p&gt;
-
-&lt;p&gt;Here is an example of a YAML data file that would feed into the view:&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/Sneakingrocky/c2e56783fc953ea2c7fd.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;This data creates generates a giant hash of keys and values like so:&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/Sneakingrocky/115e11b03387de806af8.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;If you like dealing with hashes good for you. I'm a bigger fan of working with objects. Using Ruby you can create methods which turn these key &amp;amp; values into an object like so:&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/Sneakingrocky/967bf1974a2d958b0ca5.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;The new methods we created can now be used in our view using Embedded Ruby:&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/Sneakingrocky/65ce56bee20f12a3b8c6.js"&gt;&lt;/script&gt;
-
-&lt;h2 id="everything-is-so-much-cleaner"&gt;Everything is so much cleaner!&lt;/h2&gt;
-
-&lt;p&gt;Using tools such as YAML, Ruby, and Embedded Ruby allowed me to clean up the structure of my project. With a singular view for team pages the duplication work that someone would have to do if they were somehow assigned to add 100 new teams is now gone. Imagine manually creating 100 static html pages and then having to apply future changes to each static page…yuck.&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
