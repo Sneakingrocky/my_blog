@@ -5,10 +5,134 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-07-16T22:53:00-05:00</updated>
+  <updated>2015-07-23T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Pairing with Eric Day 2</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/24/Pairing-with-Eric-Day-2/"/>
+    <id>http://blog.url.com/2015/07/24/Pairing-with-Eric-Day-2/</id>
+    <published>2015-07-23T22:53:00-05:00</published>
+    <updated>2015-07-27T17:49:51-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_dayten.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;The last day of my pairing tour was a busy one! In the morning I worked on more business cards for London and organizing all of the files for our seperate offices.&lt;/p&gt;
+
+&lt;p&gt;After lunch Eric took Nelsol and I through a client project that is looking to improve the user experience and design of their app. As Eric took us through the project I could immediately see things that Nelsol and I could do to make the application more user friendly. I honestly wish that I could design the entire thing from the ground up but that’s not in the cards. I also think this project would benefit greatly by speaking with the users so we could eliminate a lot of the noise and unneeded material within the app.&lt;/p&gt;
+
+&lt;p&gt;Going through the app was pretty tiring so Eric and I took a ping pong break to relax before we dove into pairing on SLAM again. After the best, most highly skilled round of ping-pong in the world, Eric and I showed the wireframes we had been working on to the rest of the slammers. They were excited about the proposed features and one thing i’m really glad I did was ask them for ideas that we could add. The guys came up with some really great ideas!&lt;/p&gt;
+
+&lt;p&gt;We all then began drafting out more of our ideas, writing up project stories, and breaking up into pairs to knock out some features. Eric and I continued to work on the wireframes and the others began to work on adding Google Authorization to the App.&lt;/p&gt;
+
+&lt;p&gt;My pairing session was cut short today because I received my “Challenges”.  Challenges are two weeks of work that will determine whether or not I have a future at 8th Light as a designer. They consist of….just kidding. It’s a secret.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Believe in yourself, take on your challenges, dig deep within yourself to conquer fears. Never let anyone bring you down. You got to keep going. –Chantal Sutherland&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Nelsol Day 2</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/23/Pairing-with-Nelsol-Day-2/"/>
+    <id>http://blog.url.com/2015/07/23/Pairing-with-Nelsol-Day-2/</id>
+    <published>2015-07-22T22:53:00-05:00</published>
+    <updated>2015-07-27T17:17:46-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day9.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today was my second day pairing with my mentor, Nelsol. We started off the day working on some print collateral for a client. I’m very comfortable working with the Adobe Creative Suite and print materials so this project was right up my alley. The downer was that we were on a tight deadline so I tried my best to keep composure, remain calm, and have fun regardless of the tight deadline.&lt;/p&gt;
+
+&lt;p&gt;Our workflow was constantly broken up with client meetings, messages from other project members, and questions from internal members. We worked together to stay on task and once we were comfortable with the print we sent it to the client and the printer to get their feedback.&lt;/p&gt;
+
+&lt;p&gt;While awaiting feedback we jumped right into some tickets for one of our clients. We worked through some tough problems because the code base was drowning in dependencies. Trying our best to use our principles and keep the code as clean as possible we completed the tickets.&lt;/p&gt;
+
+&lt;p&gt;One of the most helpful things that Nelsol showed me today was his workflow. The man is extremely organized and to be honest with how many things he has to juggle it would be a nightmare if he wasn’t. First, he took me through the process of submitting a ticket to be reviewed before a pull request can be requested. He then showed me the clients tracking system for each feature and how ownership is passed from person to person throughout the process. Because ownership is constantly changing, Nelsol has his own way of tracking his work on various projects. He uses trello.com, a free organization tool for teams and individuals.&lt;/p&gt;
+
+&lt;p&gt;Lesson of the day: Be Organized!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Don’t say you don’t have enough time.  You have exactly the same number of hours per day that were given to Helen Keller, Pasteur, Michaelangelo, Mother Teresea, Leonardo da Vinci, Thomas Jefferson, and Albert Einstein. – H. Jackson Brown, Jr.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Kevin</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/22/Pairing-with-Kevin/"/>
+    <id>http://blog.url.com/2015/07/22/Pairing-with-Kevin/</id>
+    <published>2015-07-21T22:53:00-05:00</published>
+    <updated>2015-07-27T16:45:48-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day8.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today I took a trip over to Groupon to pair with Kevin on an Ember.js App. It was a cool field trip and Groupon’s office certainly had a lot going on. Most memorable – a giant cardboard kitty in a massive spaceship. I’m pretty sure if I were to go there again there would be a 100 things that I missed the first time.&lt;/p&gt;
+
+&lt;p&gt;I was nervous to pair on the Ember App because I had planned to go through the Treehouse tutorial the night before but ended up falling asleep with my giant headphones on before I could finish all of the videos. I was more exhausted than I thought! I continued to prepare on the train ride in even though I get motion sick while riding and reading. I guess I was scared that I wouldn’t be able to contribute as much as I had hoped if I didn’t know Ember because I was studying like a college student about to take a final exam. Luckily, Kevin quickly filled me in that he was also just starting with Ember. Feeeeeew!&lt;/p&gt;
+
+&lt;p&gt;Together we started drafting out the function of his and Mike’s app on the whiteboard like I always love to do. We then took those ideas, set up our environment and began setting up the static stage &amp;amp; grid for the app. We also started organizing our folder structure to make sure that our CSS was well organized as we built out the project.&lt;/p&gt;
+
+&lt;p&gt;It was fun to work alongside Kevin to figure out how to implement Ember’s helpers with the styling that we wished to have. We both took turns driving and paid attention to what each person was doing. This helped a great deal as Kevin was able to catch my mistakes and vice versa. It also helped out a great deal when I was developing on the browser and would accidently save and the auto-reloader would run losing all of my changes.&lt;/p&gt;
+
+&lt;p&gt;Before I had to leave for a client meeting Kevin and I were able to add some basic styling, fonts, explore, edit &amp;amp; add some SVG graphics, and brainstorm additional styles they could add later.&lt;/p&gt;
+
+&lt;p&gt;I can’t tell you how refreshing it was to be able to start a project from scratch again. After working in webs lately, I truly appreciated getting to work on this project with Kevin.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Your life should consist of more than commuting, working, eating, surfing the Internet, sleeping and watching TV. Your life should be filled with purpose-driven experiences and projects that bring excitement, passion, energy, and authentic meaning and joy into your life.”
+― Richie Norton&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Chris</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/21/Pairing-with-Chris/"/>
+    <id>http://blog.url.com/2015/07/21/Pairing-with-Chris/</id>
+    <published>2015-07-20T22:53:00-05:00</published>
+    <updated>2015-07-27T14:48:31-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day7.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today I was able to step back into my comfort zone as a designer. I worked with Chris on the same application that I was working on with Malcolm &amp;amp; Craig yesterday. I was excited to fix up some of the unstyled work that I saw yesterday that needed some love.&lt;/p&gt;
+
+&lt;p&gt;After our team stand-up Chris showed me a page that he had worked on the day before. He had already put together some great styles that we could carry into the forms, lists, buttons, etc for our current page. He also showed me the grid that he had made and was testing out based off of the BEM (Block, Element, Modifier) naming convention. Since CSS can quickly become a spaghetti mess with hot glue instead of spaghetti sauce, the designers at 8th Light and conscientious designers everywhere are constantly testing and looking to create maintainable CSS with limited dependencies. It was cool to see how Chris was trying to make improvements to his code by carrying these conventions into his grid.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, today we felt the pain of environmental issues which cut into our work time a great deal. This is just something that one has to except on a big project with many developers, and conflicting requests. This is something that my mentor has constantly reminded me of - things may not go as smoothly as your optimistic selves may think things will go. As a consultant you have to account for things going terribly wrong or you’re going to find yourself scrambling to meet an unrealistic deadline.&lt;/p&gt;
+
+&lt;p&gt;One of our developers on the team kindly helped us move past the environment &amp;amp; project road blockers. Sadly, now Chris’s auto-reloader which was speeding up his workflow was unsupported so we had to find a workaround to bring it back. Once we got through the set-up, Chris and I were able to implement our design changes and brainstorm some design improvements to 8th Light’s SCNA conference website.&lt;/p&gt;
+
+&lt;p&gt;Working with different designers, I have found that each one has their own workflow preferences. For example, some prefer to develop in the browser as where others preferred making several changes in their editors and then seeing them all at once. A similarity that I have seen… VIM. Although, Microsoft visual studio did not allow for VIM Chris found a plug-in that him and the developers were able to use to speed up their workflow. Things still weren’t perfect, but today I learned that that comes with each client project having a different environment. Craftsman have to be comfortable being uncomfortable and willing to work with what they are given.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“I'm continually trying to make choices that put me against my own comfort zone. As long as you're uncomfortable, it means you're growing.” – Ashton Kutcher&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pairing with Malcolm</title>
+    <link rel="alternate" href="http://blog.url.com/2015/07/20/Pairing-with-Malcolm/"/>
+    <id>http://blog.url.com/2015/07/20/Pairing-with-Malcolm/</id>
+    <published>2015-07-19T22:53:00-05:00</published>
+    <updated>2015-07-27T13:44:38-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day6.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Today I paired with Malcolm and Craig on an ASP.net project written in C#. I had never worked in those environments nor had I worked within Microsoft Visual Studio so it was like I was in a foreign country. However I did my best to follow along, help, and learn as much as I could.&lt;/p&gt;
+
+&lt;p&gt;After the team’s daily stand up, Malcolm took some time to catch me up on the details of the project that we would be working on. He explained that we would be working on changing the structure of the way the backend was currently handling a process in order to better execute the end desired behavior. He took me through the white boarded diagram of the old system as well as the new system and explained how everything would work with our added changes. Because i’m a visual learner, this was a great way to put everything into context. And as he went through the diagram I couldn’t help but think about how disciplined craftsman must be to constantly bite the bullet and grow &amp;amp; change their software in order to reach the best possible solution.&lt;/p&gt;
+
+&lt;p&gt;I think the biggest take away that I got from working with Malcolm and Craig was seeing how a pair should work together in order to make progress and positive changes. Although they were pairing remotely they worked great together and seemed to have a nice workflow. They both took turns “driving” - writing code, while the other took the role as an active “passenger”. I say active because the passenger was always asking questions, adding input, and working toward a solution with the driver. They both stayed positive, included me, and made me laugh all day.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“…in my mind a craftsperson is someone who not only creates something from nothing from materials of their choice, but usually puts a part of themselves into what they make. A good craftsperson takes the time and effort to make something of quality which is worthwhile to have and which will still function way after the crafted item has been made. Good craftsmanship is synonymous with quality products.“&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
   <entry>
     <title>Pairing with Eric</title>
     <link rel="alternate" href="http://blog.url.com/2015/07/17/Pairing-with-Eric/"/>
@@ -30,161 +154,6 @@
 &lt;p&gt;We started from the first step the user would take while using the app. This would of course be logging in. We decided that using google authorization would be a good option for 8th Lighters to login and tie themselves to an identity so we could add features such as ranks, stats, and leaderboards.&lt;/p&gt;
 
 &lt;p&gt;It was a fun day, we made really good progress on the wireframes and began talks about possible branding ideas. I’m really excited to see this app grow and be used (hopefully soon!).&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Nelsol</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/16/Pairing-with-Nelsol/"/>
-    <id>http://blog.url.com/2015/07/16/Pairing-with-Nelsol/</id>
-    <published>2015-07-15T22:53:00-05:00</published>
-    <updated>2015-07-25T17:39:24-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day4.svg" /&gt;&lt;/p&gt;
-&lt;p&gt;Today I paired with my mentor, Nelsol. Through this experience I was able to truly get a feel of what a normal day for a designer at 8th Light might look like.&lt;/p&gt;
-
-&lt;p&gt;Since Nelsol and I were going to be joining the team I worked with yesterday for their iteration planning meeting and design session I caught Nelsol up on the new feature that the team was looking to add based on user input &amp;amp; data. The proposed feature was a search for the App (Global or specific has yet to be decided yet).&lt;/p&gt;
-
-&lt;p&gt;After an extended IPM with a client we were eventually able to join the team for the meeting. Mike went through the data and charts with the client, pain points, assumptions we had, and what problems the search feature would solve for the users. An important statistic that he brought up was that the search function would solve an issue that the apps most active users were having - the app having trouble handling so much data at once. Ultimately and our hope being, more users would be utilizing the app in this way in the near feature. For that reason, tackling this problem would benefit our best users as well as our best future users.&lt;/p&gt;
-
-&lt;p&gt;The client was great, and even offered a few pain points that we hadn’t thought of. Once we added those to our list we began our design session where each participant, even the clients, were asked to create four drawings in 10 minutes with their ideas for how the search feature should be displayed and how it should function. Through these drawings and exercise we were able think creatively without boundaries and quickly come up with several solutions. We shared these solutions with each other and worked together toward narrowing down the best solution for the search feature.&lt;/p&gt;
-
-&lt;p&gt;After the meeting, Nelsol and I worked together on a few client tickets. I was quickly thrown out of my comfort zone when Nelsol said that we would be using VIM as our text editor. I had meant to learn VIM during my apprenticeship but juggling all of my responsibilities pushed that further and further. Even though Nelsol had told me to start learning VIM in my spare time he was very patient with me as I slowly made changes and scrambled to remember each key.&lt;/p&gt;
-
-&lt;p&gt;Along with the painful pace at which i moved through the editor I was overwhelmed with the spaghetti code of the project and how the pages were laid out. I would be lying if I said working with this code base didn’t scar me with how many dependencies and redundant lines there were. Thinking positively - it makes me appreciate other projects i’ve worked on or have been able to start from scratch.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Legacy code. The phrase strikes disgust in the hearts of programmers. It conjures images of slogging through a murky swamp of tangled undergrowth with leaches beneath and stinging flies above. It conjures odors of murk, slime, stagnancy, and offal. Although our first joy of programming may have been intense, the misery of dealing with legacy code is often sufficient to extinguish that flame.﻿”-― Michael C. Feathers, Working Effectively with Legacy Code&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Mike</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/15/Pairing-with-Mike/"/>
-    <id>http://blog.url.com/2015/07/15/Pairing-with-Mike/</id>
-    <published>2015-07-14T22:53:00-05:00</published>
-    <updated>2015-07-25T16:57:05-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day3.svg" /&gt;&lt;/p&gt;
-&lt;p&gt;Today I paired with Mike D on an iOS app project. I was excited to work with Mike because we’ve always had great conversations at lunch but I haven’t had the opportunity to work on his project during my apprenticeship. He also did a great job helping out with a group of visitors from Mobile Makers yesterday – all of the kids were entranced while he talked about his daily activities as one of our main iOS developers.&lt;/p&gt;
-
-&lt;p&gt;To start things off Mike took me through the app and all of its current features. We worked through a couple of the support tickets and talked about some of the current user pain points that the team was looking to improve on.&lt;/p&gt;
-
-&lt;p&gt;In order to improve upon the app the team has been trying to let user input, data &amp;amp; stats drive their next steps and prioritize which pain points are the most urgent. In order to do this Mike and I began began collecting data &amp;amp; stats from our database. With the data we created charts to better represent the data to our client in our next iteration planning meeting.&lt;/p&gt;
-
-&lt;p&gt;This process excited me for a couple reasons. I think its great that the team is making an effort to solve user pain points using data driven design. Going this route will be much more effective than implementing a new feature based on pure assumption. The other thing that excited me was having a team of hardworking developers take part in the design process.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;"What makes people passionate, pure and simple, is great experiences. If they have great experience with your product and they have great experiences with your service, they’re going to be passionate about your brand, they’re going to be committed to it. That’s how you build that kind of commitment." –- Jesse James Garrett&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Kyle</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/14/Pairing-with-Kyle/"/>
-    <id>http://blog.url.com/2015/07/14/Pairing-with-Kyle/</id>
-    <published>2015-07-13T22:53:00-05:00</published>
-    <updated>2015-07-21T22:48:11-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day2.svg" /&gt;&lt;/p&gt;
-&lt;p&gt;Today I paired with Kyle, 8th Light’s writer. Although we didn’t write a single line of code together I learned a lot about all of the hard work Kyle does behind the scenes to make 8th Light a special place.&lt;/p&gt;
-
-&lt;p&gt;To start off our day Kyle and I worked on reviewing and editing a blog post submission by another Craftsman. 8th Light encourages their employees to write and talk about their passions, technical, and non-technical topics. Sometimes its not always easy for people to express their thoughts into a cohesive blog or talk. That is where Kyle comes in to help everyone produce something they can feel proud of by making sure the flow of the piece makes sense and that grammatical errors are obsolete.&lt;/p&gt;
-
-&lt;p&gt;Another project that Kyle has been working on is bringing back and improving company “Stand Up.” Stand Up is a time where everyone in the company comes together to talk about the projects that they are working on, and any successes or failures that they may have had. This helps everyone in the company stay informed about the company's progress and what their colleagues  have been working on. Last week Kyle did a great job putting together “Stand Up” and acting as MC. In order to keep on improving “Stand Up” Kyle and I went through the feedback form responses that he received and brainstormed some fun ideas with our VP of Sales &amp;amp; Marketing. After our meeting I worked on implementing a few graphs for the blog post about “Stand Up” that Kyle was going to send out to share the feedback results and Kyle multitasked on a few of the things on his list of things to do. I couldn’t help but get the feeling that Kyle does 100 things at once. Somehow he’s able to have a sense of humor through all of his tasks which is really refreshing.&lt;/p&gt;
-
-&lt;p&gt;Here are the graphs I worked on creating today:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="StandUp" src="/images/blog/StandUp_Stats_Q1.svg" /&gt;
-&lt;img alt="StandUp" src="/images/blog/StandUp_Stats_Q2.svg" /&gt;
-&lt;img alt="StandUp" src="/images/blog/StandUp_Stats_Q3.svg" /&gt;
-&lt;img alt="StandUp" src="/images/blog/StandUp_Stats_Q4.svg" /&gt;&lt;/p&gt;
-
-&lt;h4 id="words-of-wisdom-from-the-day"&gt;Words of Wisdom from the day:&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Knocked down and kicked out of all your pride”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“But you're living with the thunder that you have inside”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“You gotta open up your life”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;– JUICEBOXXX&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Ginny</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/13/Pairing-with-Ginny/"/>
-    <id>http://blog.url.com/2015/07/13/Pairing-with-Ginny/</id>
-    <published>2015-07-12T22:53:00-05:00</published>
-    <updated>2015-07-14T22:32:37-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar_day1.svg" /&gt;&lt;/p&gt;
-&lt;p&gt;For my first day of pairing I paired with Ginny and the studio team - Mike E., Sylwia, and Diana who is our newest Craftswoman. We started out our day with our daily standup to discuss what each person worked on on Friday, if they had any “blockers”, what they were planning on working on that day, and what features were most urgent.&lt;/p&gt;
-
-&lt;p&gt;After standup, Ginny, Slywia, Diana, and I started working on a priority feature for a client project that is launching very soon. We were creating a form which would process and supply the user with a code that they would need to then copy. In order to make the user-experience better we wanted to have the code automatically highlighted when it appeared. In order to do this the team used Javascript which they could place right into the html:&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/Sneakingrocky/c89c9d6fe5df543c6100.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;After working on that feature the team split off to complete the other stories. Ginny, Diana and I continued to work on making additions to the project and I was excited to be able to contribute to some of the more designer territory stories but also that I was able to follow along well with Ginny while she tackled some backend work.
-After lunch we all had an IPM (iteration planning meeting) with our client who is getting ready to launch soon. It was awesome to see everyone in action, hear the questions from both the client and, the craftsman, and the way they all worked together to figure out what was needed to wrap up this project and pass it over to the client team.&lt;/p&gt;
-
-&lt;p&gt;After the meeting we all discussed a user experience issue and came up with a nice solution together. I helped Sylwia add some style additions and then continued to work with Ginny for the rest of the day. What I loved about pairing with Ginny was that she would say every step that she was doing which made it very easy to follow along and follow her thought process - this is hard to find! A lot of developers want to get from point A to point B as fast as possible with or without their pair still in the car.&lt;/p&gt;
-
-&lt;p&gt;It was a great first day! The crazy and impressive thing about this team is that they were all versed in several client projects and had to balance time between each. And what I loved more than anything was the communication between them all on the state of the projects, the willingness of each person to help one another move a roadblock or solve a nasty bug. So while I originally thought that pairing meant that I would solely be working with one person - their great teamwork allowed me to work with every single person on the team.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results." –Andrew Carnegie”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Final Stretch</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/12/The-Final-Stretch/"/>
-    <id>http://blog.url.com/2015/07/12/The-Final-Stretch/</id>
-    <published>2015-07-11T22:53:00-05:00</published>
-    <updated>2015-07-14T21:17:08-05:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;I’ve hit an important milestone of my Design Residency here at 8th Light. I am in my last month of my apprenticeship which means that I will spend the next month trying to show what i’ve learned in the last 5 months and prove that I have what it takes to earn a position as a Design Craftsperson here at 8th Light. It is also an opportunity for me to see what it is like to work with other Craftsman, explore some of our client projects, and to gauge whether it’s truly the right fit.&lt;/p&gt;
-&lt;p&gt;For the next two weeks I will go on a “Pairing Tour” which means that I will be pairing with a new person every day. I’m really excited to continue to work alongside others as my last month of client work with Emmanuel and Geoff has been such a great experience.&lt;/p&gt;
-
-&lt;p&gt;I rolled an amazing group of people for my tour  and review board so I know it’ll be a fun couple of weeks and i’m no doubt going to learn a great deal from each person. I’ll use this fuel the energy I know i’ll need to complete two weeks of challenges following my tour and to prepare for my speech where I’ll most likely turn red thanks to my Irish side.&lt;/p&gt;
-
-&lt;h5 id="some-goals-i-have-for-my-tour"&gt;Some goals I have for my tour:&lt;/h5&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Try to get better sleep than I have during my apprenticeship&lt;/li&gt;
-  &lt;li&gt;Ask tons of questions&lt;/li&gt;
-  &lt;li&gt;Be a good pair who’s engaged in the work&lt;/li&gt;
-  &lt;li&gt;Stay positive even if I feel out of my element&lt;/li&gt;
-  &lt;li&gt;Blog about each day of my tour&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h5 id="my-schedule"&gt;My Schedule:&lt;/h5&gt;
-
-&lt;p&gt;&lt;img alt="Pairing Calendar" src="/images/Tour_calendar.svg" /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“You have to fight to reach your dream. You have to sacrifice and work hard for it.
-- Lionel Messi”&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </content>
   </entry>
 </feed>
