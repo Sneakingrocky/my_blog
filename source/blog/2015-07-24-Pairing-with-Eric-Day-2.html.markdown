@@ -4,7 +4,7 @@ date: 2015-07-24 03:53 UTC3
 tags:
 ---
 
-![Pairing Calendar](/images/Tour_calendar_dayten.svg)
+![Pairing Calendar](/images/Tour_calendar_dayten.png)
 
 The last day of my pairing tour was a busy one! In the morning I worked on more business cards for London and organizing all of the files for our seperate offices.
 

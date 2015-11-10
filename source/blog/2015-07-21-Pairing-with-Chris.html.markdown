@@ -4,7 +4,7 @@ date: 2015-07-21 03:53 UTC3
 tags:
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day7.svg)
+![Pairing Calendar](/images/Tour_calendar_day7.png)
 
 Today I was able to step back into my comfort zone as a designer. I worked with Chris on the same application that I was working on with Malcolm & Craig yesterday. I was excited to fix up some of the unstyled work that I saw yesterday that needed some love.
 

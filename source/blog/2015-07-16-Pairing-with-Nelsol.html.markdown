@@ -4,7 +4,7 @@ date: 2015-07-16 03:53 UTC3
 tags:
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day4.svg)
+![Pairing Calendar](/images/Tour_calendar_day4.png)
 
 
 Today I paired with my mentor, Nelsol. Through this experience I was able to truly get a feel of what a normal day for a designer at 8th Light might look like.

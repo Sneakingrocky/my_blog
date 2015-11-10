@@ -4,7 +4,7 @@ date: 2015-07-20 03:53 UTC3
 tags:
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day6.svg)
+![Pairing Calendar](/images/Tour_calendar_day6-2.png)
 
 Today I paired with Malcolm and Craig on an ASP.net project written in C#. I had never worked in those environments nor had I worked within Microsoft Visual Studio so it was like I was in a foreign country. However I did my best to follow along, help, and learn as much as I could.
 

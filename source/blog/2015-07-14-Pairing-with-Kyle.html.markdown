@@ -4,7 +4,7 @@ date: 2015-07-14 03:53 UTC3
 tags:
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day2.svg)
+![Pairing Calendar](/images/Tour_calendar_day2.png)
 
 Today I paired with Kyle, 8th Light’s writer. Although we didn’t write a single line of code together I learned a lot about all of the hard work Kyle does behind the scenes to make 8th Light a special place.
 

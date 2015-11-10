@@ -5,7 +5,7 @@ tags:
 ---
 
 
-![Pairing Calendar](/images/Tour_calendar_day1.svg)
+![Pairing Calendar](/images/Tour_calendar_day1.png)
 
 For my first day of pairing I paired with Ginny and the studio team - Mike E., Sylwia, and Diana who is our newest Craftswoman. We started out our day with our daily standup to discuss what each person worked on on Friday, if they had any “blockers”, what they were planning on working on that day, and what features were most urgent.
 

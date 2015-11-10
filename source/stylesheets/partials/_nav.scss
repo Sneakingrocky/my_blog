@@ -1,6 +1,8 @@
 nav {
   background-color: white;
+  border-bottom: 1px solid #eee;
   height: 45px;
+  padding: 50px 50px;
   width: 100%;
 
   ul {
@@ -25,11 +27,13 @@ nav {
 }
 
 .logo {
-  color: grey;
-  font-size: 1.4em;
+  color: #595959;
+  font-family: "chaparral-pro",sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding-left: 17px;
 }
 
 .nav-links {
@@ -37,5 +41,6 @@ nav {
   font-size: 1em;
   font-weight: 500;
   padding: 0 1em;
+  text-align: center;
   text-decoration: none;
 }
