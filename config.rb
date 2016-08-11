@@ -62,9 +62,16 @@ page "/feed.xml", layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
-###
+### =>
 # Helpers
 ###
+
+helpers do
+  def tag_links(article)
+    links = article.tags.map { |tag| link_to(tag, tag_path(tag)) }
+    links.join(", ")
+  end
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

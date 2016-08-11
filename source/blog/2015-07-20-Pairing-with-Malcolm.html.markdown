@@ -1,7 +1,7 @@
 ---
 title: Pairing with Malcolm
 date: 2015-07-20 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day6-2.png)

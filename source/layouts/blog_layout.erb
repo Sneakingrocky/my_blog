@@ -1,23 +1,31 @@
+<%= partial "partials/nav" %>
 <% wrap_layout :layout do %>
-  <div class="container">
-    <div class="article">
-      <h3 class="article-title"><%= current_article.title %></h3>
-      <div class="date"><%= current_article.date.strftime('%b %e %Y') %></div>
+  <section class="content-container">
+    <div class="container">
+      <div class="article">
+        <h3 class="article-title center"><%= current_article.title %></h3>
+        <div class="meta">
+          <time class="meta__date">
+            <%= current_article.date.strftime('%b %e %Y') %>
+          </time>
+          <%= tag_links(current_article) %>
+        </div>
 
-      <div class="article-body"><%= yield %></div>
+        <div class="article-body"><%= yield %></div>
+      </div>
+
+      <div class= "read-more">
+        <% previous_article = current_article.previous_article %>
+        <% if previous_article %>
+          <%= link_to "← #{previous_article.title}", previous_article %>
+        <% end %>
+
+        <% next_article = current_article.next_article %>
+        <% if next_article %>
+          <%= link_to "#{next_article.title} →", next_article, class: "right" %>
+        <% end %>
+      </div>
+      <div class="footer"></div>
     </div>
-
-    <div class= "read-more">
-      <% previous_article = current_article.previous_article %>
-      <% if previous_article %>
-        <%= link_to "← #{previous_article.title}", previous_article %>
-      <% end %>
-
-      <% next_article = current_article.next_article %>
-      <% if next_article %>
-        <%= link_to "#{next_article.title} →", next_article, class: "right" %>
-      <% end %>
-    </div>
-    <div class="footer"></div>
-  </div>
+  </section>
 <% end %>

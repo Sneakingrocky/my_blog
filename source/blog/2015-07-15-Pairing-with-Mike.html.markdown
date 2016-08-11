@@ -1,7 +1,7 @@
 ---
 title: Pairing with Mike
 date: 2015-07-15 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day3.png)

@@ -1,7 +1,7 @@
 ---
 title: Cesars Resources
 date: 2015-05-20 03:53 UTC3
-tags:
+tags: design, resources
 ---
 
 For the majority of my apprenticeship I have been working on my own. However, this week I was able to get some good pairing in with another designer - Cesar Figueroa. One of the things I loved about working with Cesar aside from his great taste in music is his willingness to share all of the cool tools he has gathered over time. Here are some of the cool resources that I took note of:
@@ -18,7 +18,7 @@ For the majority of my apprenticeship I have been working on my own. However, th
 “TinyPNG uses smart lossy compression techniques to reduce the file size of your PNG files.”
 
 ![Tiny PNG](/images/blog/resources/tinypng.png)
-  
+
 
 ###chrome://cache/
 

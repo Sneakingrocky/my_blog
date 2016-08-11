@@ -1,7 +1,7 @@
 ---
 title: Pairing with Kyle
 date: 2015-07-14 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day2.png)

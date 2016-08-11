@@ -1,0 +1,41 @@
+.section--textured {
+  background-image: image-url("gridme.png");
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+.hero {
+  background-size: cover;
+  margin-top: -10px;
+  width: 100%;
+  z-index: -1;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.divider {
+  background: $light_gray;
+  display: block;
+  height: 1px;
+  margin: 1.25em 0 0 0;
+  width: 100%;
+}
+
+/* item styles */
+.item-image {
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%; /* here the desired aspect ratio */
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

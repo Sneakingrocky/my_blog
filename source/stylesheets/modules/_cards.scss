@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Card
+   ========================================================================== */
+
+.card {
+  border: 1px solid #E4E3E3;
+  border-radius: 6px;
+  padding: 0px;
+  margin-bottom: 50px;
+  width: 100%;
+
+  img {
+    border-radius: 6px 6px 0 0;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+  }
+}
+
+.card .card-section {
+  border-top: 1px solid #E4E3E3;
+  margin: 0px;
+  padding: 0px 15px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__name {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
+.card-section__title {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.1em;
+  margin-bottom: .5em;
+}

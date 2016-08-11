@@ -1,7 +1,7 @@
 ---
 title: Pairing with Kevin
 date: 2015-07-22 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day8.png)

@@ -1,7 +1,7 @@
 ---
 title: Pairing with Eric
 date: 2015-07-17 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day5.png)

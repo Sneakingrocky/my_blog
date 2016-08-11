@@ -1,7 +1,7 @@
 ---
 title: Pairing with Nelsol
 date: 2015-07-16 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 ![Pairing Calendar](/images/Tour_calendar_day4.png)

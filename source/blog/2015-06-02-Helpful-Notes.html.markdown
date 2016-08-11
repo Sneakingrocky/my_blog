@@ -1,7 +1,7 @@
 ---
 title: Helpful Notes
 date: 2015-06-02 03:53 UTC3
-tags:
+tags: git, reflection
 ---
 
 Before learning anything about programming I used to thing that programmers were nerdy magical beings who had a massive file system of programming tricks up their sleeves. I soon figured out that programmers are master-expert googlers and most of the time they know how to solve a problem because they were once stuck on it themselves. Over the past year i've become more nerdy, and hopefully awesome? Here's a list I keep in my notes section of problems I have run into:
@@ -17,7 +17,7 @@ control c - quits a process on your command line
 
 ###WHEN YOU PUSH SOMETHING YOU DIDN'T MEAN TO
 
-git reset HEAD~ 
+git reset HEAD~
 re-add and commit the files you wanted
 git push --force
 
@@ -39,7 +39,7 @@ $ rvm use 2.x.x
 
 $ rvm --default use 2.x.x
 
-###WHEN YOU NEED TO CREATE A NEW BRANCH 
+###WHEN YOU NEED TO CREATE A NEW BRANCH
 example:
 
 [master][~projects/vision] git checkout -b create-branch-name-here
@@ -63,13 +63,13 @@ git br -r
 
 ——shows all branches
 
-git fetch 
+git fetch
 
 git checkout (whatever branch you want)
 
 
 
-###WHEN YOU NEED TO CREATE A PULL-REQUEST 
+###WHEN YOU NEED TO CREATE A PULL-REQUEST
 
 cool resource: http://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch
 
@@ -81,7 +81,7 @@ git add .
 
 git commit -m “ “
 
-git push origin cohort-pages 
+git push origin cohort-pages
 
 git checkout master
 
@@ -95,14 +95,14 @@ git rebase master <——may need to rebase earlier???
 
 ###WHEN YOU WANT TO SAVE YOUR LOCAL CHANGES (before pulling)
 
-git stash; 
+git stash;
 
-git pull; 
+git pull;
 
 git stash pop
 
 
-###WHEN YOU'RE HAVING A MIGRATION ERROR: 
+###WHEN YOU'RE HAVING A MIGRATION ERROR:
 rake db:reset
 
 ###WHEN YOU'RE NOT GETTING DATA FROM THE DATABASE:

@@ -1,0 +1,42 @@
+.gallery {
+  position: absolute;
+  bottom: 1.428vw;
+  left: 0;
+  right: 0;
+}
+
+.gallery__link {
+  box-sizing: content-box;
+  float: left;
+  opacity: 0;
+  padding-left: 1.428%;
+  position: relative;
+  top: -80px;
+  transition: opacity 1s, top 0.5s;
+  width: 15%;
+
+  &:last-child {
+    padding-right: 1.428%;
+  }
+
+  &.animated-in {
+    opacity: 1;
+    top: 0;
+  }
+
+  &:hover.animated-in {
+    top: -20px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.gallery__image {
+  margin-right: 5px;
+  margin-top: 0;
+  padding: 5px;
+  width: 16.3%;
+}

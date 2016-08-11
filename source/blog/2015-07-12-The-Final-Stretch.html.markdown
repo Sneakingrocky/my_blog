@@ -1,7 +1,7 @@
 ---
 title: The Final Stretch
 date: 2015-07-12 03:53 UTC3
-tags:
+tags: goals, reflection
 ---
 
 I’ve hit an important milestone of my Design Residency here at 8th Light. I am in my last month of my apprenticeship which means that I will spend the next month trying to show what i’ve learned in the last 5 months and prove that I have what it takes to earn a position as a Design Craftsperson here at 8th Light. It is also an opportunity for me to see what it is like to work with other Craftsman, explore some of our client projects, and to gauge whether it’s truly the right fit.

@@ -1,11 +1,11 @@
 ---
-title: Limiting repetiton in your html 
+title: Limiting repetiton in your html
 date: 2015-05-14 03:53 UTC3
-tags:
+tags: html, css, frontend development
 ---
 
 
-While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple. 
+While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple.
 
 ![diagram_1](/images/blog/yaml/diagram_1.svg)
 

@@ -1,0 +1,41 @@
+body {
+  background: $white;
+  color: rgb(75, 75, 75);
+  line-height: 1.9rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+a {
+  color: rgb(69, 178, 157);
+  text-decoration: none;
+}
+
+p {
+  font-family: "lato",sans-serif;
+}
+
+blockquote {
+  background: $lightest_gray;
+  border-left: 5px solid $gray_cyan;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $lightest_gray;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}

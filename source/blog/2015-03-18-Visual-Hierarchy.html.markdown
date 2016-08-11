@@ -1,17 +1,17 @@
 ---
 title: Visual Hierarchy
 date: 2015-03-18 03:53 UTC3
-tags:
+tags: Design, Hierarchy, Layout
 ---
 
-Visual hierarchy is vital in every design in order to create an enjoyable user experience. Good visual hierarchy is the responsible use of color, contrast, texture, shape, position, orientation, and size to create different levels of relative importance. It’s a difficult task to responsibly use all of these exciting tools to create a cohesive and  enjoyable experience for the user. However, with a better understanding of how our users perceive the information we provide them, we’ll have more guidance as to how to efficiently guide our viewers from one piece of content to the next. 
+Visual hierarchy is vital in every design in order to create an enjoyable user experience. Good visual hierarchy is the responsible use of color, contrast, texture, shape, position, orientation, and size to create different levels of relative importance. It’s a difficult task to responsibly use all of these exciting tools to create a cohesive and  enjoyable experience for the user. However, with a better understanding of how our users perceive the information we provide them, we’ll have more guidance as to how to efficiently guide our viewers from one piece of content to the next.
 
 ###How do humans view information?
 
 In the 1920s German psychologists created theories in order to describe the capability of our brains to generate and organize visual elements into groups or “unified wholes”. This branch of study is called Gestalt psychology and a major part of this study involves the theory of the gestalt effect. The gestalt effect contains a few principles that explain the reasoning behind why our brains are naturally able to categorize information: grouping similar visual elements and organizing them into meaningful patterns.
 
 
-A few principles of the gestalt effect are: 
+A few principles of the gestalt effect are:
 
 **Law of Similarity:** When things are similar, the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.
 
@@ -39,16 +39,16 @@ A few principles of the gestalt effect are:
 
 ###How does the gestalt theory help us?
 
-A big take away from the principles of the gestalt effect theory is that humans see everything in terms of relationships. With this information designers can apply the gestalt principles to basic design principles such as contrast, repetition, alignment, and proximity to communicate better with their users. 
+A big take away from the principles of the gestalt effect theory is that humans see everything in terms of relationships. With this information designers can apply the gestalt principles to basic design principles such as contrast, repetition, alignment, and proximity to communicate better with their users.
 
-###How is hierarchy created? 
+###How is hierarchy created?
 
 Hierarchy is created by changing the visual weight of each element. Something with more visual weight is considered higher in the ranks of hierarchy which means that something with less visual weight is less important. Visual weights can be controlled through the use of:
 
 
 **Contrast**
 
-Contrast is using the difference in visual properties to make things distinguishable from each other. Shifts in color, size, shape, and position can help create a sense of visual hierarchical importance. 
+Contrast is using the difference in visual properties to make things distinguishable from each other. Shifts in color, size, shape, and position can help create a sense of visual hierarchical importance.
 
 **Size**
 

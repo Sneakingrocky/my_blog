@@ -1,7 +1,7 @@
 ---
 title: Pairing with Ginny
 date: 2015-07-13 03:53 UTC3
-tags:
+tags: pairing tour
 ---
 
 
