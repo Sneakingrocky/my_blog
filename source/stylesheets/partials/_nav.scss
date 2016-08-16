@@ -1,7 +1,7 @@
 nav {
   background-color: white;
   border-bottom: 1px solid #eee;
-  height: 75px;
+  min-height: 75px;
   padding: 20px 40px;
   position: fixed;
   width: 100%;
@@ -25,6 +25,10 @@ nav {
 
   a:hover {
     color: rgb(83, 188, 145);
+  }
+
+  @media (max-width: 550px) {
+    text-align: center;
   }
 }
 

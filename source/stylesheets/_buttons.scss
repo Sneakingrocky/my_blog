@@ -13,6 +13,11 @@
     color: $white;
     cursor: pointer;
   }
+
+  @media (max-width: 550px) {
+    margin-bottom: 5px;
+    width: 100%;
+  }
 }
 
 .section-buttons {
