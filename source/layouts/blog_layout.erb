@@ -14,15 +14,15 @@
         <div class="article-body"><%= yield %></div>
       </div>
 
-      <div class= "read-more">
+      <div class= "read-more margin-top">
         <% previous_article = current_article.previous_article %>
         <% if previous_article %>
-          <%= link_to "← #{previous_article.title}", previous_article %>
+          <%= link_to "← #{previous_article.title}", previous_article,class: "left submit-button" %>
         <% end %>
 
         <% next_article = current_article.next_article %>
         <% if next_article %>
-          <%= link_to "#{next_article.title} →", next_article, class: "right" %>
+          <%= link_to "#{next_article.title} →", next_article, class: "right submit-button" %>
         <% end %>
       </div>
       <div class="footer"></div>

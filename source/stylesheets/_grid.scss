@@ -19,6 +19,10 @@
 .content-container {
   margin: 0 auto;
   padding: 100px 40px;
+
+  @media (max-width: $medium_width) {
+    padding: 130px 40px;
+  }
 }
 
 .row {
