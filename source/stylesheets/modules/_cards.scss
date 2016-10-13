@@ -21,8 +21,9 @@
   }
 }
 
-.card .card-section {
+.card-section {
   border-top: 1px solid #E4E3E3;
+  color: grey;
   margin: 0px;
   padding: 0px 15px;
   padding-top: 1.5em;
@@ -47,5 +48,5 @@
 .card-section__title {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.1em;
-  margin-bottom: .5em;
+  margin-bottom: 0;
 }

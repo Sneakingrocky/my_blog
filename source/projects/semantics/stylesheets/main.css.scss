@@ -55,7 +55,6 @@ a {
     color: #3F3F3F;
   }
 
- 
   &:hover {
     color: #FF6A00;
 
@@ -114,7 +113,7 @@ figcaption {
     width: 50%;
     float: left;
     padding: 0 25px;
-  }    
+  }
 }
 
 .container {
@@ -141,7 +140,7 @@ nav.top-nav {
     padding: 0 20px;
     display: block;
     line-height: 60px;
-  }  
+  }
 }
 
 
@@ -151,14 +150,14 @@ nav.top-nav {
   font-family: "cantiga",sans-serif;
   font-size: 2.5em;
   line-height: 60px;
-}  
+}
 
 
-#hero { 
+#hero {
   background-image: url("../images/Design.png");
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 60vh;
   position: relative;
 }
 
@@ -177,7 +176,7 @@ nav.top-nav {
 }
 
 .byline {
-  font-family: "bookmania",serif; 
+  font-family: "bookmania",serif;
   font-size: 1em;
   font-weight: 300;
   color: #848484;
