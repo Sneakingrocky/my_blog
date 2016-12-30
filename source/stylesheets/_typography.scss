@@ -22,3 +22,35 @@
   text-align: center;
 
 }
+
+.hero__title {
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.1em;
+
+  @media (max-width: $medium_width) {
+    font-size: 2em;
+  }
+}
+
+.section__title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 .5em 0;
+}
+
+.section__subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 .5em 0;
+}
+
+.section__number {
+  color: #ddd;
+}
+
+

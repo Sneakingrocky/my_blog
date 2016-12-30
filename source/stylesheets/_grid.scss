@@ -42,6 +42,10 @@
   &.end {
     float: right;
   }
+
+  @media (max-width: $medium_width) {
+    padding: 0;
+  }
 }
 
 .row.collapse {

@@ -1,19 +1,35 @@
+//Sections
+
+.section {
+  padding: 6em 2em;
+  border-bottom: 1px solid $light_gray;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.section__image {
+  width: 100%;
+}
+
+.section__header {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .section--textured {
   background-image: image-url("gridme.png");
   background-repeat: repeat;
   height: 100vh;
 }
 
-.hero {
-  background-size: cover;
-  margin-top: -10px;
-  width: 100%;
-  z-index: -1;
-
-  img {
-    display: block;
-    width: 100%;
-  }
+.section--light {
+  background: $off_white;
 }
 
 .divider {
@@ -29,8 +45,9 @@
   border-radius: 6px 6px 0 0;
   position: relative;
   overflow: hidden;
-  padding-bottom: 50%; /* here the desired aspect ratio */
+  padding-bottom: 50%; /* desired aspect ratio */
 }
+
 .item-image img {
   position: absolute;
   top: 0;
