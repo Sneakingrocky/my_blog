@@ -22,6 +22,23 @@
   margin: 0 auto;
 }
 
+.section__header-wrapper {
+  padding-top: 4em;
+}
+
+.section__category {
+  background: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #757575;
+  font-family: "omnes-pro",sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  padding: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .section--textured {
   background-image: image-url("gridme.png");
   background-repeat: repeat;

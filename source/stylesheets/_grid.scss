@@ -18,11 +18,21 @@
 
 .content-container {
   margin: 0 auto;
-  padding: 100px 40px;
+  padding: 8rem 6rem;
 
   @media (max-width: $medium_width) {
-    padding: 130px 40px;
+    padding: 10rem 2rem;
   }
+}
+
+.content-container--no-padding {
+  margin: 0 auto;
+  padding: 2rem 6rem;
+
+  @media (max-width: $medium_width) {
+    padding: 2rem 3rem;
+  }
+
 }
 
 .row {
