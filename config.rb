@@ -73,6 +73,9 @@ helpers do
   end
 end
 
+require "lib/helpers/project_helpers"
+helpers ProjectHelpers
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
