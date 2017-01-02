@@ -1,0 +1,15 @@
+<div class="project-footer">
+  <div class="content-container">
+    <h3 class="project-footer__title">Other Work</h3>
+    <section class="row">
+      <% projects.each do |project_slug| %>
+        <div class="column large-6">
+          <%= project_preview(project_slug) %>
+        </div>
+      <% end %>
+    </section>
+    <a class="submit-button button-wide" href="/projects/">
+      View All Projects
+    </a>
+  </div>
+</div>
