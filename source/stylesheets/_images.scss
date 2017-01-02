@@ -17,6 +17,10 @@
   display: block;
   padding: 5em 0;
 
+  &.goals {
+    background-image: url("../images/portfolio/jellybeans/goals.jpg");
+  }
+
   &.sky {
     background-image: url("../images/portfolio/thesocreports/sky.png");
   }
