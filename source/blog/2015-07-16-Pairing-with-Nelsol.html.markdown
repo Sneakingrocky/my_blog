@@ -4,9 +4,6 @@ date: 2015-07-16 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day4.png)
-
-
 Today I paired with my mentor, Nelsol. Through this experience I was able to truly get a feel of what a normal day for a designer at 8th Light might look like.
 
 Since Nelsol and I were going to be joining the team I worked with yesterday for their iteration planning meeting and design session I caught Nelsol up on the new feature that the team was looking to add based on user input & data. The proposed feature was a search for the App (Global or specific has yet to be decided yet).

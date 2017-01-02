@@ -4,8 +4,6 @@ date: 2015-07-17 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day5.png)
-
 After a long day yesterday it was nice to have a more relaxing day today. I treated myself to Starbucks Chai Tea Latte like I do most Fridays to reward myself for another good week. I had the first part of the day to set up my computer for the internal iOS app that Eric and I would be working on the second portion of the day. I installed the latest version of Xcode, pulled the repos i’d need for the project from Github and started to read documentation on that I thought might be helpful for building the app. I also used this time to work on a few business cards for the London Craftsman.
 
 After a successful week 2 company stand up, Eric and Emmanuel explained the app that the group had been working on - an internal ping pong queue named “Slam”. They then showed me the features that they had already developed.

@@ -4,8 +4,6 @@ date: 2015-07-14 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day2.png)
-
 Today I paired with Kyle, 8th Light’s writer. Although we didn’t write a single line of code together I learned a lot about all of the hard work Kyle does behind the scenes to make 8th Light a special place.
 
 To start off our day Kyle and I worked on reviewing and editing a blog post submission by another Craftsman. 8th Light encourages their employees to write and talk about their passions, technical, and non-technical topics. Sometimes its not always easy for people to express their thoughts into a cohesive blog or talk. That is where Kyle comes in to help everyone produce something they can feel proud of by making sure the flow of the piece makes sense and that grammatical errors are obsolete.

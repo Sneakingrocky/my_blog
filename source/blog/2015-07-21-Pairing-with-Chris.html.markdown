@@ -4,8 +4,6 @@ date: 2015-07-21 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day7.png)
-
 Today I was able to step back into my comfort zone as a designer. I worked with Chris on the same application that I was working on with Malcolm & Craig yesterday. I was excited to fix up some of the unstyled work that I saw yesterday that needed some love.
 
 After our team stand-up Chris showed me a page that he had worked on the day before. He had already put together some great styles that we could carry into the forms, lists, buttons, etc for our current page. He also showed me the grid that he had made and was testing out based off of the BEM (Block, Element, Modifier) naming convention. Since CSS can quickly become a spaghetti mess with hot glue instead of spaghetti sauce, the designers at 8th Light and conscientious designers everywhere are constantly testing and looking to create maintainable CSS with limited dependencies. It was cool to see how Chris was trying to make improvements to his code by carrying these conventions into his grid.

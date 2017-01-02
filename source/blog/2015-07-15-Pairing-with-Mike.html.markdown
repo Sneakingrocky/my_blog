@@ -4,8 +4,6 @@ date: 2015-07-15 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day3.png)
-
 Today I paired with Mike D on an iOS app project. I was excited to work with Mike because we’ve always had great conversations at lunch but I haven’t had the opportunity to work on his project during my apprenticeship. He also did a great job helping out with a group of visitors from Mobile Makers yesterday -- all of the kids were entranced while he talked about his daily activities as one of our main iOS developers.
 
 To start things off Mike took me through the app and all of its current features. We worked through a couple of the support tickets and talked about some of the current user pain points that the team was looking to improve on.

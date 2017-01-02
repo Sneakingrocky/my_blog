@@ -4,8 +4,6 @@ date: 2015-07-24 03:53 UTC3
 tags: pairing tour, daily life
 ---
 
-![Pairing Calendar](/images/Tour_calendar_dayten.png)
-
 The last day of my pairing tour was a busy one! In the morning I worked on more business cards for London and organizing all of the files for our seperate offices.
 
 After lunch Eric took Nelsol and I through a client project that is looking to improve the user experience and design of their app. As Eric took us through the project I could immediately see things that Nelsol and I could do to make the application more user friendly. I honestly wish that I could design the entire thing from the ground up but that’s not in the cards. I also think this project would benefit greatly by speaking with the users so we could eliminate a lot of the noise and unneeded material within the app.

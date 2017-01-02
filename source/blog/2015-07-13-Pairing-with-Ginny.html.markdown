@@ -4,9 +4,6 @@ date: 2015-07-13 03:53 UTC3
 tags: pairing tour
 ---
 
-
-![Pairing Calendar](/images/Tour_calendar_day1.png)
-
 For my first day of pairing I paired with Ginny and the studio team - Mike E., Sylwia, and Diana who is our newest Craftswoman. We started out our day with our daily standup to discuss what each person worked on on Friday, if they had any “blockers”, what they were planning on working on that day, and what features were most urgent.
 
 After standup, Ginny, Slywia, Diana, and I started working on a priority feature for a client project that is launching very soon. We were creating a form which would process and supply the user with a code that they would need to then copy. In order to make the user-experience better we wanted to have the code automatically highlighted when it appeared. In order to do this the team used Javascript which they could place right into the html:

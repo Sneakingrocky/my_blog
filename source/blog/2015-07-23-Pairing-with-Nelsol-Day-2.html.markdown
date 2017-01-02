@@ -4,9 +4,6 @@ date: 2015-07-23 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day9.png)
-
-
 Today was my second day pairing with my mentor, Nelsol. We started off the day working on some print collateral for a client. I’m very comfortable working with the Adobe Creative Suite and print materials so this project was right up my alley. The downer was that we were on a tight deadline so I tried my best to keep composure, remain calm, and have fun regardless of the tight deadline.
 
 Our workflow was constantly broken up with client meetings, messages from other project members, and questions from internal members. We worked together to stay on task and once we were comfortable with the print we sent it to the client and the printer to get their feedback.

@@ -4,8 +4,6 @@ date: 2015-07-20 03:53 UTC3
 tags: pairing tour
 ---
 
-![Pairing Calendar](/images/Tour_calendar_day6-2.png)
-
 Today I paired with Malcolm and Craig on an ASP.net project written in C#. I had never worked in those environments nor had I worked within Microsoft Visual Studio so it was like I was in a foreign country. However I did my best to follow along, help, and learn as much as I could.
 
 After the team’s daily stand up, Malcolm took some time to catch me up on the details of the project that we would be working on. He explained that we would be working on changing the structure of the way the backend was currently handling a process in order to better execute the end desired behavior. He took me through the white boarded diagram of the old system as well as the new system and explained how everything would work with our added changes. Because i’m a visual learner, this was a great way to put everything into context. And as he went through the diagram I couldn’t help but think about how disciplined craftsman must be to constantly bite the bullet and grow & change their software in order to reach the best possible solution.
