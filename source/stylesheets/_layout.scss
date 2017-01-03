@@ -24,7 +24,11 @@
 }
 
 .section__header-wrapper {
-  padding-top: 4em;
+  padding-top: 76px;
+
+  .section__category {
+    margin-top: 0;
+  }
 }
 
 .section__category {
