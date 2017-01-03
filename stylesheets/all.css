@@ -509,9 +509,12 @@
 
 /* line 26, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section__header-wrapper {
-  padding-top: 4em; }
+  padding-top: 76px; }
+  /* line 29, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+  .section__header-wrapper .section__category {
+    margin-top: 0; }
 
-/* line 30, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 34, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section__category {
   background: #f5f5f5;
   border-top: 1px solid #eee;
@@ -524,17 +527,17 @@
   text-transform: uppercase;
   text-align: center; }
 
-/* line 43, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 47, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section--textured {
   background-image: url("/images/gridme.png");
   background-repeat: repeat;
   height: 100vh; }
 
-/* line 49, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 53, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section--light {
   background: #fdfdfd; }
 
-/* line 53, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 57, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .divider {
   background: #E8E8E8;
   display: block;
@@ -543,7 +546,7 @@
   width: 100%; }
 
 /* item styles */
-/* line 62, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 66, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .item-image {
   border-radius: 6px 6px 0 0;
   position: relative;
@@ -551,7 +554,7 @@
   padding-bottom: 50%;
   /* desired aspect ratio */ }
 
-/* line 69, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+/* line 73, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .item-image img {
   position: absolute;
   top: 0;
