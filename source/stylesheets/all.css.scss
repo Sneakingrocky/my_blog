@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import "partials/nav";
-@import "partials/project_footer";
 @import "variables";
 @import "responsive";
 @import "grid";
@@ -14,3 +12,5 @@
 @import "buttons";
 @import "base";
 @import "modules/cards";
+@import "partials/nav";
+@import "partials/project_footer";

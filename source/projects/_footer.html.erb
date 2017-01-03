@@ -1,15 +1,23 @@
 <div class="project-footer">
-  <div class="content-container">
-    <h3 class="project-footer__title">Other Work</h3>
-    <section class="row">
-      <% projects.each do |project_slug| %>
-        <div class="column large-6">
-          <%= project_preview(project_slug) %>
+  <h3 class="project-footer__title">Other Work</h3>
+  <section class="row">
+    <% projects.each do |project_slug| %>
+      <div class="column large-4">
+        <%= project_preview(project_slug) %>
+      </div>
+    <% end %>
+
+    <div class="column large-4">
+      <a href="/projects/">
+        <div class="card">
+          <div class="item-image">
+            <img src="/images/portfolio/arrow.jpg" class="card__image"/>
+          </div>
+          <div class="card-section">
+            <p class="card-section__title">View All Projects</p>
+          </div>
         </div>
-      <% end %>
-    </section>
-    <a class="submit-button button-wide" href="/projects/">
-      View All Projects
-    </a>
-  </div>
+      </a>
+    </div>
+  </section>
 </div>
