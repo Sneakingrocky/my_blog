@@ -1,256 +1,247 @@
-/* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-nav {
-  background-color: white;
-  height: 45px;
-  width: 100%; }
-  /* line 6, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-  nav ul {
-    display: inline-block;
-    margin-bottom: em(10); }
-  /* line 11, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-  nav li {
-    display: block;
-    float: left;
-    padding: 0; }
-  /* line 17, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-  nav a {
-    display: block;
-    line-height: 45px; }
-  /* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-  nav a:hover {
-    color: #53bc91; }
-
-/* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-.logo {
-  color: grey;
-  font-size: 1.4em;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-left: 17px; }
-
-/* line 35, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/partials/_nav.scss */
-.nav-links {
-  color: grey;
-  font-size: 1em;
-  font-weight: 500;
-  padding: 0 1em;
-  text-decoration: none; }
-
-/* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+@charset "UTF-8";
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
 .hide-for-small-only {
   display: none; }
   @media (min-width: 640px) {
-    /* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+    /* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
     .hide-for-small-only {
       display: block; } }
 
 @media (min-width: 1024px) {
-  /* line 9, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+  /* line 9, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
   .hide-for-large-only {
     display: none; } }
 
 @media (min-width: 640px) {
-  /* line 15, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+  /* line 15, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
   .show-for-small-only {
     display: none; } }
 
-/* line 21, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+/* line 21, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
 .show-for-large-up {
   display: none; }
   @media (min-width: 1024px) {
-    /* line 21, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_responsive.scss */
+    /* line 21, /Users/ericagarcia/projects/my_blog/source/stylesheets/_responsive.scss */
     .show-for-large-up {
       display: block; } }
 
-/* line 10, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 9, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 * {
   box-sizing: border-box; }
 
-/* line 14, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 13, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .container {
   margin: 0 auto;
   max-width: 800px;
   padding: 0 1.5em; }
 
-/* line 3, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 19, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
+.content-container {
+  margin: 0 auto;
+  padding: 8rem 6rem; }
+  @media (max-width: 640px) {
+    /* line 19, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
+    .content-container {
+      padding: 10rem 2rem; } }
+
+/* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
+.content-container--no-padding {
+  margin: 0 auto;
+  padding: 2rem 6rem; }
+  @media (max-width: 640px) {
+    /* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
+    .content-container--no-padding {
+      padding: 2rem 3rem; } }
+
+/* line 2, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .row:after {
   content: "";
   display: table;
   clear: both; }
-/* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 40, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .row:not(.collapse) {
   margin-left: -1.5em;
   margin-right: -1.5em; }
 
-/* line 28, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 46, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column {
   float: left;
   padding: 0 1.5em;
   position: relative;
   width: 100%; }
-  /* line 35, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 52, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.end {
     float: right; }
+  @media (max-width: 640px) {
+    /* line 46, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
+    .column {
+      padding: 0; } }
 
-/* line 41, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 62, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .row.collapse .column {
   padding: 0; }
 
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-1 {
   width: 8.33333%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-2 {
   width: 16.66667%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-3 {
   width: 25%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-4 {
   width: 33.33333%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-5 {
   width: 41.66667%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-6 {
   width: 50%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-7 {
   width: 58.33333%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-8 {
   width: 66.66667%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-9 {
   width: 75%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-10 {
   width: 83.33333%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-11 {
   width: 91.66667%; }
-/* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .column.small-12 {
   width: 100%; }
 
 @media (min-width: 640px) {
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-1 {
     width: 8.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-2 {
     width: 16.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-3 {
     width: 25%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-4 {
     width: 33.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-5 {
     width: 41.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-6 {
     width: 50%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-7 {
     width: 58.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-8 {
     width: 66.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-9 {
     width: 75%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-10 {
     width: 83.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-11 {
     width: 91.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.medium-12 {
     width: 100%; } }
 @media (min-width: 1024px) {
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-1 {
     width: 8.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-2 {
     width: 16.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-3 {
     width: 25%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-4 {
     width: 33.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-5 {
     width: 41.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-6 {
     width: 50%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-7 {
     width: 58.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-8 {
     width: 66.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-9 {
     width: 75%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-10 {
     width: 83.33333%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-11 {
     width: 91.66667%; }
-  /* line 49, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_grid.scss */
+  /* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
   .column.large-12 {
     width: 100%; } }
-/* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
 .article {
-  font-size: 20px; }
-  /* line 4, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  font-size: 1rem;
+  line-height: 1.9rem; }
+  /* line 5, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article h3.article-title {
     font-size: 1.5em;
     font-weight: normal;
     margin-bottom: 10px;
     text-transform: uppercase; }
-    /* line 10, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+    /* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
     .article h3.article-title, .article h3.article-title a, .article h3.article-title a:visited {
       color: #4e6d82; }
-    /* line 13, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+    /* line 14, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
     .article h3.article-title a:hover {
-      color: #446072; }
+      color: #53bc91; }
+  /* line 19, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+  .article img {
+    max-width: 100%; }
 
-/* line 19, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 23, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
 .article-body {
-  font-size: .85em; }
-  /* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  border-top: 1px solid #f0f0f2;
+  line-height: 1.9rem;
+  padding-top: 3rem; }
+  /* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body h2, .article-body h3, .article-body h4 {
     margin-top: 50px;
     font-weight: normal; }
-  /* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 33, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body h2 {
     font-size: 1.3em; }
-  /* line 31, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 37, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body h3 {
     font-size: 1.2em; }
-  /* line 35, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 41, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body h4 {
     font-size: 1.1em;
     margin-bottom: 10px; }
-  /* line 40, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 46, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body img {
     max-width: 100%;
     margin: 5px; }
-  /* line 45, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 51, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body code {
     color: #0d115a;
     font-size: 0.75em;
     background: #eee;
     padding: 4px; }
-  /* line 52, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 58, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .article-body pre {
     background: #eee;
     padding: 10px;
@@ -258,80 +249,199 @@ nav {
     word-wrap: normal;
     overflow: auto; }
 
-/* line 62, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.date {
-  font-size: 0.75em; }
-
-/* line 66, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+/* line 68, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
 .teal-link {
   color: #45b29d;
   font-size: 1em;
   text-decoration: none;
   padding-bottom: 50px; }
-  /* line 72, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 74, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .teal-link, .teal-link a, .teal-link a:visited {
     color: #45b29d; }
-  /* line 75, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
+  /* line 77, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
   .teal-link a:hover {
     color: #3ea08d; }
 
-/* line 80, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-.read-more {
-  color: #45b29d;
-  font-size: 1em;
-  text-decoration: none;
-  padding-top: 50px;
-  padding-bottom: 100px; }
-  /* line 87, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-  .read-more, .read-more a, .read-more a:visited {
-    color: #45b29d; }
-  /* line 90, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_blog.scss */
-  .read-more a:hover {
-    color: #3ea08d; }
+/* line 82, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+.meta {
+  padding-bottom: 3rem;
+  line-height: 1.5;
+  text-align: center; }
 
-/* line 1, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
-* {
-  box-sizing: border-box; }
+/* line 88, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+.meta__author {
+  display: inline-block;
+  line-height: 1.3;
+  position: relative; }
 
-/* line 6, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
-.clearfix:after, .container:after {
-  content: "";
-  display: table;
-  clear: both; }
+/* line 94, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+.meta__author::after {
+  content: "–"; }
 
-/* line 13, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
-img.project-border {
-  max-width: 100%;
-  position: center;
-  border: 5px solid rgba(150, 150, 150, 0.2); }
+/* line 98, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+.meta__date {
+  color: #9095A4;
+  font-size: .8rem; }
+  /* line 102, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+  .meta__date:after {
+    content: "–-";
+    margin: 0 0.5rem; }
 
-/* line 19, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
-h3.project-title a {
-  color: #4e6d82;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-bottom: 10px;
+/* line 108, /Users/ericagarcia/projects/my_blog/source/stylesheets/_blog.scss */
+.meta__tag-list {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  list-style: none;
+  text-align: center;
   text-transform: uppercase; }
 
-/* line 27, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/_projects.scss */
-p.project-description {
-  font-size: 1.1em; }
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+.gallery {
+  position: absolute;
+  bottom: 1.428vw;
+  left: 0;
+  right: 0; }
 
-/* line 10, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 8, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+.gallery__link {
+  box-sizing: content-box;
+  float: left;
+  opacity: 0;
+  padding-left: 1.428%;
+  position: relative;
+  top: -80px;
+  transition: opacity 1s, top 0.5s;
+  width: 15%; }
+  /* line 18, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+  .gallery__link:last-child {
+    padding-right: 1.428%; }
+  /* line 22, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+  .gallery__link.animated-in {
+    opacity: 1;
+    top: 0; }
+  /* line 27, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+  .gallery__link:hover.animated-in {
+    top: -20px; }
+  /* line 31, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+  .gallery__link img {
+    width: 100%;
+    display: block; }
+
+/* line 37, /Users/ericagarcia/projects/my_blog/source/stylesheets/_gallery.scss */
+.gallery__image {
+  margin-right: 5px;
+  margin-top: 0;
+  padding: 5px;
+  width: 16.3%; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.hero {
+  background-size: cover;
+  margin-top: -10px;
+  width: 100%;
+  z-index: -1; }
+  /* line 7, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .hero img {
+    display: block;
+    width: 100%; }
+
+/* line 13, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.hero__image {
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  display: block;
+  padding: 5em 0; }
+  /* line 20, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .hero__image.goals {
+    background-image: url("../images/portfolio/jellybeans/goals.jpg"); }
+  /* line 24, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .hero__image.sky {
+    background-image: url("../images/portfolio/thesocreports/sky.png"); }
+  /* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .hero__image.office {
+    background-image: url("../images/portfolio/careerpage/office_space.jpg"); }
+
+/* line 34, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.background-image {
+  background-image: none;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 3rem 0;
+  width: 100%; }
+  /* line 41, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .background-image.socreports {
+    background-image: url("../images/portfolio/thesocreports/posts_with_hashtags.png");
+    background-position: 0% 10%;
+    background-position: 80% -100%;
+    background-size: 20%;
+    height: 443px; }
+  /* line 49, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .background-image.data {
+    background-image: url("../images/portfolio/thesocreports/data.svg");
+    background-position: 0% 10%;
+    background-position: 80% -100%;
+    background-size: 20%;
+    height: 443px; }
+
+/* line 61, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.header__logo {
+  background: url("../images/portfolio/thesocreports/thesocreports_logo.png") no-repeat;
+  background-size: contain;
+  border: 0;
+  display: block;
+  height: 60px;
+  width: 210px; }
+  /* line 69, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .header__logo img {
+    border: 0; }
+
+/* line 76, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.header__icon {
+  padding-bottom: 1em;
+  width: 3em; }
+
+/* line 2, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.right {
+  float: right; }
+
+/* line 6, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.left {
+  float: left; }
+
+/* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.margin-right {
+  margin-right: 15px; }
+
+/* line 15, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.margin-top {
+  margin-top: 3em; }
+
+/* line 20, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.center {
+  text-align: center; }
+
+/* line 25, /Users/ericagarcia/projects/my_blog/source/stylesheets/_utilities.scss */
+.no-border {
+  border: none; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .title h1 {
-  color: #53bc91;
+  color: #7CD3C8;
   font-family: "chaparral-pro",sans-serif;
   font-size: 5em;
   font-weight: 400;
   line-height: 1.2em;
   letter-spacing: 2px;
-  margin: 0 auto;
-  padding-top: 3em;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 15%;
   text-align: center; }
 
-/* line 22, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 14, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .subtitle {
-  color: grey;
+  color: #9095A4;
   font-family: "chaparral-pro",sans-serif;
   font-size: 1.2em;
   font-weight: 400;
@@ -340,173 +450,340 @@ p.project-description {
   margin: 0 auto;
   text-align: center; }
 
-/* ==========================================================================
-   Card
-   ========================================================================== */
-/* line 39, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.card {
-  border: 1px solid #E4E3E3;
-  border-bottom-width: 3px;
-  padding: 0px;
-  margin-bottom: 50px;
+/* line 26, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.hero__title {
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.1em; }
+  @media (max-width: 640px) {
+    /* line 26, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    .hero__title {
+      font-size: 2em; } }
+
+/* line 38, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.hero__title--transparent {
+  background: black;
+  padding: .5em;
+  opacity: .7; }
+
+/* line 44, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.section__title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0 0 .5em 0; }
+
+/* line 51, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.section__subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 .5em 0; }
+
+/* line 58, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.section__number {
+  color: #ddd; }
+
+/* line 3, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section {
+  padding: 6em 2em;
+  border-bottom: 1px solid #E8E8E8; }
+  /* line 7, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+  .section:first-child {
+    padding-top: 0; }
+  /* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+  .section:last-child {
+    border-bottom: none; }
+
+/* line 16, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section__image {
+  max-width: 100%;
   width: 100%; }
-  /* line 46, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-  .card img {
-    display: block; }
-  /* line 50, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-  .card a {
-    color: inherit;
-    text-decoration: none; }
 
-/* line 57, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.card .card-section {
-  border-top: 1px solid #E4E3E3;
-  margin: 0px;
-  padding: 0px 15px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+/* line 21, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section__header {
+  max-width: 680px;
+  margin: 0 auto; }
+
+/* line 26, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section__header-wrapper {
+  padding-top: 4em; }
+
+/* line 30, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section__category {
+  background: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #757575;
+  font-family: "omnes-pro",sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  padding: 1.2rem;
+  text-transform: uppercase;
   text-align: center; }
-  /* line 65, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-  .card .card-section :first-child {
-    margin-top: 0; }
 
-/* line 70, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.card__image {
-  max-width: 100%; }
+/* line 43, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section--textured {
+  background-image: url("/images/gridme.png");
+  background-repeat: repeat;
+  height: 100vh; }
 
-/* line 74, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.card__name {
-  font-family: "omnes-pro",sans-serif;
-  font-size: 1.4em;
-  line-height: 1.3em; }
+/* line 49, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.section--light {
+  background: #fdfdfd; }
 
-/* line 80, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.card-section__title {
-  font-family: "omnes-pro",sans-serif;
-  font-size: 1.1em;
-  margin-bottom: .5em; }
-
-/* line 91, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.hero {
-  background-size: cover;
-  margin-top: -10px;
-  width: 100%;
-  z-index: -1; }
-  /* line 97, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-  .hero img {
-    display: block;
-    width: 100%; }
-
-/* line 103, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-body {
-  background: white;
-  color: #4b4b4b; }
-
-/* line 108, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-/* line 114, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-a {
-  color: #45b29d;
-  text-decoration: none; }
-
-/* line 119, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-p {
-  font-family: "lato",sans-serif;
-  line-height: 1.5em; }
-
-/* line 124, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.content-container {
-  margin: 0 auto;
-  padding: 50px 10px; }
-
-/* line 129, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.mobile-bio {
-  color: #4e6d82;
-  font-family: "lato",sans-serif;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin-top: 30px;
-  text-align: left; }
-
-/* line 138, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.blog-divider {
-  background: #e8e8e8;
+/* line 53, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.divider {
+  background: #E8E8E8;
   display: block;
   height: 1px;
   margin: 1.25em 0 0 0;
   width: 100%; }
 
-/* line 146, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* item styles */
+/* line 62, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.item-image {
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%;
+  /* desired aspect ratio */ }
+
+/* line 69, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
+.item-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_forms.scss */
 .placeholder {
   padding-left: 50px; }
 
-/* line 150, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.circle-text {
-  width: 400px;
-  position: absolute;
-  top: 30%;
-  left: 15%; }
-
-/* line 157, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.circle-text:after {
-  content: "";
-  background-color: rgba(51, 77, 92, 0.9);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  border-radius: 50%; }
-
-/* line 168, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.circle-text div {
-  color: white;
-  font-family: "lato",sans-serif;
-  font-size: 1.4em;
-  float: left;
-  width: 90%;
-  padding-top: 30%;
-  padding-left: 10%;
-  line-height: 1.5em;
-  margin-top: -0.5em;
-  text-align: left; }
-  /* line 180, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-  .circle-text div a {
-    color: #45b29d;
-    text-decoration: none; }
-
-/* line 186, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.quote-color {
-  color: #969696; }
-
-/* line 190, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.right {
-  float: right; }
-
-/* line 195, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_buttons.scss */
 .submit-button {
-  background: transparent;
-  border: 2px solid #53bc91;
-  color: grey;
+  background: white;
+  border: 2px solid #7CD3C8;
+  border-radius: 3px;
+  color: #9095A4;
   font-family: "lato",sans-serif;
   margin: 0;
-  padding: 0.5rem 1rem; }
-  /* line 203, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+  padding: .8rem 3rem;
+  transition: background 0.3s, color 0.3s; }
+  /* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/_buttons.scss */
   .submit-button:hover {
-    background: #53bc91;
-    color: #FFF;
+    background: #7CD3C8;
+    color: white;
     cursor: pointer; }
+  @media (max-width: 550px) {
+    /* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_buttons.scss */
+    .submit-button {
+      margin-bottom: 5px;
+      width: 100%; } }
 
-/* line 210, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
+/* line 23, /Users/ericagarcia/projects/my_blog/source/stylesheets/_buttons.scss */
 .section-buttons {
   text-align: center;
   margin-top: 50px; }
 
-/* line 215, /Users/EricaGarcia/projects/MyBlog/source/stylesheets/all.css.scss */
-.margin-right {
-  margin-right: 15px; }
+/* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_buttons.scss */
+.button-wide {
+  display: block;
+  text-align: center; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+body {
+  background: white;
+  color: #4b4b4b;
+  line-height: 1.9rem; }
+
+/* line 7, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+img {
+  border: 0; }
+
+/* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 17, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+a {
+  color: #45b29d;
+  text-decoration: none; }
+
+/* line 22, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+p {
+  font-family: "lato",sans-serif; }
+
+/* line 26, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #99BABE;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+
+/* line 34, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+blockquote:before {
+  color: #f9f9f9;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+/* line 43, /Users/ericagarcia/projects/my_blog/source/stylesheets/_base.scss */
+blockquote p {
+  display: inline; }
+
+/* ==========================================================================
+   Card
+   ========================================================================== */
+/* line 6, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card {
+  background: none;
+  border: 1px solid #E4E3E3;
+  border-radius: 6px;
+  padding: 0px;
+  margin-bottom: 2em;
+  width: 100%; }
+  /* line 14, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+  .card img {
+    border-radius: 6px 6px 0 0;
+    display: block; }
+  /* line 19, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+  .card a {
+    color: inherit;
+    text-decoration: none; }
+
+/* line 25, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card-section {
+  background: #fff;
+  border-top: 1px solid #E4E3E3;
+  color: grey;
+  margin: 0px;
+  padding: 0px 15px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center; }
+  /* line 35, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+  .card-section :first-child {
+    margin-top: 0; }
+
+/* line 40, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__image {
+  cursor: hand;
+  cursor: pointer;
+  width: 100%; }
+
+/* line 46, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__name {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.4em;
+  line-height: 1.3em; }
+
+/* line 52, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card-section__title {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 0; }
+
+/* ==========================================================================
+   Card List
+   ========================================================================== */
+/* line 62, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__list {
+  background: none;
+  border: 1px solid #E4E3E3;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: .8em;
+  margin-bottom: 1em;
+  width: 100%; }
+
+/* line 72, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__list--green-border {
+  border-left: 3px solid #BACCB9; }
+
+/* line 76, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__list--blue-border {
+  border-left: 3px solid #27A8E0; }
+
+/* line 80, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__list--dark-green-border {
+  border-left: 3px solid #576A67; }
+
+/* line 84, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__list--light-grey {
+  border-left: 3px solid #eee; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+.nav {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  min-height: 75px;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  /* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  .nav ul {
+    display: inline-block;
+    margin-bottom: em(10); }
+  /* line 16, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  .nav li {
+    display: block;
+    float: left;
+    padding: 0; }
+  /* line 22, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  .nav a {
+    display: block;
+    line-height: 45px; }
+  /* line 27, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  .nav a:hover {
+    color: #53bc91; }
+  @media (max-width: 550px) {
+    /* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+    .nav {
+      text-align: left; } }
+
+/* line 36, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+.logo {
+  color: #595959;
+  font-family: "chaparral-pro",sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media (max-width: 550px) {
+    /* line 36, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+    .logo {
+      font-size: 1em; } }
+
+/* line 50, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+.nav-links {
+  color: grey;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0 1em;
+  text-decoration: none; }
+
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_project_footer.scss */
+.project-footer {
+  background: #f1f1f1;
+  padding: 1rem 6rem; }
+  @media (max-width: 640px) {
+    /* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_project_footer.scss */
+    .project-footer {
+      padding: 1rem 2rem; } }
+
+/* line 10, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_project_footer.scss */
+.project-footer__title {
+  font-weight: normal; }

@@ -107,13 +107,14 @@ section {
 
 /* line 117, ../projects/assessment/stylesheets/main.css.scss */
 #hero {
-  background-image: url("../images/wood_texture.png");
+  background-image: url("../images/wood_texture-progressive.jpg");
   background-size: cover;
+  height: 100vh;
   width: 100%;
   display: block;
   padding: 5em 0; }
 
-/* line 125, ../projects/assessment/stylesheets/main.css.scss */
+/* line 126, ../projects/assessment/stylesheets/main.css.scss */
 .content-divider {
   background: #e8e8e8;
   display: block;
@@ -128,7 +129,7 @@ section {
   0% {
     stroke-dashoffset: 0; } }
 /* Container */
-/* line 137, ../projects/assessment/stylesheets/main.css.scss */
+/* line 138, ../projects/assessment/stylesheets/main.css.scss */
 .progress {
   position: relative;
   display: inline-block;
@@ -136,7 +137,7 @@ section {
   text-align: center; }
 
 /* Item */
-/* line 144, ../projects/assessment/stylesheets/main.css.scss */
+/* line 145, ../projects/assessment/stylesheets/main.css.scss */
 .progress > li {
   display: inline-block;
   position: relative;
@@ -145,7 +146,7 @@ section {
   font-family: "jaf-bernina-sans-condensed",sans-serif;
   margin: 2rem; }
 
-/* line 152, ../projects/assessment/stylesheets/main.css.scss */
+/* line 153, ../projects/assessment/stylesheets/main.css.scss */
 .progress > li:before {
   content: attr(skill);
   position: absolute;
@@ -153,7 +154,7 @@ section {
   bottom: -2rem;
   font-weight: 400; }
 
-/* line 159, ../projects/assessment/stylesheets/main.css.scss */
+/* line 160, ../projects/assessment/stylesheets/main.css.scss */
 .progress > li:after {
   content: attr(rating);
   position: absolute;
@@ -163,24 +164,24 @@ section {
   font-size: 5rem;
   text-align: center; }
 
-/* line 168, ../projects/assessment/stylesheets/main.css.scss */
+/* line 169, ../projects/assessment/stylesheets/main.css.scss */
 .progress svg {
   width: 100%;
   height: 10rem;
   fill: none;
   stroke-width: 6; }
 
-/* line 176, ../projects/assessment/stylesheets/main.css.scss */
+/* line 177, ../projects/assessment/stylesheets/main.css.scss */
 .web-development .progress svg.circle path {
   stroke: #8CBEB2; }
-/* line 180, ../projects/assessment/stylesheets/main.css.scss */
+/* line 181, ../projects/assessment/stylesheets/main.css.scss */
 .design .progress svg.circle path {
   stroke: #F3B562; }
-/* line 184, ../projects/assessment/stylesheets/main.css.scss */
+/* line 185, ../projects/assessment/stylesheets/main.css.scss */
 .personal-skills .progress svg.circle path {
   stroke: #F06060; }
 
-/* line 189, ../projects/assessment/stylesheets/main.css.scss */
+/* line 190, ../projects/assessment/stylesheets/main.css.scss */
 .progress svg.circle-mask {
   position: absolute;
   left: 0;
@@ -190,7 +191,7 @@ section {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg); }
 
-/* line 198, ../projects/assessment/stylesheets/main.css.scss */
+/* line 199, ../projects/assessment/stylesheets/main.css.scss */
 .progress svg.circle-mask path {
   stroke-dasharray: 629;
   stroke: #fff;
