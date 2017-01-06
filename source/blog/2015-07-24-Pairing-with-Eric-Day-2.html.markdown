@@ -2,6 +2,7 @@
 title: Pairing with Eric Day 2
 date: 2015-07-24 03:53 UTC3
 tags: pairing tour, daily life
+published: false
 ---
 
 The last day of my pairing tour was a busy one! In the morning I worked on more business cards for London and organizing all of the files for our seperate offices.

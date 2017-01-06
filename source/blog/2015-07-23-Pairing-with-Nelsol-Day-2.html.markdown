@@ -2,6 +2,7 @@
 title: Pairing with Nelsol Day 2
 date: 2015-07-23 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 Today was my second day pairing with my mentor, Nelsol. We started off the day working on some print collateral for a client. I’m very comfortable working with the Adobe Creative Suite and print materials so this project was right up my alley. The downer was that we were on a tight deadline so I tried my best to keep composure, remain calm, and have fun regardless of the tight deadline.

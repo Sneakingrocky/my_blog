@@ -2,6 +2,7 @@
 title: Pairing with Chris
 date: 2015-07-21 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 Today I was able to step back into my comfort zone as a designer. I worked with Chris on the same application that I was working on with Malcolm & Craig yesterday. I was excited to fix up some of the unstyled work that I saw yesterday that needed some love.

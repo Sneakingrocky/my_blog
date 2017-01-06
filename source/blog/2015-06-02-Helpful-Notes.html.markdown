@@ -2,6 +2,7 @@
 title: Helpful Notes
 date: 2015-06-02 03:53 UTC3
 tags: git, reflection
+published: false
 ---
 
 Before learning anything about programming I used to thing that programmers were nerdy magical beings who had a massive file system of programming tricks up their sleeves. I soon figured out that programmers are master-expert googlers and most of the time they know how to solve a problem because they were once stuck on it themselves. Over the past year i've become more nerdy, and hopefully awesome? Here's a list I keep in my notes section of problems I have run into:

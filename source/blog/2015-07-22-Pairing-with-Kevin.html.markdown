@@ -2,6 +2,7 @@
 title: Pairing with Kevin
 date: 2015-07-22 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 Today I took a trip over to Groupon to pair with Kevin on an Ember.js App. It was a cool field trip and Groupon’s office certainly had a lot going on. Most memorable -- a giant cardboard kitty in a massive spaceship. I’m pretty sure if I were to go there again there would be a 100 things that I missed the first time.

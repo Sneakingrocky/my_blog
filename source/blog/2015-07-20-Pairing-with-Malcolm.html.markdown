@@ -2,6 +2,7 @@
 title: Pairing with Malcolm
 date: 2015-07-20 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 Today I paired with Malcolm and Craig on an ASP.net project written in C#. I had never worked in those environments nor had I worked within Microsoft Visual Studio so it was like I was in a foreign country. However I did my best to follow along, help, and learn as much as I could.
