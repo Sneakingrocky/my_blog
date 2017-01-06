@@ -5,143 +5,405 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-07-23T22:53:00-05:00</updated>
+  <updated>2015-05-13T22:53:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Pairing with Eric Day 2</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/24/Pairing-with-Eric-Day-2/"/>
-    <id>http://blog.url.com/2015/07/24/Pairing-with-Eric-Day-2/</id>
-    <published>2015-07-23T22:53:00-05:00</published>
+    <title>Limiting repetiton in your html</title>
+    <link rel="alternate" href="http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/"/>
+    <id>http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/</id>
+    <published>2015-05-13T22:53:00-05:00</published>
     <updated>2017-01-02T23:46:19-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;The last day of my pairing tour was a busy one! In the morning I worked on more business cards for London and organizing all of the files for our seperate offices.&lt;/p&gt;
-&lt;p&gt;After lunch Eric took Nelsol and I through a client project that is looking to improve the user experience and design of their app. As Eric took us through the project I could immediately see things that Nelsol and I could do to make the application more user friendly. I honestly wish that I could design the entire thing from the ground up but that’s not in the cards. I also think this project would benefit greatly by speaking with the users so we could eliminate a lot of the noise and unneeded material within the app.&lt;/p&gt;
+    <content type="html">&lt;p&gt;While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="diagram_1" src="/images/blog/yaml/diagram_1.svg" /&gt;&lt;/p&gt;
 
-&lt;p&gt;Going through the app was pretty tiring so Eric and I took a ping pong break to relax before we dove into pairing on SLAM again. After the best, most highly skilled round of ping-pong in the world, Eric and I showed the wireframes we had been working on to the rest of the slammers. They were excited about the proposed features and one thing i’m really glad I did was ask them for ideas that we could add. The guys came up with some really great ideas!&lt;/p&gt;
+&lt;p&gt;The team pages were structured the same but contained content particular to that team such as its own about content, members, and leader info. The best part about this monster I created was that it would breed like bunnies…&lt;/p&gt;
 
-&lt;p&gt;We all then began drafting out more of our ideas, writing up project stories, and breaking up into pairs to knock out some features. Eric and I continued to work on the wireframes and the others began to work on adding Google Authorization to the App.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="baby_bunnies" src="/images/blog/yaml/baby_bunnies.svg" /&gt;&lt;/p&gt;
 
-&lt;p&gt;My pairing session was cut short today because I received my “Challenges”.  Challenges are two weeks of work that will determine whether or not I have a future at 8th Light as a designer. They consist of….just kidding. It’s a secret.&lt;/p&gt;
+&lt;p&gt;As more team pages were added that same html markup would have to be copied. Even more fun – adding and updating content would not be pretty and I could create more enemies than Joffrey from the Game of Thrones.&lt;/p&gt;
+
+&lt;p&gt;I decided to leave the darkside and find a better solution.&lt;/p&gt;
+
+&lt;h2 id="one-view-to-the-rescue"&gt;One view to the rescue&lt;/h2&gt;
+
+&lt;p&gt;The idea behind this approach is to solve these problems:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Each team is it’s own “view” = ton’s of repetition&lt;/li&gt;
+  &lt;li&gt;In order to edit data pertaining to a team you currently have to update it in the index and its individual team page&lt;/li&gt;
+  &lt;li&gt;The static html files are tedious to enter data into&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Create easy to edit data files that feed into one view. It would work like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="diagram_2" src="/images/blog/yaml/diagram_2.svg" /&gt;&lt;/p&gt;
+
+&lt;h2 id="creating-the-data-files"&gt;Creating the "data files"&lt;/h2&gt;
+
+&lt;p&gt;As I stated before the data for each of the team pages was pretty similar. So having data files that could feed into one view which would generate new team pages made sense.&lt;/p&gt;
+
+&lt;p&gt;I chose to research and use my new friend, YAML aka “YAML Ain't Markup Language" for these data files. What is great about YAML is that it was designed to be easily mapped to data types common to most high-level languages: lists, associative arrays, and scalar.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of a YAML data file that would feed into the view:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/c2e56783fc953ea2c7fd.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;This data creates generates a giant hash of keys and values like so:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/115e11b03387de806af8.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;If you like dealing with hashes good for you. I'm a bigger fan of working with objects. Using Ruby you can create methods which turn these key &amp;amp; values into an object like so:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/967bf1974a2d958b0ca5.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;The new methods we created can now be used in our view using Embedded Ruby:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/65ce56bee20f12a3b8c6.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="everything-is-so-much-cleaner"&gt;Everything is so much cleaner!&lt;/h2&gt;
+
+&lt;p&gt;Using tools such as YAML, Ruby, and Embedded Ruby allowed me to clean up the structure of my project. With a singular view for team pages the duplication work that someone would have to do if they were somehow assigned to add 100 new teams is now gone. Imagine manually creating 100 static html pages and then having to apply future changes to each static page…yuck.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>CSS Architecture</title>
+    <link rel="alternate" href="http://blog.url.com/2015/04/24/CSS-Architecture/"/>
+    <id>http://blog.url.com/2015/04/24/CSS-Architecture/</id>
+    <published>2015-04-23T22:53:00-05:00</published>
+    <updated>2017-01-02T23:46:19-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;When I was first learning to program in Ruby I remember being so excited to have a working program. I was extremely nervous to show my work to my mentor. And as we went through my code she was very patient and told me that she could tell I worked hard on it. It meant so much - and honestly was great fuel to keep me excited about programming.&lt;/p&gt;
+&lt;p&gt;Fast forward to the last few months of my student software apprenticeship and I realized just how terrible my code was. I had no regard for clean or structured code - I was a beginner and I needed to know how to make things work above all.&lt;/p&gt;
+
+&lt;p&gt;I can see this same pattern in my Design Apprenticeship but perhaps the rules for the design and structure for setting up your project files and CSS is less clear and more opinionated than than it seemed to me when dealing with backend code. It just seems like everyone is trying to find a way to solve CSS architecture - but no one has found a solution to win over the masses quite yet.&lt;/p&gt;
+
+&lt;p&gt;In order to start forming my own ideas on CSS architecture my mentor had me research a few of the most popular ways to structure my code and files: OOCSS(Object Oriented CSS), BEM(Block, Element, Modifier), and SMACSS(Scalable and Modular Architecture for CSS).&lt;/p&gt;
+
+&lt;h3 id="oocssobject-oriented-css"&gt;OOCSS(Object Oriented CSS)&lt;/h3&gt;
+
+&lt;p&gt;Object oriented CSS reminds me a lot about of the philosophies I learned during my student software apprenticeship. The idea is the same - while coding it is important to write it in a way that is clean and reusable. The benefits of coding this way are having cleaner, smaller, and more maintainable stylesheets.&lt;/p&gt;
+
+&lt;h3 id="bemblock-element-modifier"&gt;BEM(Block, Element, Modifier)&lt;/h3&gt;
+
+&lt;p&gt;BEM was a really interesting one to research. It’s a bit ugly but it’s purpose is beautiful. It’s ultimately trying to solve the problem of CSS being unreadable and confusing to those who didn’t write it themselves. If we’re honest with ourselves, maybe the classes we wrote ourselves a few weeks ago don’t seem to make sense anymore. This problem was also present when I was learning Ruby —&amp;gt; Write methods that are more descriptive. In reference to CSS —&amp;gt; Write classes that are more descriptive.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="BEM" src="/images/bem.png" /&gt;&lt;/p&gt;
+
+&lt;h3 id="smacssscalable-and-modular-architecture-for-css"&gt;SMACSS(Scalable and Modular Architecture for CSS)&lt;/h3&gt;
+
+&lt;p&gt;SMACSS was a little confusing at first but broken down it is simply trying to find a universal way for everyone to structure their project folders.&lt;/p&gt;
+
+&lt;p&gt;style.scss&lt;/p&gt;
+
+&lt;p&gt;_base.scss&lt;/p&gt;
+
+&lt;p&gt;_layout.scss&lt;/p&gt;
+
+&lt;p&gt;_modules.scss&lt;/p&gt;
+
+&lt;p&gt;_state.scss&lt;/p&gt;
+
+&lt;p&gt;_theme.scss&lt;/p&gt;
+
+&lt;p&gt;Personally, I think that the state and theme folders are not necessary all the time and I don’t think i’ll be adding them to my file structure. However the other folders will help my organization a lot:&lt;/p&gt;
+
+&lt;p&gt;style.scss
+The master file that imports all of your other stylesheets&lt;/p&gt;
+
+&lt;p&gt;_base.scss
+This is where all the base styles live; resets, element defaults, default font sizes, etc.&lt;/p&gt;
+
+&lt;p&gt;_layout.scss
+In this section you specify all types of layout containers, such as header, footer, content, sidebar, etc.&lt;/p&gt;
+
+&lt;p&gt;_modules.scss
+Every module should be completely independent of its context and should work within any layout container or other module.&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Say No</title>
+    <link rel="alternate" href="http://blog.url.com/2015/04/21/Say-No/"/>
+    <id>http://blog.url.com/2015/04/21/Say-No/</id>
+    <published>2015-04-20T22:53:00-05:00</published>
+    <updated>2017-01-06T16:07:06-06:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;A few months ago a friend said something to me that I silently found offensive. He stated that I was a “people pleaser”. I couldn’t exactly pinpoint why this stuck with me so much… I mean how is wanting to make people happy a bad quality? If more people went out of their way to make others happy wouldn’t that make the world be a better place?&lt;/p&gt;
+&lt;p&gt;Last week I learned a valuable lesson: Everyone needs to be able to say no. And people pleasing doesn’t always just mean making others happy - it can also mean sacrificing your health &amp;amp; happiness.&lt;/p&gt;
+
+&lt;p&gt;To make a long story short I was asked to take on several tasks - some which should not have been my responsibility. Knowing I had a lot on my plate I still took on more responsibilities than I should have.&lt;/p&gt;
+
+&lt;p&gt;I was able to accomplish all of the tasks but that came with a lot of stress and little sleep. I should have stood my ground and said no. That would have been the professional thing to do.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Believe in yourself, take on your challenges, dig deep within yourself to conquer fears. Never let anyone bring you down. You got to keep going. –Chantal Sutherland&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;“Saying “yes” too much could jeopardize more than just your patience. Taking on more than you’re capable could result in illness or burning out. When you become sick, it’s a struggle to help yourself, much less everyone around you, so cut your losses and say “no” for the sake of your health.”&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
   </entry>
   <entry>
-    <title>Pairing with Nelsol Day 2</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/23/Pairing-with-Nelsol-Day-2/"/>
-    <id>http://blog.url.com/2015/07/23/Pairing-with-Nelsol-Day-2/</id>
-    <published>2015-07-22T22:53:00-05:00</published>
+    <title>SVG's</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/25/SVG's/"/>
+    <id>http://blog.url.com/2015/03/25/SVG's/</id>
+    <published>2015-03-24T22:53:00-05:00</published>
     <updated>2017-01-02T23:46:19-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Today was my second day pairing with my mentor, Nelsol. We started off the day working on some print collateral for a client. I’m very comfortable working with the Adobe Creative Suite and print materials so this project was right up my alley. The downer was that we were on a tight deadline so I tried my best to keep composure, remain calm, and have fun regardless of the tight deadline.&lt;/p&gt;
-&lt;p&gt;Our workflow was constantly broken up with client meetings, messages from other project members, and questions from internal members. We worked together to stay on task and once we were comfortable with the print we sent it to the client and the printer to get their feedback.&lt;/p&gt;
+    <content type="html">&lt;p&gt;When I first started working with images way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.&lt;/p&gt;
+&lt;p&gt;Enter the world of people accessing the internet via various devices, screen sizes, and resolutions as well as the trend of responsive web design. Images and graphics not only need to be displayed at high quality, they need to be scalable and responsive.&lt;/p&gt;
 
-&lt;p&gt;While awaiting feedback we jumped right into some tickets for one of our clients. We worked through some tough problems because the code base was drowning in dependencies. Trying our best to use our principles and keep the code as clean as possible we completed the tickets.&lt;/p&gt;
+&lt;p&gt;I have been really intrigued with the world of responsive web design which is why I stumbled upon SVG’s (Scalable Vector Graphics). An SVG is a XML-based vector image format for 2D graphics that has support for interactivity and animation. A few benefits of using an SVG are its scalability, and SEO friendliness because is can include descriptions which can be searched by search engines.&lt;/p&gt;
 
-&lt;p&gt;One of the most helpful things that Nelsol showed me today was his workflow. The man is extremely organized and to be honest with how many things he has to juggle it would be a nightmare if he wasn’t. First, he took me through the process of submitting a ticket to be reviewed before a pull request can be requested. He then showed me the clients tracking system for each feature and how ownership is passed from person to person throughout the process. Because ownership is constantly changing, Nelsol has his own way of tracking his work on various projects. He uses trello.com, a free organization tool for teams and individuals.&lt;/p&gt;
+&lt;p&gt;During my last project: &lt;a title="Self Assessment" href="http://ericagarcia.me/projects/assessment/"&gt;Self Assessment&lt;/a&gt;, I was looking for a way to display my ratings and decided to experiement with SVG graphics and animations.&lt;/p&gt;
 
-&lt;p&gt;Lesson of the day: Be Organized!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles.png" /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Don’t say you don’t have enough time.  You have exactly the same number of hours per day that were given to Helen Keller, Pasteur, Michaelangelo, Mother Teresea, Leonardo da Vinci, Thomas Jefferson, and Albert Einstein. – H. Jackson Brown, Jr.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The code to create one of these animated circles looks a little confusing:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/09fbb1e2d4b5dfc8af2d.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="lets-break-it-down"&gt;Let's break it down&lt;/h2&gt;
+
+&lt;p&gt;Maybe it would be easier to view this problem as a series of different sections like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles_divided.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The code to create a sectioned circle would look something like this:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/a87b2b0803ed122c9bbd.js"&gt;&lt;/script&gt;
+
+&lt;h2 id="viewbox-and-g"&gt;viewBox and g&lt;/h2&gt;
+
+&lt;p&gt;The first things we see listed are svg viewBox and g.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/d32a3bf9cfd12eb5279f.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;viewBox&lt;/strong&gt; - contains four numbers (min-x, min-y, width and height) which define how the graphics fit in its container element.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;g&lt;/strong&gt; - This element is used to group SVG shapes together as a single shape. The advantages of doing this are you can now target grouped shapes and add things such as transformations or styles.&lt;/p&gt;
+
+&lt;h3 id="paths"&gt;Paths&lt;/h3&gt;
+
+&lt;p&gt;To create these animated circles several paths were needed:&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/1ba09a94d2c33a8954e4.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;I think out of everything, paths can look pretty intimidating. But they aren't so bad! To make things a little easier, let's just grab the first path and disect it.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;path&lt;/strong&gt; - This element is used to draw advanced shapes combined from lines, arcs, curves etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;d&lt;/strong&gt; - this is the d attribute which the drawing commands which are given to a “virtual pen”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;M&lt;/strong&gt; - “Move to” command - This should always be first thing listed in a path! Here the virtual pen is being moved to point 0, -100
+  &lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt; - “Arc” command has five parameters. The first two set the radius of the arc, the third sets the rotation of the arc’s -axis compared to the normal x-axis, and the fourth and fifth parameters are the large-arc-flag and the sweep flag. The large-arc flag  determines if the arc that should be drawn should be greater than, or less than 180 degrees, and in the end determines which direction the arc will travel around a given circle. The sweep-flag determines if the arc should begin moving at negative or positive angles.&lt;/p&gt;
+
+&lt;p&gt;A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="svg_arcs" src="/images/blog/svg/SVGArcs_Flags.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here the virtual pen is using absolute coordinates - starting at 0, -100 to the point 86.6, -50 ( the last two numbers in the list of A coordinates). The first two numbers of A are the same 100, 100 so this results in a circular arc.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/99667e908a90482a804c.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;*Note that an uppercase “A” uses absolute coordinates and a lowercase “a” uses relative coordinates (relative from its start point).&lt;/p&gt;
+
+&lt;h2 id="getting-fancy"&gt;Getting Fancy&lt;/h2&gt;
+
+&lt;p&gt;What about that second SVG? This is a piece that is used as a mask for the circle animation. Told you we were getting fancy!&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/2ed94c52b0eec7222230.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;This contains some of the other elements but a couple new ones as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C&lt;/strong&gt; (absolute) &lt;strong&gt;c&lt;/strong&gt; (relative) - (x1 y1 x2 y2 x y)&lt;/p&gt;
+
+&lt;p&gt;This draws a &lt;a title="Cubic Bézier curve" href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves"&gt;Cubic Bézier curve&lt;/a&gt; from the current point to (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2, y2) as the control point at the end of the curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Z or z&lt;/strong&gt; are simple guys - they simply close the path.&lt;/p&gt;
+
+&lt;h2 id="styling"&gt;Styling&lt;/h2&gt;
+&lt;p&gt;When I was browsing through a lot of SVG XML code I saw tons of inline styles - which kind of brought me nightmares of when I used to be able to sprint to the mailbox faster than the internet could load an image. When styling, try to place everything in your CSS - some things won't work but your SVG code will look much cleaner without all of its inline styles.&lt;/p&gt;
+
+&lt;p&gt;This was just a brief breakdown of some of the many elements available for building SVG's. And perhaps an easier less exploratory route to make a circle would have been simply using the SVG circle element. This element uses the parameters cx, cy, and r where the cx and cy attributes define the x and y coordinates of the center of the circle and the r attribute defines the radius of the circle.&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/Sneakingrocky/260ab17f67ab6965e263.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;If this excited you, what are you still doing here? You should probably be experimenting with SVG's :)&lt;/p&gt;
+
 </content>
   </entry>
   <entry>
-    <title>Pairing with Kevin</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/22/Pairing-with-Kevin/"/>
-    <id>http://blog.url.com/2015/07/22/Pairing-with-Kevin/</id>
-    <published>2015-07-21T22:53:00-05:00</published>
+    <title>Visual Hierarchy</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/18/Visual-Hierarchy/"/>
+    <id>http://blog.url.com/2015/03/18/Visual-Hierarchy/</id>
+    <published>2015-03-17T22:53:00-05:00</published>
     <updated>2017-01-02T23:46:19-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Today I took a trip over to Groupon to pair with Kevin on an Ember.js App. It was a cool field trip and Groupon’s office certainly had a lot going on. Most memorable – a giant cardboard kitty in a massive spaceship. I’m pretty sure if I were to go there again there would be a 100 things that I missed the first time.&lt;/p&gt;
-&lt;p&gt;I was nervous to pair on the Ember App because I had planned to go through the Treehouse tutorial the night before but ended up falling asleep with my giant headphones on before I could finish all of the videos. I was more exhausted than I thought! I continued to prepare on the train ride in even though I get motion sick while riding and reading. I guess I was scared that I wouldn’t be able to contribute as much as I had hoped if I didn’t know Ember because I was studying like a college student about to take a final exam. Luckily, Kevin quickly filled me in that he was also just starting with Ember. Feeeeeew!&lt;/p&gt;
+    <content type="html">&lt;p&gt;Visual hierarchy is vital in every design in order to create an enjoyable user experience. Good visual hierarchy is the responsible use of color, contrast, texture, shape, position, orientation, and size to create different levels of relative importance. It’s a difficult task to responsibly use all of these exciting tools to create a cohesive and  enjoyable experience for the user. However, with a better understanding of how our users perceive the information we provide them, we’ll have more guidance as to how to efficiently guide our viewers from one piece of content to the next.&lt;/p&gt;
+&lt;h3 id="how-do-humans-view-information"&gt;How do humans view information?&lt;/h3&gt;
 
-&lt;p&gt;Together we started drafting out the function of his and Mike’s app on the whiteboard like I always love to do. We then took those ideas, set up our environment and began setting up the static stage &amp;amp; grid for the app. We also started organizing our folder structure to make sure that our CSS was well organized as we built out the project.&lt;/p&gt;
+&lt;p&gt;In the 1920s German psychologists created theories in order to describe the capability of our brains to generate and organize visual elements into groups or “unified wholes”. This branch of study is called Gestalt psychology and a major part of this study involves the theory of the gestalt effect. The gestalt effect contains a few principles that explain the reasoning behind why our brains are naturally able to categorize information: grouping similar visual elements and organizing them into meaningful patterns.&lt;/p&gt;
 
-&lt;p&gt;It was fun to work alongside Kevin to figure out how to implement Ember’s helpers with the styling that we wished to have. We both took turns driving and paid attention to what each person was doing. This helped a great deal as Kevin was able to catch my mistakes and vice versa. It also helped out a great deal when I was developing on the browser and would accidently save and the auto-reloader would run losing all of my changes.&lt;/p&gt;
+&lt;p&gt;A few principles of the gestalt effect are:&lt;/p&gt;
 
-&lt;p&gt;Before I had to leave for a client meeting Kevin and I were able to add some basic styling, fonts, explore, edit &amp;amp; add some SVG graphics, and brainstorm additional styles they could add later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Law of Similarity:&lt;/strong&gt; When things are similar, the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.&lt;/p&gt;
 
-&lt;p&gt;I can’t tell you how refreshing it was to be able to start a project from scratch again. After working in webs lately, I truly appreciated getting to work on this project with Kevin.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="similarity_example" src="/images/blog/hierarchy/similarity.png" /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“Your life should consist of more than commuting, working, eating, surfing the Internet, sleeping and watching TV. Your life should be filled with purpose-driven experiences and projects that bring excitement, passion, energy, and authentic meaning and joy into your life.”
-― Richie Norton&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Law of Continuation:&lt;/strong&gt; Continuation occurs when the eye is naturally compelled to move through one object to another object. Elements arranged on a line or curve are perceived to be more related than elements not on a line or curve.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="continuation_example" src="/images/blog/hierarchy/continuation.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Closure:&lt;/strong&gt; This is a really cool one. This occurs when the human brain is able to fill in missing information in order to create a whole.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="closure_example" src="/images/blog/hierarchy/closure.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Law of Proximity:&lt;/strong&gt; When elements are placed in close proximity the brain tends to categorize them into a group as where things that are placed further apart from each other are viewed as  separate groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="proximity_example" src="/images/blog/hierarchy/proximity.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure and Ground Relationships:&lt;/strong&gt; This is the brains ability to create a relationship between the object and its background.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="figure_ground_example" src="/images/blog/hierarchy/figure_ground.png" /&gt;&lt;/p&gt;
+
+&lt;h3 id="how-does-the-gestalt-theory-help-us"&gt;How does the gestalt theory help us?&lt;/h3&gt;
+
+&lt;p&gt;A big take away from the principles of the gestalt effect theory is that humans see everything in terms of relationships. With this information designers can apply the gestalt principles to basic design principles such as contrast, repetition, alignment, and proximity to communicate better with their users.&lt;/p&gt;
+
+&lt;h3 id="how-is-hierarchy-created"&gt;How is hierarchy created?&lt;/h3&gt;
+
+&lt;p&gt;Hierarchy is created by changing the visual weight of each element. Something with more visual weight is considered higher in the ranks of hierarchy which means that something with less visual weight is less important. Visual weights can be controlled through the use of:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrast&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Contrast is using the difference in visual properties to make things distinguishable from each other. Shifts in color, size, shape, and position can help create a sense of visual hierarchical importance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Size&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Elements that are larger in size carry more visual weight. That being said, the most important elements of your design should be bigger and the least important elements should be smaller.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Color&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bold, contrasting colors can call attention to an element and raise its importance in a design. It can also be used as a hierarchy organizational tool in something such as infographic. The value (the darkness and lightness of an element can also give it more or less visual weight).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proximity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Proximity separates elements from each other and creates sub-hierarchies. Items that are packed closely together create a dense area and therefore create more visual weight.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Repetition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Repetition instantly attaches meaning to elements and communicates that elements are at the same level in the hierarchy. An example of this would be a human knowing that something is a link because they are all styled the same throughout the website.&lt;/p&gt;
+
+&lt;h3 id="pulling-it-all-together"&gt;Pulling it all together&lt;/h3&gt;
+&lt;p&gt;Whenever you are working on a project it is important to know what your goals are. What are you trying to communicate to the viewer? Which information needs to be prioritized? When you have your design, ask yourself whether or not there is a nice visual flow from one piece of content to the next. While drafting, if literally numbering your pieces of content in order of importance helps - go for it! If you’re having trouble, try standing back and viewing your design while squinting in order to see what pops out to you first. Is it the content that you numbered 1? If yes, move on to see if the rest of the numbers follow sequentially. If no, you’ll need to play around with your visual weight tools a little more. And once you’re done creating a visual hierarchy masterpiece be sure to celebrate!&lt;/p&gt;
 </content>
   </entry>
   <entry>
-    <title>Pairing with Chris</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/21/Pairing-with-Chris/"/>
-    <id>http://blog.url.com/2015/07/21/Pairing-with-Chris/</id>
-    <published>2015-07-20T22:53:00-05:00</published>
+    <title>Semantic Elements</title>
+    <link rel="alternate" href="http://blog.url.com/2015/03/05/HTML5-Semantic-elements/"/>
+    <id>http://blog.url.com/2015/03/05/HTML5-Semantic-elements/</id>
+    <published>2015-03-04T21:53:00-06:00</published>
     <updated>2017-01-02T23:46:19-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Today I was able to step back into my comfort zone as a designer. I worked with Chris on the same application that I was working on with Malcolm &amp;amp; Craig yesterday. I was excited to fix up some of the unstyled work that I saw yesterday that needed some love.&lt;/p&gt;
-&lt;p&gt;After our team stand-up Chris showed me a page that he had worked on the day before. He had already put together some great styles that we could carry into the forms, lists, buttons, etc for our current page. He also showed me the grid that he had made and was testing out based off of the BEM (Block, Element, Modifier) naming convention. Since CSS can quickly become a spaghetti mess with hot glue instead of spaghetti sauce, the designers at 8th Light and conscientious designers everywhere are constantly testing and looking to create maintainable CSS with limited dependencies. It was cool to see how Chris was trying to make improvements to his code by carrying these conventions into his grid.&lt;/p&gt;
+    <content type="html">&lt;p&gt;For the first 20 years of my life when someone would tell me that they were interested in learning a new language I would immediately think that they were talking about a foreign language. But in the past year, hanging around people who are passionate about programming and web development, “learning a new language” has a whole new meaning.&lt;/p&gt;
+&lt;p&gt;Perhaps learning a programming or markup language is not so different from learning a foreign language. There are plenty of similarities between learning a language such as Spanish and a markup language such as HTML (HyperText Markup Language).&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, today we felt the pain of environmental issues which cut into our work time a great deal. This is just something that one has to except on a big project with many developers, and conflicting requests. This is something that my mentor has constantly reminded me of - things may not go as smoothly as your optimistic selves may think things will go. As a consultant you have to account for things going terribly wrong or you’re going to find yourself scrambling to meet an unrealistic deadline.&lt;/p&gt;
+&lt;p&gt;One such example is the study of Semantics: The study of the meanings of words and phrases in a language.&lt;/p&gt;
 
-&lt;p&gt;One of our developers on the team kindly helped us move past the environment &amp;amp; project road blockers. Sadly, now Chris’s auto-reloader which was speeding up his workflow was unsupported so we had to find a workaround to bring it back. Once we got through the set-up, Chris and I were able to implement our design changes and brainstorm some design improvements to 8th Light’s SCNA conference website.&lt;/p&gt;
+&lt;p&gt;In HTML5 there are non-semantic elements as well as semantic elements:&lt;/p&gt;
 
-&lt;p&gt;Working with different designers, I have found that each one has their own workflow preferences. For example, some prefer to develop in the browser as where others preferred making several changes in their editors and then seeing them all at once. A similarity that I have seen… VIM. Although, Microsoft visual studio did not allow for VIM Chris found a plug-in that him and the developers were able to use to speed up their workflow. Things still weren’t perfect, but today I learned that that comes with each client project having a different environment. Craftsman have to be comfortable being uncomfortable and willing to work with what they are given.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Non-semantic:&lt;/strong&gt; These elements do not tell us the meaning of it’s content
+&lt;strong&gt;Examples:&lt;/strong&gt; &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“I'm continually trying to make choices that put me against my own comfort zone. As long as you're uncomfortable, it means you're growing.” – Ashton Kutcher&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Malcolm</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/20/Pairing-with-Malcolm/"/>
-    <id>http://blog.url.com/2015/07/20/Pairing-with-Malcolm/</id>
-    <published>2015-07-19T22:53:00-05:00</published>
-    <updated>2017-01-02T23:46:19-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Today I paired with Malcolm and Craig on an ASP.net project written in C#. I had never worked in those environments nor had I worked within Microsoft Visual Studio so it was like I was in a foreign country. However I did my best to follow along, help, and learn as much as I could.&lt;/p&gt;
-&lt;p&gt;After the team’s daily stand up, Malcolm took some time to catch me up on the details of the project that we would be working on. He explained that we would be working on changing the structure of the way the backend was currently handling a process in order to better execute the end desired behavior. He took me through the white boarded diagram of the old system as well as the new system and explained how everything would work with our added changes. Because i’m a visual learner, this was a great way to put everything into context. And as he went through the diagram I couldn’t help but think about how disciplined craftsman must be to constantly bite the bullet and grow &amp;amp; change their software in order to reach the best possible solution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Semantic:&lt;/strong&gt; These elements give meaning to the content
+&lt;strong&gt;Examples:&lt;/strong&gt; &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;,  &lt;code&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;I think the biggest take away that I got from working with Malcolm and Craig was seeing how a pair should work together in order to make progress and positive changes. Although they were pairing remotely they worked great together and seemed to have a nice workflow. They both took turns “driving” - writing code, while the other took the role as an active “passenger”. I say active because the passenger was always asking questions, adding input, and working toward a solution with the driver. They both stayed positive, included me, and made me laugh all day.&lt;/p&gt;
+&lt;p&gt;You may be wondering what is means to “give meaning” or to “not give meaning” to content. Semantic elements explicitly label its content and enable computers, search engines, screen readers, etc. to read and understand the content on our web pages. And not only does it help machines better understand our HTML,  it creates a universal language so that when someone else jumps onto your markup they can better understand all of the parts.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;“…in my mind a craftsperson is someone who not only creates something from nothing from materials of their choice, but usually puts a part of themselves into what they make. A good craftsperson takes the time and effort to make something of quality which is worthwhile to have and which will still function way after the crafted item has been made. Good craftsmanship is synonymous with quality products.“&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Pairing with Eric</title>
-    <link rel="alternate" href="http://blog.url.com/2015/07/17/Pairing-with-Eric/"/>
-    <id>http://blog.url.com/2015/07/17/Pairing-with-Eric/</id>
-    <published>2015-07-16T22:53:00-05:00</published>
-    <updated>2017-01-02T23:46:19-06:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;After a long day yesterday it was nice to have a more relaxing day today. I treated myself to Starbucks Chai Tea Latte like I do most Fridays to reward myself for another good week. I had the first part of the day to set up my computer for the internal iOS app that Eric and I would be working on the second portion of the day. I installed the latest version of Xcode, pulled the repos i’d need for the project from Github and started to read documentation on that I thought might be helpful for building the app. I also used this time to work on a few business cards for the London Craftsman.&lt;/p&gt;
-&lt;p&gt;After a successful week 2 company stand up, Eric and Emmanuel explained the app that the group had been working on - an internal ping pong queue named “Slam”. They then showed me the features that they had already developed.&lt;/p&gt;
+&lt;p&gt;Here are a few HTML5 Semantic tags explained using a project I worked on this week:&lt;/p&gt;
 
-&lt;p&gt;Although they were eager to jump right into styling I couldn’t help but want to start from the beginning and sketch out a user flow to come up with some additional fun features. Having time to utilize the entire design process and meet tight deadlines is not something that I have been able to do during my apprenticeship so I really wanted to use it for this project.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ericagarcia.me/projects/semantics/"&gt;&lt;img alt="My Semantics Project" src="/images/blog/semantics/Semantics_project.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The guys were very welcoming to the idea of mapping out a user flow so together we started from the beginning creating an enjoyable user-flow chart. We then began fleshing these ideas out more in the form of low fidelity wireframes using Balsamiq Mockups.&lt;/p&gt;
+&lt;h5 id="header-"&gt;&amp;lt; header &amp;gt;&lt;/h5&gt;
 
-&lt;p&gt;We started from the first step the user would take while using the app. This would of course be logging in. We decided that using google authorization would be a good option for 8th Lighters to login and tie themselves to an identity so we could add features such as ranks, stats, and leaderboards.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; is a structural element that represents a group of introductory or navigational aids. It typically contains a section’s heading, but can hold other content (a search form, relevant logos, etc.) if necessary.&lt;/p&gt;
 
-&lt;p&gt;It was a fun day, we made really good progress on the wireframes and began talks about possible branding ideas. I’m really excited to see this app grow and be used (hopefully soon!).&lt;/p&gt;
+&lt;p&gt;There can be multiple headers in a document but be sure not to overuse this element. For example, if the &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; element only contains a single heading element its unnecessary.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="header_example" src="/images/blog/semantics/Semantics_header.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="footer-"&gt;&amp;lt; footer &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The footer identifies the closing or end of a page, article, section, or other segment of a page.&lt;/p&gt;
+
+&lt;p&gt;Footers may contain things such as short list of links to various pages of a site, social media icons, copyright information, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="footer_example" src="/images/blog/semantics/Semantics_footer.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="nav-"&gt;&amp;lt; nav &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The nav identifies a section of major navigational links on a page.&lt;/p&gt;
+
+&lt;p&gt;This element is also one that is commonly overused. An example of over-usage would be using it for the links located in your footer as they are not considered “major” navigational links.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="nav_example" src="/images/blog/semantics/Semantics_nav.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="article-"&gt;&amp;lt; article &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is used to contribute to the documents structure. It contains a standalone piece of content that may be independently distributed or reused.&lt;/p&gt;
+
+&lt;p&gt;An easy test to see whether something would make sense as an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is:
+Would it’s content make sense independent of it’s context? If so, it’s a good candidate for an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="article_example" src="/images/blog/semantics/Semantics_article.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="section-"&gt;&amp;lt; section &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A section is also used to contribute to the documents structure. It is used to group different articles into different purposes or subjects, or to define the different sections of a single article.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="section_example" src="/images/blog/semantics/Semantics_section.png" /&gt;&lt;/p&gt;
+
+&lt;h5 id="aside-"&gt;&amp;lt; aside &amp;gt;&lt;/h5&gt;
+&lt;p&gt;The aside element holds content, such as sidebars, inserts, or brief explanations that is separate from but related to the content surrounding it.&lt;/p&gt;
+
+&lt;p&gt;Examples for an aside could be advertisements, or groups of navigation items. In this case I have a list of speakers which navigate to their personal websites.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="aside_example" src="/images/blog/semantics/Semantics_aside.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Extra:&lt;/p&gt;
+
+&lt;p&gt;In my previous project I used a &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; to label a quote that was pulled from the magazine article and used as a print “pull-quote.” However this was not the right use of a &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;…&lt;/p&gt;
+
+&lt;h5 id="blockquote-"&gt;&amp;lt; blockquote &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; is used to specify that a section is quoted from another source:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote cite="http://www.imdb.com/title/tt0091042/quotes"&amp;gt;
+  &amp;lt;p&amp;gt;Life moves pretty fast. If you don't stop and look around once in a while, you could miss it..&amp;lt;/p&amp;gt;
+  &amp;lt;footer&amp;gt;— &amp;lt;a href="http://www.imdb.com/title/tt0091042/quotes"&amp;gt;Ferris Bueller&amp;lt;/a&amp;gt;&amp;lt;/footer&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cite is used to specify the source of the quotation*&lt;/p&gt;
+
+&lt;h5 id="q-"&gt;&amp;lt; q &amp;gt;&lt;/h5&gt;
+&lt;p&gt;A &lt;code&gt;&amp;lt;q&amp;gt;&lt;/code&gt; is an inline html quotation element that is used for short quotations that don’t require paragraph breaks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="blockquote_example" src="/images/blog/semantics/Semantics_blockquote.png" /&gt;&lt;/p&gt;
+
 </content>
   </entry>
 </feed>
