@@ -2,6 +2,7 @@
 title: I don't have to choose
 date: 2015-05-13 03:53 UTC3
 tags: goals, reflection
+published: false
 ---
 
 Last October while in the last month of my student software apprenticeship I really struggled with the decision of whether to continue to learn software development or to jump back into my designer shoes. I enjoyed the complex problems of programming but really missed the design side of problem solving. And even though I have always believed that one doesn’t have to choose between design and development I truly felt that I had to make a choice. And I did. Because to be honest - as a beginner of anything you have to stay focused on the thing you want to perfect. If you’re jumping around too much too early on you’re going to know a lot of things but you’ll never be a master at anything.
