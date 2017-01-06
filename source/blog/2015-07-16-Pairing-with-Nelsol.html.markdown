@@ -2,6 +2,7 @@
 title: Pairing with Nelsol
 date: 2015-07-16 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 Today I paired with my mentor, Nelsol. Through this experience I was able to truly get a feel of what a normal day for a designer at 8th Light might look like.

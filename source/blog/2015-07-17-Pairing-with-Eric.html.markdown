@@ -2,6 +2,7 @@
 title: Pairing with Eric
 date: 2015-07-17 03:53 UTC3
 tags: pairing tour
+published: false
 ---
 
 After a long day yesterday it was nice to have a more relaxing day today. I treated myself to Starbucks Chai Tea Latte like I do most Fridays to reward myself for another good week. I had the first part of the day to set up my computer for the internal iOS app that Eric and I would be working on the second portion of the day. I installed the latest version of Xcode, pulled the repos i’d need for the project from Github and started to read documentation on that I thought might be helpful for building the app. I also used this time to work on a few business cards for the London Craftsman.
