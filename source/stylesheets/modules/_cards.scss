@@ -30,6 +30,7 @@
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   text-align: center;
+  transition: background 0.5s;
 
   :first-child {
     margin-top: 0;
@@ -52,6 +53,16 @@
   font-family: "omnes-pro",sans-serif;
   font-size: 1.1em;
   margin-bottom: 0;
+}
+
+.card:hover {
+  .card-section {
+    background: #fafafa;
+  }
+
+  .item-image img {
+    opacity: 0.8;
+  }
 }
 
 /* ==========================================================================
