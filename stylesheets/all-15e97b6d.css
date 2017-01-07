@@ -355,13 +355,13 @@
   padding: 5em 0; }
   /* line 20, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
   .hero__image.goals {
-    background-image: url("../images/portfolio/jellybeans/goals.jpg"); }
+    background-image: url("../images/portfolio/jellybeans/goals-3e1fb655.jpg"); }
   /* line 24, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
   .hero__image.sky {
-    background-image: url("../images/portfolio/thesocreports/sky.png"); }
+    background-image: url("../images/portfolio/thesocreports/sky-30cbbd4b.png"); }
   /* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
   .hero__image.office {
-    background-image: url("../images/portfolio/careerpage/office_space.jpg"); }
+    background-image: url("../images/portfolio/careerpage/office_space-45f226d2.jpg"); }
 
 /* line 34, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
 .background-image {
@@ -372,14 +372,14 @@
   width: 100%; }
   /* line 41, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
   .background-image.socreports {
-    background-image: url("../images/portfolio/thesocreports/posts_with_hashtags.png");
+    background-image: url("../images/portfolio/thesocreports/posts_with_hashtags-3c627428.png");
     background-position: 0% 10%;
     background-position: 80% -100%;
     background-size: 20%;
     height: 443px; }
   /* line 49, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
   .background-image.data {
-    background-image: url("../images/portfolio/thesocreports/data.svg");
+    background-image: url("../images/portfolio/thesocreports/data-ea9ba6ac.svg");
     background-position: 0% 10%;
     background-position: 80% -100%;
     background-size: 20%;
@@ -387,7 +387,7 @@
 
 /* line 61, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
 .header__logo {
-  background: url("../images/portfolio/thesocreports/thesocreports_logo.png") no-repeat;
+  background: url("../images/portfolio/thesocreports/thesocreports_logo-597fef6e.png") no-repeat;
   background-size: contain;
   border: 0;
   display: block;
@@ -530,7 +530,7 @@
 
 /* line 47, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section--textured {
-  background-image: url("/images/gridme.png");
+  background-image: url("/images/gridme-45fc77dc.png");
   background-repeat: repeat; }
 
 /* line 52, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */

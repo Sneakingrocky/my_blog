@@ -19,11 +19,11 @@
       <name>Article Author</name>
     </author>
     <content type="html">&lt;p&gt;While working on a section of an internal project there was something that was bothering me about the way that I structured everything with static pages. Essentially the section contained an index page which linked to four individual view/team pages. Pretty simple.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="diagram_1" src="/images/blog/yaml/diagram_1.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="diagram_1" src="/images/blog/yaml/diagram_1-5b08514e.svg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The team pages were structured the same but contained content particular to that team such as its own about content, members, and leader info. The best part about this monster I created was that it would breed like bunnies…&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="baby_bunnies" src="/images/blog/yaml/baby_bunnies.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="baby_bunnies" src="/images/blog/yaml/baby_bunnies-6bb5f703.svg" /&gt;&lt;/p&gt;
 
 &lt;p&gt;As more team pages were added that same html markup would have to be copied. Even more fun – adding and updating content would not be pretty and I could create more enemies than Joffrey from the Game of Thrones.&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Create easy to edit data files that feed into one view. It would work like so:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="diagram_2" src="/images/blog/yaml/diagram_2.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="diagram_2" src="/images/blog/yaml/diagram_2-47533dc9.svg" /&gt;&lt;/p&gt;
 
 &lt;h2 id="creating-the-data-files"&gt;Creating the "data files"&lt;/h2&gt;
 
@@ -95,7 +95,7 @@
 
 &lt;p&gt;BEM was a really interesting one to research. It’s a bit ugly but it’s purpose is beautiful. It’s ultimately trying to solve the problem of CSS being unreadable and confusing to those who didn’t write it themselves. If we’re honest with ourselves, maybe the classes we wrote ourselves a few weeks ago don’t seem to make sense anymore. This problem was also present when I was learning Ruby —&amp;gt; Write methods that are more descriptive. In reference to CSS —&amp;gt; Write classes that are more descriptive.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="BEM" src="/images/bem.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="BEM" src="/images/bem-7e07a280.png" /&gt;&lt;/p&gt;
 
 &lt;h3 id="smacssscalable-and-modular-architecture-for-css"&gt;SMACSS(Scalable and Modular Architecture for CSS)&lt;/h3&gt;
 
@@ -166,7 +166,7 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;During my last project: &lt;a title="Self Assessment" href="http://ericagarcia.me/projects/assessment/"&gt;Self Assessment&lt;/a&gt;, I was looking for a way to display my ratings and decided to experiement with SVG graphics and animations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles-3604d17d.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The code to create one of these animated circles looks a little confusing:&lt;/p&gt;
 
@@ -176,7 +176,7 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;Maybe it would be easier to view this problem as a series of different sections like so:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles_divided.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="svg_circles" src="/images/blog/svg/svg_circles_divided-99fd748c.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;The code to create a sectioned circle would look something like this:&lt;/p&gt;
 
@@ -213,7 +213,7 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;A rx(radius in x-direction), ry(radius in y-direction), x-axis rotation, large-arc flag, sweep-flag&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="svg_arcs" src="/images/blog/svg/SVGArcs_Flags.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="svg_arcs" src="/images/blog/svg/SVGArcs_Flags-a119f4a6.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here the virtual pen is using absolute coordinates - starting at 0, -100 to the point 86.6, -50 ( the last two numbers in the list of A coordinates). The first two numbers of A are the same 100, 100 so this results in a circular arc.&lt;/p&gt;
 
@@ -264,23 +264,23 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;&lt;strong&gt;Law of Similarity:&lt;/strong&gt; When things are similar, the human brain tends to perceive them as a group or pattern. Therefore, something different from the group will tend to stand out.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="similarity_example" src="/images/blog/hierarchy/similarity.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="similarity_example" src="/images/blog/hierarchy/similarity-2c0ccf74.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Law of Continuation:&lt;/strong&gt; Continuation occurs when the eye is naturally compelled to move through one object to another object. Elements arranged on a line or curve are perceived to be more related than elements not on a line or curve.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="continuation_example" src="/images/blog/hierarchy/continuation.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="continuation_example" src="/images/blog/hierarchy/continuation-7d619156.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Law of Closure:&lt;/strong&gt; This is a really cool one. This occurs when the human brain is able to fill in missing information in order to create a whole.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="closure_example" src="/images/blog/hierarchy/closure.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="closure_example" src="/images/blog/hierarchy/closure-692a4c9c.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Law of Proximity:&lt;/strong&gt; When elements are placed in close proximity the brain tends to categorize them into a group as where things that are placed further apart from each other are viewed as  separate groups.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="proximity_example" src="/images/blog/hierarchy/proximity.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="proximity_example" src="/images/blog/hierarchy/proximity-b12d3d11.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Figure and Ground Relationships:&lt;/strong&gt; This is the brains ability to create a relationship between the object and its background.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="figure_ground_example" src="/images/blog/hierarchy/figure_ground.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="figure_ground_example" src="/images/blog/hierarchy/figure_ground-fe0a9c91.png" /&gt;&lt;/p&gt;
 
 &lt;h3 id="how-does-the-gestalt-theory-help-us"&gt;How does the gestalt theory help us?&lt;/h3&gt;
 
@@ -340,7 +340,7 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;Here are a few HTML5 Semantic tags explained using a project I worked on this week:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://ericagarcia.me/projects/semantics/"&gt;&lt;img alt="My Semantics Project" src="/images/blog/semantics/Semantics_project.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ericagarcia.me/projects/semantics/"&gt;&lt;img alt="My Semantics Project" src="/images/blog/semantics/Semantics_project-cbbf32a5.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h5 id="header-"&gt;&amp;lt; header &amp;gt;&lt;/h5&gt;
 
@@ -348,21 +348,21 @@ Every module should be completely independent of its context and should work wit
 
 &lt;p&gt;There can be multiple headers in a document but be sure not to overuse this element. For example, if the &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; element only contains a single heading element its unnecessary.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="header_example" src="/images/blog/semantics/Semantics_header.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="header_example" src="/images/blog/semantics/Semantics_header-06fa3bb7.png" /&gt;&lt;/p&gt;
 
 &lt;h5 id="footer-"&gt;&amp;lt; footer &amp;gt;&lt;/h5&gt;
 &lt;p&gt;The footer identifies the closing or end of a page, article, section, or other segment of a page.&lt;/p&gt;
 
 &lt;p&gt;Footers may contain things such as short list of links to various pages of a site, social media icons, copyright information, etc.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="footer_example" src="/images/blog/semantics/Semantics_footer.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="footer_example" src="/images/blog/semantics/Semantics_footer-f5e279a7.png" /&gt;&lt;/p&gt;
 
 &lt;h5 id="nav-"&gt;&amp;lt; nav &amp;gt;&lt;/h5&gt;
 &lt;p&gt;The nav identifies a section of major navigational links on a page.&lt;/p&gt;
 
 &lt;p&gt;This element is also one that is commonly overused. An example of over-usage would be using it for the links located in your footer as they are not considered “major” navigational links.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="nav_example" src="/images/blog/semantics/Semantics_nav.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="nav_example" src="/images/blog/semantics/Semantics_nav-50208e2f.png" /&gt;&lt;/p&gt;
 
 &lt;h5 id="article-"&gt;&amp;lt; article &amp;gt;&lt;/h5&gt;
 &lt;p&gt;A &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is used to contribute to the documents structure. It contains a standalone piece of content that may be independently distributed or reused.&lt;/p&gt;
@@ -370,19 +370,19 @@ Every module should be completely independent of its context and should work wit
 &lt;p&gt;An easy test to see whether something would make sense as an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; is:
 Would it’s content make sense independent of it’s context? If so, it’s a good candidate for an &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="article_example" src="/images/blog/semantics/Semantics_article.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="article_example" src="/images/blog/semantics/Semantics_article-c0a138b0.png" /&gt;&lt;/p&gt;
 
 &lt;h5 id="section-"&gt;&amp;lt; section &amp;gt;&lt;/h5&gt;
 &lt;p&gt;A section is also used to contribute to the documents structure. It is used to group different articles into different purposes or subjects, or to define the different sections of a single article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="section_example" src="/images/blog/semantics/Semantics_section.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="section_example" src="/images/blog/semantics/Semantics_section-9d3f336d.png" /&gt;&lt;/p&gt;
 
 &lt;h5 id="aside-"&gt;&amp;lt; aside &amp;gt;&lt;/h5&gt;
 &lt;p&gt;The aside element holds content, such as sidebars, inserts, or brief explanations that is separate from but related to the content surrounding it.&lt;/p&gt;
 
 &lt;p&gt;Examples for an aside could be advertisements, or groups of navigation items. In this case I have a list of speakers which navigate to their personal websites.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="aside_example" src="/images/blog/semantics/Semantics_aside.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="aside_example" src="/images/blog/semantics/Semantics_aside-6ad45d68.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Extra:&lt;/p&gt;
 
@@ -402,7 +402,7 @@ Would it’s content make sense independent of it’s context? If so, it’s a g
 &lt;h5 id="q-"&gt;&amp;lt; q &amp;gt;&lt;/h5&gt;
 &lt;p&gt;A &lt;code&gt;&amp;lt;q&amp;gt;&lt;/code&gt; is an inline html quotation element that is used for short quotations that don’t require paragraph breaks.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="blockquote_example" src="/images/blog/semantics/Semantics_blockquote.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="blockquote_example" src="/images/blog/semantics/Semantics_blockquote-b9ca6eb1.png" /&gt;&lt;/p&gt;
 
 </content>
   </entry>

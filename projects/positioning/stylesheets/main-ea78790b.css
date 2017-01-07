@@ -47,7 +47,7 @@ h2, h3 {
 /* line 53, ../projects/positioning/stylesheets/main.css.scss */
 .header {
   background-color: #484a47;
-  background-image: url("../images/forest.png");
+  background-image: url("../images/forest-52970088.png");
   background-size: cover;
   height: 500px;
   width: 100%;
@@ -63,7 +63,7 @@ h2, h3 {
 
 /* line 70, ../projects/positioning/stylesheets/main.css.scss */
 .fox {
-  background-image: url("../images/grey_fox_shadow.png");
+  background-image: url("../images/grey_fox_shadow-592b5e55.png");
   background-repeat: no-repeat;
   position: fixed;
   top: 15px;
@@ -74,7 +74,7 @@ h2, h3 {
 
 /* line 81, ../projects/positioning/stylesheets/main.css.scss */
 .red-fox {
-  background-image: url("../images/red_fox.png");
+  background-image: url("../images/red_fox-5da8a900.png");
   background-repeat: no-repeat;
   position: relative;
   width: 300px;
@@ -82,7 +82,7 @@ h2, h3 {
 
 /* line 90, ../projects/positioning/stylesheets/main.css.scss */
 .blue-fox {
-  background-image: url("../images/blue_fox.png");
+  background-image: url("../images/blue_fox-84ad8d3d.png");
   background-repeat: no-repeat;
   position: relative;
   width: 200px;
