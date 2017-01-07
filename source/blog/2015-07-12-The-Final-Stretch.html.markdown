@@ -2,6 +2,7 @@
 title: The Final Stretch
 date: 2015-07-12 03:53 UTC3
 tags: goals, reflection
+section: blog
 published: false
 ---
 

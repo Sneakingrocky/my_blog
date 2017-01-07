@@ -2,6 +2,7 @@
 title: Helpful Notes
 date: 2015-06-02 03:53 UTC3
 tags: git, reflection
+section: blog
 published: false
 ---
 

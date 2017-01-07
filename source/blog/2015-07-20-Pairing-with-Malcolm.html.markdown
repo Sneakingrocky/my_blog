@@ -2,6 +2,7 @@
 title: Pairing with Malcolm
 date: 2015-07-20 03:53 UTC3
 tags: pairing tour
+section: blog
 published: false
 ---
 

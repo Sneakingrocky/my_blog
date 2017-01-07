@@ -1,16 +1,19 @@
-<section class="section--textured fl">
-  <section class="row large-12 collapse">
+---
+section: work
+---
 
-    <header class="title">
-      <h1>Erica Garcia</h1>
-      <p class="subtitle">Designer. Developer. Animal Lover.</p>
+<%= partial "partials/nav" %>
+
+<section>
+  <div class="content-container section--textured">
+
+    <header class="row">
+      <div class="column large-8">
+      <h1 class="title">I'm a knowledge hungry designer;</h1> 
+      <p class="subtitle">who enjoys tackling every part of the design process - from user research, testing, visual design and implementation. I'm currently working at <a href="https://8thlight.com/" target="_blank">8th Light</a> in Chicago, IL.  When not designing, you can find me with my awesome dog Maverick, mentoring in the community, and stretching my comfort zone by trying new things.</p>
     </header>
 
-    <section class="section-buttons">
-      <%= link_to "Work", "/projects.html", :class => 'submit-button' %>
-      <%= link_to "Blog", "/blog.html", :class => 'submit-button margin-right' %> 
-    </section>
   </section>
 
-  <section id="instafeed" class="hide-for-small-only gallery"></section>
+  <%= partial "projects" %>
 </section>

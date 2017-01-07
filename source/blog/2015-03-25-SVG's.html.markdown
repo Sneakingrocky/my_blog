@@ -2,6 +2,7 @@
 title: SVG's
 date: 2015-03-25 03:53 UTC3
 tags: SVG's, Animations, Design
+section: blog
 ---
 
 When I first started working with images way back when, I would save them as a jpeg (Joint Photographic Experts Group). The problem with saving an image as a jpeg is it has a “lossy” file compression. This means that data is lost as the file is compressed which causes a noticeable loss of quality. When I discovered this, you can imagine how cool I felt when I started saving my images and graphics as png’s (Portable Network Graphics) -  which are “lossless”. A file type that does not lose data so that it can be viewed at a high quality resolution seemed like the end all solution for web images and graphics.

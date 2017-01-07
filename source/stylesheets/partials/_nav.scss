@@ -16,12 +16,9 @@
   li {
     display: block;
     float: left;
-    padding: 0;
-  }
+    padding-right: 2em;
 
-  a {
-    display: block;
-    line-height: 45px;
+
   }
 
   a:hover {
@@ -51,6 +48,10 @@
   color: grey;
   font-size: 1em;
   font-weight: 500;
-  padding: 0 1em;
   text-decoration: none;
+
+  &.active {
+    border-bottom: 2px solid $cyan;
+    padding-bottom: .4em;
+  }
 }

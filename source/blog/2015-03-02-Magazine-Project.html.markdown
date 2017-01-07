@@ -2,6 +2,7 @@
 title: Magazine Project
 date: 2015-03-02 03:53 UTC
 tags: Design, CSS, Positioning
+section: blog
 ---
 
 In order to work more on my understanding of CSS positioning and relationships, I was given the challenge of choosing a magazine layout and trying to replicate it using HTML and CSS.

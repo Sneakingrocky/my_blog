@@ -2,6 +2,7 @@
 title: Pairing with Eric
 date: 2015-07-17 03:53 UTC3
 tags: pairing tour
+section: blog
 published: false
 ---
 

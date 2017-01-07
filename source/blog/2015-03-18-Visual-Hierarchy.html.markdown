@@ -2,6 +2,7 @@
 title: Visual Hierarchy
 date: 2015-03-18 03:53 UTC3
 tags: Design, Hierarchy, Layout
+section: blog
 ---
 
 Visual hierarchy is vital in every design in order to create an enjoyable user experience. Good visual hierarchy is the responsible use of color, contrast, texture, shape, position, orientation, and size to create different levels of relative importance. It’s a difficult task to responsibly use all of these exciting tools to create a cohesive and  enjoyable experience for the user. However, with a better understanding of how our users perceive the information we provide them, we’ll have more guidance as to how to efficiently guide our viewers from one piece of content to the next.

@@ -2,6 +2,7 @@
 title: Pairing with Kevin
 date: 2015-07-22 03:53 UTC3
 tags: pairing tour
+section: blog
 published: false
 ---
 

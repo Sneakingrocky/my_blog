@@ -2,6 +2,7 @@
 title: Pairing with Eric Day 2
 date: 2015-07-24 03:53 UTC3
 tags: pairing tour, daily life
+section: blog
 published: false
 ---
 

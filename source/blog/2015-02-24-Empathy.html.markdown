@@ -2,6 +2,7 @@
 title: Empathy
 date: 2015-02-24 03:53 UTC
 tags: Empathy, Wisdom, Soft Talk
+section: blog
 ---
 
 

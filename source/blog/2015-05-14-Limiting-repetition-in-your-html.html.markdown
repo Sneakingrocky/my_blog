@@ -2,6 +2,7 @@
 title: Limiting repetiton in your html
 date: 2015-05-14 03:53 UTC3
 tags: html, css, frontend development
+section: blog
 ---
 
 

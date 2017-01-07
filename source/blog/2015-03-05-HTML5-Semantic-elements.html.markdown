@@ -2,6 +2,7 @@
 title: Semantic Elements
 date: 2015-03-05 03:53 UTC
 tags: HTML, Semantics
+section: blog
 ---
 
 

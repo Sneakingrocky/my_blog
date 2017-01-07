@@ -1,26 +1,26 @@
-.title h1 {
-  color: $cyan;
-  font-family: "chaparral-pro",sans-serif;
-  font-size: 5em;
+.title {
+  color: $dark_gray;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3em;
   font-weight: 400;
   line-height: 1.2em;
   letter-spacing: 2px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 15%;
-  text-align: center;
+  margin: 0;
+
+  @media (max-width: $medium_width) {
+    font-size: 2em;
+  }
 }
 
 .subtitle {
-  color: $gray_blue;
-  font-family: "chaparral-pro",sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.2em;
-  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
   margin: 0 auto;
-  text-align: center;
 
+  @media (max-width: $medium_width) {
+    font-size: .8em
+  }
 }
 
 .hero__title {

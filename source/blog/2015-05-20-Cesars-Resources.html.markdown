@@ -2,6 +2,7 @@
 title: Cesars Resources
 date: 2015-05-20 03:53 UTC3
 tags: design, resources
+section: blog
 published: false
 ---
 

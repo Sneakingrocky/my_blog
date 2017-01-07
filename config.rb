@@ -73,7 +73,9 @@ helpers do
   end
 end
 
+require "lib/helpers/general_helpers"
 require "lib/helpers/project_helpers"
+helpers GeneralHelpers
 helpers ProjectHelpers
 
 # Automatic image dimensions on image_tag helper

@@ -2,6 +2,7 @@
 title: Defending your designs
 date: 2015-02-06 03:53 UTC3
 tags: Design
+section: blog
 ---
 
 This week my mentor asked me to think about my process while creating a project. He brought up the importance of being ready to defend your work and design decisions when presenting to clients. I was really glad that he brought up this topic because being able to defend your work is such an important skill to have and to actively think about.

@@ -47,11 +47,19 @@
 .section--textured {
   background-image: image-url("gridme.png");
   background-repeat: repeat;
-  height: 100vh;
 }
 
 .section--light {
   background: $off_white;
+}
+
+.section__divider {
+  border-top: 1px solid #d3dadf;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding-bottom: 1.3em;
+  width: 60px;
 }
 
 .divider {

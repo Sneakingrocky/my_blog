@@ -2,6 +2,7 @@
 title: CSS Architecture
 date: 2015-04-24 03:53 UTC3
 tags: CSS, BEM, OOCSS, SMACSS
+section: blog
 ---
 
 
