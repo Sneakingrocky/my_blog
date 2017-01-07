@@ -1,5 +1,5 @@
 ---
-title: Limiting repetiton in your html
+title: Limiting repetitive markup with middleman
 date: 2015-05-14 03:53 UTC3
 tags: html, css, frontend development
 section: blog

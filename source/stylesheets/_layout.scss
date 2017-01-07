@@ -69,25 +69,3 @@
   margin: 1.25em 0 0 0;
   width: 100%;
 }
-
-/* item styles */
-.item-image {
-  border-radius: 6px 6px 0 0;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 50%; /* desired aspect ratio */
-}
-
-.item-image img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.item-image img {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
