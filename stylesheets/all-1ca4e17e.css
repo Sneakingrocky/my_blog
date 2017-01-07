@@ -576,29 +576,6 @@
   margin: 1.25em 0 0 0;
   width: 100%; }
 
-/* item styles */
-/* line 74, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
-.item-image {
-  border-radius: 6px 6px 0 0;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 50%;
-  /* desired aspect ratio */ }
-
-/* line 81, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
-.item-image img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; }
-
-/* line 90, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
-.item-image img {
-  opacity: 1;
-  transition: opacity 0.5s; }
-
 /* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/_forms.scss */
 .placeholder {
   padding-left: 50px; }

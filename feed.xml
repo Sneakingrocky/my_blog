@@ -10,11 +10,11 @@
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Limiting repetiton in your html</title>
+    <title>Limiting repetitive markup with middleman</title>
     <link rel="alternate" href="http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/"/>
     <id>http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/</id>
     <published>2015-05-13T22:53:00-05:00</published>
-    <updated>2017-01-07T16:43:35-06:00</updated>
+    <updated>2017-01-07T17:46:49-06:00</updated>
     <author>
       <name>Article Author</name>
     </author>
