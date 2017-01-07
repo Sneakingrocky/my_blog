@@ -1,8 +1,9 @@
 .nav {
   background-color: white;
   border-bottom: 1px solid #eee;
+  line-height: 44px;
   min-height: 75px;
-  padding: 15px 40px;
+  padding: 15px 6rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -18,7 +19,9 @@
     float: left;
     padding-right: 2em;
 
-
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   a:hover {
