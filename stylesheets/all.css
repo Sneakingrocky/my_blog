@@ -42,7 +42,7 @@
   @media (max-width: 640px) {
     /* line 19, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
     .content-container {
-      padding: 10rem 2rem; } }
+      padding: 6rem 2rem; } }
 
 /* line 28, /Users/ericagarcia/projects/my_blog/source/stylesheets/_grid.scss */
 .content-container--no-padding {
