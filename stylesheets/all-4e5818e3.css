@@ -739,22 +739,26 @@ blockquote p {
 .nav {
   background-color: white;
   border-bottom: 1px solid #eee;
+  line-height: 44px;
   min-height: 75px;
-  padding: 15px 40px;
+  padding: 15px 6rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10; }
-  /* line 11, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 12, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav ul {
     display: inline-block;
     margin-bottom: em(10); }
-  /* line 16, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 17, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav li {
     display: block;
     float: left;
     padding-right: 2em; }
-  /* line 24, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 22, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+    .nav li:last-child {
+      padding-right: 0; }
+  /* line 27, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav a:hover {
     color: #53bc91; }
   @media (max-width: 550px) {
@@ -762,7 +766,7 @@ blockquote p {
     .nav {
       text-align: left; } }
 
-/* line 33, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 36, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
 .logo {
   color: #595959;
   font-family: "chaparral-pro",sans-serif;
@@ -772,17 +776,17 @@ blockquote p {
   text-decoration: none;
   text-transform: uppercase; }
   @media (max-width: 550px) {
-    /* line 33, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 36, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo {
       font-size: 1em; } }
 
-/* line 47, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 50, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav-links {
   color: grey;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none; }
-  /* line 53, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 56, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav-links.active {
     border-bottom: 2px solid #7CD3C8;
     padding-bottom: .4em; }
