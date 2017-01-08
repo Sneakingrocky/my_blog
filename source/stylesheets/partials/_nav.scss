@@ -9,6 +9,10 @@
   width: 100%;
   z-index: 10;
 
+  @media (max-width: $medium_width) {
+    padding: 15px 1.5em;
+  }
+
   ul {
     display: inline-block;
     margin-bottom: em(10);
@@ -26,10 +30,6 @@
 
   a:hover {
     color: rgb(83, 188, 145);
-  }
-
-  @media (max-width: 550px) {
-    text-align: left;
   }
 }
 
