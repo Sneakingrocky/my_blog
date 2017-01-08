@@ -4,7 +4,6 @@
   border-radius: 3px;
   color: $gray_blue;
   font-family: "lato",sans-serif;
-  margin: 0;
   padding: .8rem 3rem;
   transition: background 0.3s, color 0.3s;
 
@@ -16,6 +15,7 @@
 
   @media (max-width: 550px) {
     margin-bottom: 5px;
+    text-align: center;
     width: 100%;
   }
 }

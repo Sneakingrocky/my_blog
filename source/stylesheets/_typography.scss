@@ -17,10 +17,6 @@
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
-
-  @media (max-width: $medium_width) {
-    font-size: .8em
-  }
 }
 
 .hero__title {
