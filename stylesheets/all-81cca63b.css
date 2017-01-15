@@ -405,7 +405,29 @@
   padding-bottom: 1em;
   width: 3em; }
 
-/* line 84, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+/* line 81, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+.circle__icon {
+  background: #8E99A8;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  position: relative; }
+  /* line 91, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .circle__icon img {
+    position: absolute;
+    top: 10.5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  /* line 99, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+  .circle__icon:hover {
+    background: #818EA0;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15); }
+
+/* line 108, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
 .item-image {
   border-radius: 6px 6px 0 0;
   position: relative;
@@ -413,7 +435,7 @@
   padding-bottom: 50%;
   /* desired aspect ratio */ }
 
-/* line 91, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+/* line 115, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
 .item-image img {
   position: absolute;
   top: 0;
@@ -422,7 +444,7 @@
   right: 0;
   margin: auto; }
 
-/* line 100, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
+/* line 124, /Users/ericagarcia/projects/my_blog/source/stylesheets/_images.scss */
 .item-image img {
   opacity: 1;
   transition: opacity 0.5s; }
@@ -498,13 +520,23 @@
   margin: 0 0 .5em 0; }
 
 /* line 47, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.section__title--light {
+  color: white; }
+
+/* line 51, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__subtitle {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 0 0 .5em 0; }
 
-/* line 54, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 58, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.section__body {
+  color: white;
+  max-width: 680px;
+  margin: 0 auto; }
+
+/* line 64, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__number {
   color: #ddd; }
 
@@ -802,10 +834,10 @@ blockquote p {
     border-bottom: 2px solid #7CD3C8;
     padding-bottom: .4em; }
 
-/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_project_footer.scss */
-.project-footer {
+/* line 1, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_footer.scss */
+.footer {
   background: #f1f1f1; }
 
-/* line 5, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_project_footer.scss */
-.project-footer__title {
-  font-weight: normal; }
+/* line 5, /Users/ericagarcia/projects/my_blog/source/stylesheets/partials/_footer.scss */
+.footer--dark {
+  background: #8E99A8; }
