@@ -1,0 +1,41 @@
+---
+layout: layout
+section: work
+---
+
+<%= partial "partials/nav" %>
+
+<div class="content-container">
+  <section class="section center">
+    <h2 class="section__title"><span class="section__number">01.</span> Landing Page</h1>
+    <img src="/images/portfolio/travelsite/travelsite_homepage.jpg" class="section__image">
+    <div class="section center">
+      <a class="submit-button" href="https://thawing-lake-3074.herokuapp.com/" target="_blank">View Live Site</a>
+    </div>
+  </section>
+
+  <section class="row section">
+    <h2 class="section__title"><span class="section__number">02.</span> Hotel Search</h1>
+    <div class="column large-6">   
+      <img src="/images/portfolio/travelsite/travelsite_hotelspage.jpg" class="section__image">
+    </div>
+
+    <div class="column large-6">
+      <img src="/images/portfolio/travelsite/travelsite_hotelssearch.jpg" class="section__image">
+    </div>
+  </section>
+
+  <section class="row section">
+    <h2 class="section__title"><span class="section__number">03.</span> Rental Car Search</h1>
+    <div class="column large-6">   
+      <img src="/images/portfolio/travelsite/travelsite_cars.jpg" class="section__image">
+    </div>
+
+    <div class="column large-6">
+      <img src="/images/portfolio/travelsite/travelsite_rentals.jpg" class="section__image">
+    </div>
+  </section>
+
+</div>
+
+<%= partial "projects/footer", locals: {projects: ["thesocreports", "careerpage"]} %>

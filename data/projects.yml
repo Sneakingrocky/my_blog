@@ -10,3 +10,8 @@
   image: "/images/portfolio/jellybeans/Jellybeans_signin.jpg"
   slug: "jellybeans"
   link: "/projects/jellybeans"
+- name: "Travel Site"
+  image: "/images/Travel_site.png"
+  slug: "travelsite"
+  link: "/projects/travelsite"
+
