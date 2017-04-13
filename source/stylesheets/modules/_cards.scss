@@ -37,6 +37,35 @@
   }
 }
 
+.card-section--no-border {
+  border-radius: 6px;
+  border-top: none;
+}
+
+.card__accent--orange {
+  border-bottom: 2px solid #EC8064;
+}
+
+.card__accent--green {
+  border-bottom: 2px solid #A0C8B0;
+}
+
+.card__accent--purple {
+  border-bottom: 2px solid #C88FC0;
+}
+
+.card__accent--blue {
+  border-bottom: 2px solid #7CACDB;
+}
+
+.card__accent--grey {
+  border-bottom: 2px solid #75808F;
+}
+
+.card__accent--peach {
+  border-bottom: 2px solid #FCCE93;
+}
+
 .card__image {
   cursor: hand;
   cursor: pointer;
