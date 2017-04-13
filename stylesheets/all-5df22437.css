@@ -729,34 +729,63 @@ blockquote p {
     margin-top: 0; }
 
 /* line 41, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card-section--no-border {
+  border-radius: 6px;
+  border-top: none; }
+
+/* line 46, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--orange {
+  border-bottom: 2px solid #EC8064; }
+
+/* line 50, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--green {
+  border-bottom: 2px solid #A0C8B0; }
+
+/* line 54, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--purple {
+  border-bottom: 2px solid #C88FC0; }
+
+/* line 58, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--blue {
+  border-bottom: 2px solid #7CACDB; }
+
+/* line 62, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--grey {
+  border-bottom: 2px solid #75808F; }
+
+/* line 66, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card__accent--peach {
+  border-bottom: 2px solid #FCCE93; }
+
+/* line 70, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__image {
   cursor: hand;
   cursor: pointer;
   width: 100%; }
 
-/* line 47, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 76, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__name {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.4em;
   line-height: 1.3em; }
 
-/* line 53, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 82, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card-section__title {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.1em;
   margin-bottom: 0; }
 
-/* line 60, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 89, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .card-section {
   background: #fafafa; }
-/* line 64, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 93, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .item-image img {
   opacity: 0.8; }
 
 /* ==========================================================================
    Card List
    ========================================================================== */
-/* line 73, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 102, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list {
   background: none;
   border: 1px solid #E4E3E3;
@@ -766,19 +795,19 @@ blockquote p {
   margin-bottom: 1em;
   width: 100%; }
 
-/* line 83, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 112, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--green-border {
   border-left: 3px solid #BACCB9; }
 
-/* line 87, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 116, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--blue-border {
   border-left: 3px solid #27A8E0; }
 
-/* line 91, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 120, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--dark-green-border {
   border-left: 3px solid #576A67; }
 
-/* line 95, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 124, /Users/ericagarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--light-grey {
   border-left: 3px solid #eee; }
 
