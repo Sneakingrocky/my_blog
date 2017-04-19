@@ -64,3 +64,25 @@
 .section__number {
   color: #ddd;
 }
+
+.list__header {
+  border-bottom: double 4px #dbd9d4;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+  padding-bottom: .5em;
+}
+
+.list {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+
+  li {
+    border-bottom: 1px dashed #dbd9d4;
+    font-weight: 1.4em;
+    padding: 1em 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
