@@ -544,6 +544,26 @@
 .section__number {
   color: #ddd; }
 
+/* line 68, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.list__header {
+  border-bottom: double 4px #dbd9d4;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+  padding-bottom: .5em; }
+
+/* line 75, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+.list {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5; }
+  /* line 79, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+  .list li {
+    border-bottom: 1px dashed #dbd9d4;
+    font-weight: 1.4em;
+    padding: 1em 0; }
+    /* line 84, /Users/ericagarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    .list li:last-child {
+      border-bottom: none; }
+
 /* line 3, /Users/ericagarcia/projects/my_blog/source/stylesheets/_layout.scss */
 .section {
   padding: 6em 0;
