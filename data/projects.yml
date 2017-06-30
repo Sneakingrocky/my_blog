@@ -14,4 +14,8 @@
   image: "/images/Travel_site.png"
   slug: "travelsite"
   link: "/projects/travelsite"
+- name: "Creating Handmade Jewelry"
+  image: "/images/portfolio/jewelry/deernecklacenew_2.jpg"
+  slug: "jewelry"
+  link: "/projects/jewelry"
 
