@@ -1,11 +1,9 @@
 .title {
   color: $dark_gray;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 3em;
-  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.2em;
   line-height: 1.2em;
   letter-spacing: 2px;
-  margin: 0;
 
   @media (max-width: $medium_width) {
     font-size: 2em;
