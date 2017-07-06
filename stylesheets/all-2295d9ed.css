@@ -483,25 +483,23 @@
 /* line 1, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .title {
   color: #242424;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 3em;
-  font-weight: 400;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.2em;
   line-height: 1.2em;
-  letter-spacing: 2px;
-  margin: 0; }
+  letter-spacing: 2px; }
   @media (max-width: 640px) {
     /* line 1, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
     .title {
       font-size: 2em; } }
 
-/* line 15, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 13, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto; }
 
-/* line 22, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 20, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title {
   color: white;
   font-family: 'Libre Franklin', sans-serif;
@@ -509,61 +507,61 @@
   font-weight: 300;
   line-height: 1.1em; }
   @media (max-width: 640px) {
-    /* line 22, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 20, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
     .hero__title {
       font-size: 2em; } }
 
-/* line 34, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 32, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title--transparent {
   background: black;
   padding: .5em;
   opacity: .7; }
 
-/* line 40, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 38, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__title {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 .5em 0; }
 
-/* line 47, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 45, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__title--light {
   color: white; }
 
-/* line 51, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 49, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__subtitle {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 0 0 .5em 0; }
 
-/* line 58, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 56, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__body {
   color: white;
   max-width: 680px;
   margin: 0 auto; }
 
-/* line 64, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 62, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__number {
   color: #ddd; }
 
-/* line 68, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 66, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .list__header {
   border-bottom: double 4px #dbd9d4;
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   padding-bottom: .5em; }
 
-/* line 75, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 73, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .list {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
-  /* line 79, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+  /* line 77, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
   .list li {
     border-bottom: 1px dashed #dbd9d4;
     font-weight: 1.4em;
     padding: 1em 0; }
-    /* line 84, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 82, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
     .list li:last-child {
       border-bottom: none; }
 
