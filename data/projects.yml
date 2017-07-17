@@ -28,10 +28,13 @@
   slug: "axus"
   link: "/projects/axus"
   role: "Role: Product Design Lead"
+- name: "Realestate Investment Platform"
+  image: "/images/portfolio/fundwise/fundwise_homepage_sm.jpg"
+  slug: "fundwise"
+  link: "/projects/fundwise"
+  role: "Role: Lead Product Designer"
 - name: "Static Magazine Recreation in HTML/CSS"
   image: "/images/Magazine.png"
   slug: "magazine"
   link: "/projects/magazine"
   role: "Role: Implemented this for fun"
-
-
