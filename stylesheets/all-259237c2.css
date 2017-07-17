@@ -501,12 +501,11 @@
 
 /* line 13, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .subtitle {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto; }
 
-/* line 20, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 19, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title {
   color: white;
   font-family: 'Libre Franklin', sans-serif;
@@ -514,61 +513,61 @@
   font-weight: 300;
   line-height: 1.1em; }
   @media (max-width: 640px) {
-    /* line 20, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 19, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
     .hero__title {
       font-size: 2em; } }
 
-/* line 32, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 31, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title--transparent {
   background: black;
   padding: .5em;
   opacity: .7; }
 
-/* line 38, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 37, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__title {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 .5em 0; }
 
-/* line 45, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 44, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__title--light {
   color: white; }
 
-/* line 49, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 48, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__subtitle {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 0 0 .5em 0; }
 
-/* line 56, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 55, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__body {
   color: white;
   max-width: 680px;
   margin: 0 auto; }
 
-/* line 62, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 61, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .section__number {
   color: #ddd; }
 
-/* line 66, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 65, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .list__header {
   border-bottom: double 4px #dbd9d4;
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   padding-bottom: .5em; }
 
-/* line 73, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+/* line 72, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
 .list {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
-  /* line 77, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+  /* line 76, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
   .list li {
     border-bottom: 1px dashed #dbd9d4;
     font-weight: 1.4em;
     padding: 1em 0; }
-    /* line 82, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 81, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_typography.scss */
     .list li:last-child {
       border-bottom: none; }
 
@@ -745,6 +744,7 @@ blockquote p {
 .card-section {
   background: #fff;
   border-top: 1px solid #E4E3E3;
+  border-radius: 0 0 6px 6px;
   color: grey;
   margin: 0px;
   padding: 0px 15px;
@@ -752,68 +752,75 @@ blockquote p {
   padding-bottom: 1.2em;
   text-align: center;
   transition: background 0.5s; }
-  /* line 36, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+  /* line 37, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
   .card-section :first-child {
     margin-top: 0; }
 
-/* line 41, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 42, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card-section--no-border {
   border-radius: 6px;
   border-top: none; }
 
-/* line 46, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 47, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--orange {
   border-bottom: 2px solid #EC8064; }
 
-/* line 50, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 51, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--green {
   border-bottom: 2px solid #A0C8B0; }
 
-/* line 54, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 55, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--purple {
   border-bottom: 2px solid #C88FC0; }
 
-/* line 58, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 59, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--blue {
   border-bottom: 2px solid #7CACDB; }
 
-/* line 62, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 63, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--grey {
   border-bottom: 2px solid #75808F; }
 
-/* line 66, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 67, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__accent--peach {
   border-bottom: 2px solid #FCCE93; }
 
-/* line 70, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 71, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__image {
   cursor: hand;
   cursor: pointer;
   width: 100%; }
 
-/* line 76, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 77, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__name {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.4em;
   line-height: 1.3em; }
 
-/* line 82, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 83, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card-section__title {
   font-family: "omnes-pro",sans-serif;
   font-size: 1.1em;
   margin-bottom: 0; }
 
 /* line 89, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+.card-section__info {
+  font-family: "lato",sans-serif;
+  color: #bbbbbb;
+  font-size: .9em;
+  margin: 0; }
+
+/* line 97, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .card-section {
   background: #fafafa; }
-/* line 93, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 101, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .item-image img {
   opacity: 0.8; }
 
 /* ==========================================================================
    Card List
    ========================================================================== */
-/* line 102, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 110, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list {
   background: none;
   border: 1px solid #E4E3E3;
@@ -823,19 +830,19 @@ blockquote p {
   margin-bottom: 1em;
   width: 100%; }
 
-/* line 112, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 120, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--green-border {
   border-left: 3px solid #BACCB9; }
 
-/* line 116, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 124, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--blue-border {
   border-left: 3px solid #27A8E0; }
 
-/* line 120, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 128, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--dark-green-border {
   border-left: 3px solid #576A67; }
 
-/* line 124, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 132, /Users/EricaGarcia/projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--light-grey {
   border-left: 3px solid #eee; }
 
