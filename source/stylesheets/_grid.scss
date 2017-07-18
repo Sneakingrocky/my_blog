@@ -22,6 +22,15 @@
   margin: 0 auto;
   padding: 8rem 6rem;
   box-sizing: content-box;
+}
+
+.content-container--short {
+  padding: 8rem 6rem 1rem 6rem;
+}
+
+.content-container,
+.content-container--small,
+.content-container--short {
 
   @media (max-width: $medium_width) {
     padding: 6rem 2rem;
