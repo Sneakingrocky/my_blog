@@ -688,29 +688,28 @@ body {
   background: white;
   color: #4b4b4b;
   line-height: 1.9rem;
-  max-width: 1400px;
   padding-top: 70px; }
 
-/* line 9, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 8, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 img {
   border: 0; }
 
-/* line 13, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 12, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 19, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 18, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 a {
   color: #45b29d;
   text-decoration: none; }
 
-/* line 24, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 23, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 p {
   font-family: "lato",sans-serif; }
 
-/* line 28, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 27, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 blockquote {
   background: #f9f9f9;
   border-left: 5px solid #99BABE;
@@ -718,7 +717,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’"; }
 
-/* line 36, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 35, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 blockquote:before {
   color: #f9f9f9;
   content: open-quote;
@@ -727,7 +726,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em; }
 
-/* line 45, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
+/* line 44, /Users/EricaGarcia/projects/my_blog/source/stylesheets/_base.scss */
 blockquote p {
   display: inline; }
 
