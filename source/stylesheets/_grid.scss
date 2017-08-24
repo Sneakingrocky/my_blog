@@ -19,9 +19,10 @@
 
 .content-container,
 .content-container--small {
-  margin: 0 auto;
-  padding: 8rem 6rem;
   box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 8rem 6rem;
 }
 
 .content-container--short {

@@ -1,24 +1,26 @@
-<footer class="content-container footer">
-  <h2 class="section__title center">Other Work</h2>
-  <span class="section__divider"></span>
-  <section class="row">
-    <% projects.each do |project_slug| %>
-      <div class="column large-4">
-        <%= project_preview(project_slug) %>
-      </div>
-    <% end %>
-
-    <div class="column large-4">
-      <a href="/#projects">
-        <div class="card">
-          <div class="item-image">
-            <img src="/images/portfolio/arrow.jpg" class="card__image"/>
-          </div>
-          <div class="card-section">
-            <p class="card-section__title">View All Projects</p>
-          </div>
+<footer class="footer">
+  <div class="content-container">
+    <h2 class="section__title center">Other Work</h2>
+    <span class="section__divider"></span>
+    <section class="row">
+      <% projects.each do |project_slug| %>
+        <div class="column large-4">
+          <%= project_preview(project_slug) %>
         </div>
-      </a>
-    </div>
-  </section>
+      <% end %>
+
+      <div class="column large-4">
+        <a href="/#projects">
+          <div class="card">
+            <div class="item-image">
+              <img src="/images/portfolio/arrow.jpg" class="card__image"/>
+            </div>
+            <div class="card-section">
+              <p class="card-section__title">View All Projects</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
 </footer>
