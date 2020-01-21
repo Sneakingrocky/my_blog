@@ -5,7 +5,7 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-05-13T22:53:00-05:00</updated>
+  <updated>2015-05-13T23:53:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Limiting repetitive markup with middleman</title>
     <link rel="alternate" href="http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/"/>
     <id>http://blog.url.com/2015/05/14/Limiting-repetition-in-your-html/</id>
-    <published>2015-05-13T22:53:00-05:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-05-13T23:53:00-04:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -75,8 +75,8 @@
     <title>CSS Architecture</title>
     <link rel="alternate" href="http://blog.url.com/2015/04/24/CSS-Architecture/"/>
     <id>http://blog.url.com/2015/04/24/CSS-Architecture/</id>
-    <published>2015-04-23T22:53:00-05:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-04-23T23:53:00-04:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -133,8 +133,8 @@ Every module should be completely independent of its context and should work wit
     <title>Say No</title>
     <link rel="alternate" href="http://blog.url.com/2015/04/21/Say-No/"/>
     <id>http://blog.url.com/2015/04/21/Say-No/</id>
-    <published>2015-04-20T22:53:00-05:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-04-20T23:53:00-04:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -154,8 +154,8 @@ Every module should be completely independent of its context and should work wit
     <title>SVG's</title>
     <link rel="alternate" href="http://blog.url.com/2015/03/25/SVG's/"/>
     <id>http://blog.url.com/2015/03/25/SVG's/</id>
-    <published>2015-03-24T22:53:00-05:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-03-24T23:53:00-04:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -250,8 +250,8 @@ Every module should be completely independent of its context and should work wit
     <title>Visual Hierarchy</title>
     <link rel="alternate" href="http://blog.url.com/2015/03/18/Visual-Hierarchy/"/>
     <id>http://blog.url.com/2015/03/18/Visual-Hierarchy/</id>
-    <published>2015-03-17T22:53:00-05:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-03-17T23:53:00-04:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -318,8 +318,8 @@ Every module should be completely independent of its context and should work wit
     <title>Semantic Elements</title>
     <link rel="alternate" href="http://blog.url.com/2015/03/05/HTML5-Semantic-elements/"/>
     <id>http://blog.url.com/2015/03/05/HTML5-Semantic-elements/</id>
-    <published>2015-03-04T21:53:00-06:00</published>
-    <updated>2017-06-29T13:18:19-05:00</updated>
+    <published>2015-03-04T22:53:00-05:00</published>
+    <updated>2020-01-21T16:48:42-05:00</updated>
     <author>
       <name>Article Author</name>
     </author>
