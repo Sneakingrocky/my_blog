@@ -104,7 +104,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.8.1)
       activesupport (>= 3.1)
-    rack (1.6.5)
+    rack (1.6.12)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
