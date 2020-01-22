@@ -520,6 +520,15 @@
   margin: 0 auto; }
 
 /* line 19, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+.details {
+  background: #f0f0f2;
+  border-radius: 3px;
+  font-family: 'Lora', serif;
+  margin: 2em 0;
+  padding: .5em;
+  text-align: center; }
+
+/* line 28, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title {
   color: white;
   font-family: 'Libre Franklin', sans-serif;
@@ -527,68 +536,68 @@
   font-weight: 300;
   line-height: 1.1em; }
   @media (max-width: 640px) {
-    /* line 19, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 28, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
     .hero__title {
       font-size: 2em; } }
 
-/* line 31, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 40, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .hero__title--transparent {
   background: black;
   padding: .5em;
   opacity: .7; }
 
-/* line 37, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 46, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__title {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 .5em 0; }
 
-/* line 44, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__title--light {
   color: white; }
 
-/* line 48, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 57, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__subtitle {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 0 0 .5em 0; }
 
-/* line 55, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 64, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__highlight {
   font-family: 'Lora', serif;
   font-size: 1.2em;
   line-height: 2;
   margin-bottom: 2em; }
 
-/* line 62, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 71, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__body {
   color: white;
   max-width: 680px;
   margin: 0 auto; }
 
-/* line 68, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 77, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__number {
   color: #ddd; }
 
-/* line 72, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 81, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .list__header {
   border-bottom: double 4px #dbd9d4;
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   padding-bottom: .5em; }
 
-/* line 79, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 88, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .list {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
-  /* line 83, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+  /* line 92, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
   .list li {
     border-bottom: 1px dashed #dbd9d4;
     font-weight: 1.4em;
     padding: 1em 0; }
-    /* line 88, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 97, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
     .list li:last-child {
       border-bottom: none; }
 
