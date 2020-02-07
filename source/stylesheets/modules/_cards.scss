@@ -80,13 +80,14 @@
 }
 
 .card-section__title {
-  font-family: "omnes-pro",sans-serif;
+  color: grey;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 1.1em;
   margin-bottom: 0;
 }
 
 .card-section__info {
-  font-family: "lato",sans-serif;
+  font-family: 'Lora', serif;
   color: #bbbbbb;
   font-size: .9em;
   margin: 0;
@@ -130,4 +131,70 @@
 
 .card__list--light-grey {
   border-left: 3px solid #eee;
+}
+
+
+/* ==========================================================================
+   Portfolio Cards
+   ========================================================================== */
+
+.portfolio-card-container {
+  background: #f4f4f4;
+  margin: 0 auto;
+  padding: 6rem 6rem;
+
+  @media (max-width: $medium_width) {
+    padding: 2rem 3rem;
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  clear: left;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  margin: 1.5em 0;
+  overflow: hidden;
+
+  &:hover {
+    .portfolio-card-info {
+      height: 5em;
+    }
+  }
+}
+
+.portfolio-card-image {
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.portfolio-card-info {
+  background: #fff;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: height 0.2s ease;
+}
+
+.portfolio-title {
+  color: grey;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1em;
+  margin-bottom: 0;
+  padding-top: 1em;
+}
+
+.porfolio-subtitle {
+  font-family: 'Lora', serif;
+  color: #bbbbbb;
+  font-size: .9em;
+  margin: 0;
+  padding-bottom: 1em;
 }

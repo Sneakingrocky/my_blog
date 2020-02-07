@@ -1,11 +1,14 @@
 <a href="<%= project.link %>">
-  <div class="card">
-    <div class="item-image">
-      <img src="<%= project.image %>" class="card__image"/>
-    </div>
-    <div class="card-section">
-      <p class="card-section__title"><%= project.name %></p>
-      <p class="card-section__info"><%= project.role %></p>
-    </div>
-  </div>
+	<ul>
+  	<li class="portfolio-card">
+  		<div class="portfolio-card-image">
+      	<img src="<%= project.image %>" class="card__image"/>
+      </div>
+
+	    <div class="portfolio-card-info">
+	      <p class="portfolio-title card-section__title"><%= project.name %></p>
+	      <p class="porfolio-subtitle card-section__info"><%= project.role %></p>
+	    </div>
+  	</li>
+  </ul>
 </a>
