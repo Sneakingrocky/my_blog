@@ -474,7 +474,7 @@
 
 /* line 150, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_images.scss */
 .item-image img {
-  opacity: 1;
+  opacity: 2;
   transition: opacity 0.5s; }
 
 /* line 2, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
@@ -836,28 +836,29 @@ blockquote p {
 
 /* line 83, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card-section__title {
-  font-family: "omnes-pro",sans-serif;
+  color: grey;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 1.1em;
   margin-bottom: 0; }
 
-/* line 89, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 90, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card-section__info {
-  font-family: "lato",sans-serif;
+  font-family: 'Lora', serif;
   color: #bbbbbb;
   font-size: .9em;
   margin: 0; }
 
-/* line 97, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 98, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .card-section {
   background: #fafafa; }
-/* line 101, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 102, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card:hover .item-image img {
   opacity: 0.8; }
 
 /* ==========================================================================
    Card List
    ========================================================================== */
-/* line 110, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 111, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list {
   background: none;
   border: 1px solid #E4E3E3;
@@ -867,21 +868,82 @@ blockquote p {
   margin-bottom: 1em;
   width: 100%; }
 
-/* line 120, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 121, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--green-border {
   border-left: 3px solid #BACCB9; }
 
-/* line 124, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 125, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--blue-border {
   border-left: 3px solid #27A8E0; }
 
-/* line 128, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 129, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--dark-green-border {
   border-left: 3px solid #576A67; }
 
-/* line 132, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 133, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--light-grey {
   border-left: 3px solid #eee; }
+
+/* ==========================================================================
+   Portfolio Cards
+   ========================================================================== */
+/* line 142, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.portfolio-card-container {
+  background: #f4f4f4;
+  margin: 0 auto;
+  padding: 6rem 6rem; }
+  @media (max-width: 640px) {
+    /* line 142, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    .portfolio-card-container {
+      padding: 2rem 3rem; } }
+
+/* line 152, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.portfolio-card {
+  position: relative;
+  clear: left;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  margin: 1.5em 0;
+  overflow: hidden; }
+  /* line 163, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+  .portfolio-card:hover .portfolio-card-info {
+    height: 5em; }
+
+/* line 169, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.portfolio-card-image {
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  overflow: hidden; }
+
+/* line 176, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.portfolio-card-info {
+  background: #fff;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: height 0.2s ease; }
+
+/* line 187, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.portfolio-title {
+  color: grey;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1em;
+  margin-bottom: 0;
+  padding-top: 1em; }
+
+/* line 195, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+.porfolio-subtitle {
+  font-family: 'Lora', serif;
+  color: #bbbbbb;
+  font-size: .9em;
+  margin: 0;
+  padding-bottom: 1em; }
 
 /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav {
