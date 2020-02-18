@@ -936,14 +936,22 @@ blockquote p {
   font-size: 1em;
   margin-bottom: 0;
   padding-top: 1em; }
+  @media (max-width: 640px) {
+    /* line 187, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    .portfolio-title {
+      font-size: .7em; } }
 
-/* line 195, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 199, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .porfolio-subtitle {
   font-family: 'Lora', serif;
   color: #bbbbbb;
   font-size: .9em;
   margin: 0;
   padding-bottom: 1em; }
+  @media (max-width: 640px) {
+    /* line 199, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    .porfolio-subtitle {
+      font-size: .5em; } }
 
 /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav {
