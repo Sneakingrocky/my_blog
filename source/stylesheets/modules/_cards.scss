@@ -146,6 +146,10 @@
   @media (max-width: $medium_width) {
     padding: 2rem 3rem;
   }
+
+   @media (max-width: 450px) {
+    padding: 1rem 1rem;
+  }
 }
 
 .portfolio-card {
@@ -162,6 +166,10 @@
     .portfolio-card-info {
       height: 5em;
     }
+  }
+
+  @media (max-width: 4500px) {
+    margin: .5em 0;
   }
 }
 
