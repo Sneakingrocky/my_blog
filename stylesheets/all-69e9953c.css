@@ -991,18 +991,34 @@ blockquote p {
   font-size: 3em;
   text-align: center;
   text-decoration: none; }
-  @media (max-width: 550px) {
+  @media (max-width: 770px) {
     /* line 36, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo {
-      font-size: 1em; } }
+      display: none; } }
 
-/* line 48, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 49, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+.logo--mobile {
+  color: #595959;
+  font-family: 'Yellowtail', cursive;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none; }
+  @media (min-width: 771px) {
+    /* line 49, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    .logo--mobile {
+      display: none; } }
+  @media (max-width: 600px) {
+    /* line 49, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    .logo--mobile {
+      font-size: 2em; } }
+
+/* line 66, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav-links {
   color: grey;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none; }
-  /* line 54, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 72, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav-links.active {
     border-bottom: 2px solid #7CD3C8;
     padding-bottom: .4em; }
