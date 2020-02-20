@@ -983,7 +983,7 @@ blockquote p {
     @media (max-width: 600px) {
       /* line 21, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
       .nav li {
-        padding-right: 1.1em; } }
+        padding-right: .8em; } }
   /* line 35, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav a:hover {
     color: #53bc91; }
@@ -1018,7 +1018,7 @@ blockquote p {
   @media (max-width: 400px) {
     /* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo--mobile {
-      font-size: 1.5em; } }
+      font-size: 1.2em; } }
 
 /* line 74, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav-links {
