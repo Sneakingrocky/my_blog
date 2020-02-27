@@ -680,6 +680,70 @@
   margin: 1.25em 0 0 0;
   width: 100%; }
 
+/* line 80, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+header {
+  position: relative; }
+
+/* line 84, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+#header-design {
+  background: linear-gradient(150deg, #3dacff 15%, #b5dcd6 70%, #97e0c2 100%);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%; }
+  /* line 91, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+  #header-design span {
+    height: 150px;
+    position: absolute;
+    transform: skew(10deg, 10deg); }
+  /* line 97, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+  #header-design span:first-child {
+    background: #0340772b;
+    left: -16.66666%;
+    left: calc(calc(calc(100% / 3) / 2) * -1);
+    transform: skew(10deg, 10deg);
+    width: 33.33333%;
+    width: calc(100% / 3); }
+  /* line 106, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+  #header-design span:nth-child(2) {
+    background: #0077cc14;
+    bottom: 10%;
+    left: 16.66666%;
+    left: calc(calc(100% / 3) / 2);
+    right: auto;
+    width: 33.33333%;
+    width: calc(100% / 3); }
+  /* line 116, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+  #header-design span:nth-child(3) {
+    background: #9300cc12;
+    left: 40%;
+    top: 30%;
+    width: 33.33333%;
+    width: calc(100% / 3); }
+
+/* line 125, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+.header__title {
+  border: 2px dashed white;
+  color: #122b7b;
+  display: inline-block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  padding: 20px; }
+  @media (max-width: 640px) {
+    /* line 125, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+    .header__title {
+      font-size: 2em; } }
+
+/* line 140, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+.header__body-text {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.2em; }
+
 /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_forms.scss */
 .placeholder {
   padding-left: 50px; }
@@ -975,8 +1039,7 @@ blockquote p {
 
 /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav {
-  background-color: white;
-  border-bottom: 1px solid #eee;
+  background: #fff;
   line-height: 44px;
   min-height: 75px;
   padding: 15px 6rem;
@@ -988,27 +1051,27 @@ blockquote p {
     /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .nav {
       padding: 15px 2em; } }
-  /* line 16, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 15, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav ul {
     display: inline-block;
     margin-bottom: em(10); }
-  /* line 21, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 20, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav li {
     display: block;
     float: left;
     padding-right: 2em; }
-    /* line 26, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 25, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .nav li:last-child {
       padding-right: 0; }
     @media (max-width: 600px) {
-      /* line 21, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+      /* line 20, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
       .nav li {
         padding-right: .8em; } }
-  /* line 35, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 34, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav a:hover {
     color: #53bc91; }
 
-/* line 40, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 39, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .logo {
   color: #595959;
   font-family: 'Yellowtail', cursive;
@@ -1016,11 +1079,11 @@ blockquote p {
   text-align: center;
   text-decoration: none; }
   @media (max-width: 770px) {
-    /* line 40, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 39, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo {
       display: none; } }
 
-/* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 52, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .logo--mobile {
   color: #595959;
   font-family: 'Yellowtail', cursive;
@@ -1028,25 +1091,25 @@ blockquote p {
   text-align: center;
   text-decoration: none; }
   @media (min-width: 771px) {
-    /* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 52, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo--mobile {
       display: none; } }
   @media (max-width: 600px) {
-    /* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 52, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo--mobile {
       font-size: 2em; } }
   @media (max-width: 400px) {
-    /* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+    /* line 52, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
     .logo--mobile {
       font-size: 1.2em; } }
 
-/* line 74, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+/* line 73, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
 .nav-links {
   color: grey;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none; }
-  /* line 80, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
+  /* line 79, /Users/ericagarcia/Projects/my_blog/source/stylesheets/partials/_nav.scss */
   .nav-links.active {
     border-bottom: 2px solid #7CD3C8;
     padding-bottom: .4em; }
