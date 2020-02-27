@@ -73,3 +73,74 @@
   margin: 1.25em 0 0 0;
   width: 100%;
 }
+
+
+//Header
+
+header {
+  position: relative;
+}
+
+#header-design {
+  background: linear-gradient(150deg, #3dacff 15%, #b5dcd6 70%, #97e0c2 100%);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  
+  span {
+    height: 150px;
+    position: absolute;
+    transform: skew(10deg, 10deg);
+  }
+
+  span:first-child {
+    background: #0340772b;
+    left: -16.66666%;
+    left: calc(calc(calc(100% / 3) / 2) * -1);
+    transform: skew(10deg, 10deg);
+    width: 33.33333%;
+    width: calc(100% / 3);
+  }
+
+  span:nth-child(2) {
+    background: #0077cc14;
+    bottom: 10%;
+    left: 16.66666%;
+    left: calc(calc(100% / 3) / 2);
+    right: auto;
+    width: 33.33333%;
+    width: calc(100% / 3);
+  }
+
+  span:nth-child(3) {
+    background: #9300cc12;
+    left: 40%;
+    top: 30%;
+    width: 33.33333%;
+    width: calc(100% / 3);
+  }
+}
+
+.header__title {
+  border: 2px dashed white;
+  color: #122b7b;
+  display: inline-block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3em;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  padding: 20px;
+
+  @media (max-width: $medium_width) {
+    font-size: 2em;
+  }
+}
+
+.header__body-text {
+  color: #fff;
+  font-family: 'Open Sans',;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.2em;
+}

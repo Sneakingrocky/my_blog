@@ -4,24 +4,35 @@ section: work
 
 <%= partial "partials/nav" %>
 
-<section>
-  <div class="section--textured">
-    <div class="content-container">
+<header>
+  <div id="header-design" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-      <header class="row">
+  <section>
+    <div class="content-container">
+      <div class=row>
         <div class="column large-6">
-          <p class="title">Hello, I'm Erica, a product designer who thrives on creating seamless user experiences and building platforms that are maintainable and scalable.</p>
+          <h1 class="header__title">
+            Hi, I'm Erica.
+          </h1>
+
+          <p class="header__body-text">
+            I'm a product designer who thrives on creating seamless user experiences and building platforms that are maintainable and scalable.
+          </p>
         </div>
 
         <div class="column large-6">
           <img src="/images/portfolio/ericaandmav.png"/ class="hero__illustration">
         </div>
-      </header>
-
+      </div>
     </div>
-  </div>
+  </section>
+</header>
 
-  <%= partial "projects" %>
-</section>
+
+<%= partial "projects" %>
 
 <%= partial "partials/social-footer" %>
