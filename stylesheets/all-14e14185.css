@@ -53,7 +53,7 @@
   .content-container,
   .content-container--small,
   .content-container--short {
-    padding: 6rem 2rem; } }
+    padding: 2rem 2rem; } }
 
 /* line 41, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_grid.scss */
 .content-container--small {
@@ -511,7 +511,7 @@
   @media (max-width: 640px) {
     /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
     .title {
-      font-size: 2em; } }
+      font-size: 1.5em; } }
 
 /* line 13, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .subtitle {
@@ -552,56 +552,60 @@
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 .5em 0; }
+  @media (max-width: 640px) {
+    /* line 46, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+    .section__title {
+      font-size: 1.5em; } }
 
-/* line 53, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 57, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__title--light {
   color: white; }
 
-/* line 57, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 61, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__subtitle {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
   margin: 0 0 .5em 0; }
 
-/* line 64, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 68, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__highlight {
   font-family: 'Lora', serif;
   font-size: 1.2em;
   line-height: 2;
   margin-bottom: 2em; }
 
-/* line 71, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 75, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__body {
   color: white;
   max-width: 680px;
   margin: 0 auto; }
 
-/* line 77, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 81, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .section__number {
   color: #ddd; }
 
-/* line 81, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 85, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .list__header {
   border-bottom: double 4px #dbd9d4;
   font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   padding-bottom: .5em; }
 
-/* line 88, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 92, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .list {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.5; }
-  /* line 92, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+  /* line 96, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
   .list li {
     border-bottom: 1px dashed #dbd9d4;
     font-weight: 1.4em;
     padding: 1em 0; }
-    /* line 97, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+    /* line 101, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
     .list li:last-child {
       border-bottom: none; }
 
-/* line 103, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
+/* line 107, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_typography.scss */
 .figcaption {
   font-size: 0.875em;
   color: #979797;
@@ -743,6 +747,10 @@ header {
   font-size: 2em;
   font-weight: 300;
   line-height: 1.2em; }
+  @media (max-width: 640px) {
+    /* line 140, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_layout.scss */
+    .header__body-text {
+      font-size: 1.5em; } }
 
 /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_forms.scss */
 .placeholder {
@@ -753,28 +761,29 @@ header {
   background: white;
   border: 2px solid #7CD3C8;
   border-radius: 3px;
-  color: #9095A4;
+  color: #7CD3C8;
+  display: inline-block;
   font-family: "lato",sans-serif;
-  padding: .8rem 3rem;
+  padding: .375em 1.125em;
   transition: background 0.3s, color 0.3s; }
-  /* line 10, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
+  /* line 11, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
   .submit-button:hover {
     background: #7CD3C8;
     color: white;
     cursor: pointer; }
-  @media (max-width: 550px) {
+  @media (max-width: 640px) {
     /* line 1, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
     .submit-button {
       margin-bottom: 5px;
       text-align: center;
       width: 100%; } }
 
-/* line 23, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
+/* line 24, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
 .section-buttons {
   text-align: center;
   margin-top: 50px; }
 
-/* line 28, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
+/* line 29, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_buttons.scss */
 .button-wide {
   display: block;
   text-align: center; }
