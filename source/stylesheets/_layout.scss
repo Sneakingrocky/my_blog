@@ -143,4 +143,8 @@ header {
   font-size: 2em;
   font-weight: 300;
   line-height: 1.2em;
+
+  @media (max-width: $medium_width) {
+    font-size: 1.5em;
+  }
 }

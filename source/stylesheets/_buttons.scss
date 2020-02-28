@@ -2,9 +2,10 @@
   background: $white;
   border: 2px solid $cyan;
   border-radius: 3px;
-  color: $gray_blue;
+  color: $cyan;
+  display: inline-block;
   font-family: "lato",sans-serif;
-  padding: .8rem 3rem;
+  padding: .375em 1.125em;
   transition: background 0.3s, color 0.3s;
 
   &:hover {
@@ -13,7 +14,7 @@
     cursor: pointer;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: $medium_width) {
     margin-bottom: 5px;
     text-align: center;
     width: 100%;
