@@ -12,10 +12,8 @@
 
 .hero__image {
   background-size: cover;
-  height: 75vh;
-  width: 100%;
-  display: block;
-  padding: 5em 0;
+  background-position: center;
+  height: 600px;
 
   &.drawing {
     background-image: url("../images/portfolio/jewelry/Sketches.jpg");
