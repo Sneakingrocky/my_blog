@@ -1,12 +1,9 @@
 .nav {
-  background: #fff;
   line-height: 44px;
   min-height: 75px;
   padding: 15px 6rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+  background: white;
+  position: relative;
 
   @media (max-width: $medium_width) {
     padding: 15px 2em;
@@ -34,23 +31,32 @@
   a:hover {
     color: rgb(83, 188, 145);
   }
+
+  &.nav--dark {
+    background: none;
+
+    a:hover {
+      color: #def1ff;
+    }
+  }
 }
 
 .logo {
-  color: #595959;
   font-family: 'Yellowtail', cursive;
   font-size: 3em;
   text-align: center;
   text-decoration: none;
 
-
   @media (max-width: 770px) {
     display: none;
+  }
+
+  .nav--dark & {
+    color: white;
   }
 }
 
 .logo--mobile {
-  color: #595959;
   font-family: 'Yellowtail', cursive;
   font-size: 3em;
   text-align: center;
@@ -68,16 +74,28 @@
   @media (max-width: 400px) {
     font-size: 1.2em;
   }
+
+  .nav--dark & {
+    color: white;
+  }
 }
 
 .nav-links {
-  color: grey;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
+  color: grey;
 
   &.active {
     border-bottom: 2px solid $cyan;
     padding-bottom: .4em;
+  }
+
+  .nav--dark & {
+    color: white;
+
+    &.active {
+      border-bottom-color: white;
+    }
   }
 }

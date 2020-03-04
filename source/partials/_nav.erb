@@ -1,4 +1,6 @@
-<nav class="nav">
+<% dark = false unless defined?(dark) %>
+
+<nav class="nav <%= dark ? 'nav--dark' : '' %>">
   <ul class="left">
     <li>
       <%= link_to "Erica Garcia", "/index.html", :class => 'logo' %>
