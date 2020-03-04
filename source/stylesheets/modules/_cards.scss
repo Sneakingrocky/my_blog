@@ -193,6 +193,12 @@
   width: 100%;
   text-align: center;
   transition: height 0.2s ease;
+
+  @media (max-width: 420px) {
+    height: 60px;
+    transition: none;
+
+  }
 }
 
 .portfolio-title {
