@@ -1,5 +1,5 @@
 .title {
-  color: $dark_gray;
+  color: #1d2b36;
   font-family: 'Titillium Web', sans-serif;
   font-size: 2.2em;
   line-height: 1.2em;
@@ -11,15 +11,16 @@
 }
 
 .subtitle {
+  color: #556575;
   font-size: 1.1em;
-  line-height: 1.5em;
+  line-height: 1.8;
   margin: 0 auto;
 }
 
 .details {
   background: #f0f0f2;
   border-radius: 3px;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 2em 0;
   padding: .5em;
   text-align: center;
@@ -44,6 +45,7 @@
 }
 
 .section__title {
+  color: #253642;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 2em;
   font-weight: 300;
@@ -59,27 +61,30 @@
 }
 
 .section__subtitle {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 .5em 0;
 }
 
 .section__highlight {
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
   line-height: 2;
   margin-bottom: 2em;
 }
 
 .section__body {
+  font-size: 1.1em;
+  font-weight: 300;
   color: white;
+  line-height: 1.8;
   max-width: 680px;
   margin: 0 auto;
 }
 
 .section__number {
-  color: #ddd;
+  color: #7CD3C8;
 }
 
 .list__header {
@@ -108,6 +113,7 @@
   font-size: 0.875em;
   color: #979797;
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-style: italic;
 }

@@ -1,7 +1,19 @@
 body {
   background: $white;
-  color: rgb(75, 75, 75);
-  line-height: 1.9rem;
+  color: #556575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.004em;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 img {
@@ -15,7 +27,8 @@ ul {
 }
 
 ol {
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -24,9 +37,10 @@ a {
 }
 
 p {
-  font-family: 'Lora', serif;
-  font-size: 1em;
-  line-height: 1.7em;
+  color: #556575;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
   margin: 0 0 1em 0;
 }
 
