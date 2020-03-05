@@ -527,10 +527,18 @@
   margin-top: 3em; }
 
 /* line 20, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
+.padding-top {
+  padding-top: 8rem; }
+  @media (max-width: 640px) {
+    /* line 20, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
+    .padding-top {
+      padding: 1.5rem; } }
+
+/* line 29, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
 .center {
   text-align: center; }
 
-/* line 25, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
+/* line 34, /Users/ericagarcia/Projects/my_blog/source/stylesheets/_utilities.scss */
 .no-border {
   border: none; }
 
@@ -980,49 +988,50 @@ blockquote p {
   background: none;
   border: 1px solid #E4E3E3;
   border-radius: 6px;
+  font-family: 'Lora', serif;
   line-height: 1.5;
   padding: .8em;
   margin-bottom: 1em;
   width: 100%; }
 
-/* line 121, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 122, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--green-border {
   border-left: 3px solid #BACCB9; }
 
-/* line 125, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 126, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--blue-border {
   border-left: 3px solid #27A8E0; }
 
-/* line 129, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 130, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--dark-green-border {
   border-left: 3px solid #576A67; }
 
-/* line 133, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 134, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--light-grey {
   border-left: 3px solid #eee; }
 
-/* line 137, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 138, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .card__list--light-red {
   border-left: 3px solid #EF1717; }
 
 /* ==========================================================================
    Portfolio Cards
    ========================================================================== */
-/* line 146, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 147, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .portfolio-card-container {
   background: #f4f4f4;
   margin: 0 auto;
-  padding: 6rem 6rem; }
+  padding: 8rem 6rem; }
   @media (max-width: 640px) {
-    /* line 146, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 147, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .portfolio-card-container {
       padding: 2rem 3rem; } }
   @media (max-width: 450px) {
-    /* line 146, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 147, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .portfolio-card-container {
       padding: 1rem 1rem; } }
 
-/* line 160, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 161, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .portfolio-card {
   position: relative;
   clear: left;
@@ -1032,22 +1041,22 @@ blockquote p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   margin: 1.5em 0;
   overflow: hidden; }
-  /* line 171, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+  /* line 172, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
   .portfolio-card:hover .portfolio-card-info {
     height: 5em; }
   @media (max-width: 4500px) {
-    /* line 160, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 161, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .portfolio-card {
       margin: .5em 0; } }
 
-/* line 181, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 182, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .portfolio-card-image {
   max-width: 100%;
   height: 0;
   padding-bottom: 75%;
   overflow: hidden; }
 
-/* line 188, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 189, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .portfolio-card-info {
   background: #fff;
   height: 0;
@@ -1058,12 +1067,12 @@ blockquote p {
   text-align: center;
   transition: height 0.2s ease; }
   @media (max-width: 420px) {
-    /* line 188, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 189, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .portfolio-card-info {
       height: 60px;
       transition: none; } }
 
-/* line 205, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 206, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .portfolio-title {
   color: grey;
   font-family: 'Libre Franklin', sans-serif;
@@ -1071,11 +1080,11 @@ blockquote p {
   margin-bottom: 0;
   padding-top: 1em; }
   @media (max-width: 640px) {
-    /* line 205, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 206, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .portfolio-title {
       font-size: .7em; } }
 
-/* line 217, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+/* line 218, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
 .porfolio-subtitle {
   font-family: 'Lora', serif;
   color: #bbbbbb;
@@ -1083,7 +1092,7 @@ blockquote p {
   margin: 0;
   padding-bottom: 1em; }
   @media (max-width: 640px) {
-    /* line 217, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
+    /* line 218, /Users/ericagarcia/Projects/my_blog/source/stylesheets/modules/_cards.scss */
     .porfolio-subtitle {
       font-size: .5em; } }
 
