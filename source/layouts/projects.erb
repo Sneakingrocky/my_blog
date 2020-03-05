@@ -2,4 +2,8 @@
 section: work
 ---
 
-<%= yield %>
+<% wrap_layout :layout do %>
+  <%= partial "partials/nav" %>
+  <%= yield %>
+  <%= partial "partials/social-footer" %>
+<% end %>
