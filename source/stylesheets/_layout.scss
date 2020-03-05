@@ -87,7 +87,7 @@ header {
   overflow: hidden;
   position: absolute;
   width: 100%;
-  
+
   span {
     height: 150px;
     position: absolute;
@@ -139,7 +139,7 @@ header {
   @media (max-width: $large_width) {
     width: 100%;
     text-align: center;
-  } 
+  }
 }
 
 .header__body-text {
