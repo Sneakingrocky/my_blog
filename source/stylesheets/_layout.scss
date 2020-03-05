@@ -135,6 +135,11 @@ header {
   @media (max-width: $medium_width) {
     font-size: 2em;
   }
+
+  @media (max-width: $large_width) {
+    width: 100%;
+    text-align: center;
+  } 
 }
 
 .header__body-text {

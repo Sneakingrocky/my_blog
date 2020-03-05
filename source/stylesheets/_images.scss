@@ -48,6 +48,10 @@
 
 .hero__illustration {
   width: 100%;
+
+  @media (max-width: $large_width) {
+    padding: 50px;
+  }  
 }
 
 //Background Images
