@@ -16,6 +16,15 @@
 	margin-top: 3em;
 }
 
+//Padding
+.padding-top {
+  padding-top: 8rem;
+
+  @media (max-width: $medium_width) {
+    padding: 1.5rem;
+  }
+}
+
 //Alignment
 .center {
   text-align: center;

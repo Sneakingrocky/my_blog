@@ -111,6 +111,7 @@
   background: none;
   border: 1px solid #E4E3E3;
   border-radius: 6px;
+  font-family: 'Lora', serif;
   line-height: 1.5;
   padding: .8em;
   margin-bottom: 1em;
@@ -145,7 +146,7 @@
 .portfolio-card-container {
   background: #f4f4f4;
   margin: 0 auto;
-  padding: 6rem 6rem;
+  padding: 8rem 6rem;
 
   @media (max-width: $medium_width) {
     padding: 2rem 3rem;
