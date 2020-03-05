@@ -42,33 +42,37 @@
 }
 
 .logo {
-  font-family: 'Yellowtail', cursive;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
+  background-image: url("../images/logo.svg");
+  height: 55px;
+  width: 155px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: -5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @media (max-width: 770px) {
     display: none;
   }
 
   .nav--dark & {
-    color: white;
+    background-image: url("../images/logo-white.svg");
   }
 }
 
 .logo--mobile {
   font-family: 'Yellowtail', cursive;
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: center;
   text-decoration: none;
 
 
   @media (min-width: 771px) {
     display: none;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 2em;
   }
 
   @media (max-width: 400px) {
@@ -97,5 +101,9 @@
     &.active {
       border-bottom-color: white;
     }
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.8em;
   }
 }
