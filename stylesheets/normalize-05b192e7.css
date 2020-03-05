@@ -62,9 +62,14 @@ audio:not([controls]) {
  */
 
 html {
+  font-size: 100%;
     font-family: sans-serif; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+
+  @media (min-width: 768px) {
+    font-size: 112.5%; // = 18 pixels in most browsers
+  }
 }
 
 /*
