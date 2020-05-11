@@ -44,6 +44,10 @@
   &.cityscape {
     background-image: url("../images/portfolio/buildout/cityscape.png");
   }
+
+ &.covid19 {
+    background-image: url("../images/portfolio/gamenight/covid19.png");
+  }
 }
 
 .hero__illustration {
@@ -51,7 +55,7 @@
 
   @media (max-width: $large_width) {
     padding: 50px;
-  }  
+  }
 }
 
 //Background Images

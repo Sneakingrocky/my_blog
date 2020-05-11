@@ -38,3 +38,8 @@
   slug: "buildout"
   link: "/projects/buildout"
   role: "Role: Product Manager & Designer"
+- name: "Creating happy moments during Covid-19"
+  image: "/images/portfolio/gamenight/snowball_fight.png"
+  slug: "gamenight"
+  link: "/projects/gamenight"
+  role: "Role: Product Designer"
