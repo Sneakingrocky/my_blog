@@ -144,9 +144,13 @@
    Portfolio Cards
    ========================================================================== */
 
-.portfolio-card-container {
+.portfolio-background {
   background: #f4f4f4;
+}
+
+.portfolio-card-container {
   margin: 0 auto;
+  max-width: 2000px;
   padding: 8rem 6rem;
 
   @media (max-width: $medium_width) {
